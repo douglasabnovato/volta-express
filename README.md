@@ -85,6 +85,11 @@ Estão na ordem do fluxo perfeito de uso.
 
 Como baixar, instalar as dependências e rodar o projeto na máquina local.
 
+### Referências
+
+- [Bonieky Lacerda](https://www.youtube.com/watch?v=iD94avNeoXM)
+- [Sujeito programador](https://www.youtube.com/watch?v=Zbg1BHOVzRg)
+
 ### Desenvolvedores
 
 - Douglas A. B. Novato - @douglasabnovato
