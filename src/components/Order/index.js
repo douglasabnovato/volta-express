@@ -6,7 +6,9 @@ function Order() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [namemerchandise, setNamemerchandise] = useState("");
-  const [typemerchandise, setTypemerchandise] = useState("");
+
+  const [typemerchandise, setTypemerchandise] = useState(""); 
+
   const [volumemerchandise, setVolumemerchandise] = useState("");
   const [dataembarque, setDataembarque] = useState("");
   const [localembarque, setLocalembarque] = useState("");
@@ -17,6 +19,11 @@ function Order() {
   const [docexportacao, setDocexportacao] = useState("");
   const [imgcontaineraberto, setImgcontaineraberto] = useState("");
   const [message, setMessage] = useState("");
+ 
+  const handleMyTypemerchandise = (event) => {
+    console.log("atualizar: ",typemerchandise)
+    setTypemerchandise(event.target.value)
+  }
 
   function sendEmail(e) {
     e.preventDefault();
@@ -114,14 +121,16 @@ function Order() {
           placeholder="O nome da mercadoria"
           onChange={(e) => setNamemerchandise(e.target.value)}
           value={namemerchandise}
-        />
-        <input
-          className="input"
-          type="text"
-          placeholder="O tipo da mercadoria"
-          onChange={(e) => setTypemerchandise(e.target.value)}
-          value={typemerchandise}
-        />
+        />        
+        <select className="input" type="text" value={typemerchandise} onChange={handleMyTypemerchandise}>
+          <option value={0}>O tipo da mercadoria</option>
+          <option value="Eletro_Eletronicos">Eletro e Eletrônicos</option>
+          <option value="Alimento_Nao_Perecivel">Alimento Não Perecível</option>
+          <option value="Pecas_Industria">Peças e Indústria</option>
+          <option value="Material_Limpeza_e_Descartaveis">Material de Limpeza e Descartáveis</option>
+          <option value="Outros">Outros - Adicionar em mais informações</option>
+        </select> 
+
         <input
           className="input"
           type="text"

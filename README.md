@@ -28,6 +28,17 @@ Informações do primeiro cadastro
 - informações do primeiro cadastro
 - design intuitivo e moderno com componentes inteligentes
 
+#### Componentes da Página pedido
+
+- Elementos no input para melhor o preenchimento do formulário de pedido
+- Calendário, Lista de opções
+- Mensagem de envio com sucesso ou erro
+- Botão Sair redirecionar para o início com mensagem de agradecimento
+- Campo mais informações sem obrigatoriedade 
+- Validação de novo usuário
+- Telefone de contato e email de contato para validar via código
+- Autopreenchimento de nome e email vindo de login
+
 #### Identidade visual
 
 - cores
