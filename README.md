@@ -26,6 +26,7 @@ Informações do primeiro cadastro
 - preencher informações de pedido, enviar email, resposta de enviado.
 - ferramenta de disparo de emails, emailsJS.
 - informações do primeiro cadastro
+- design intuitivo e moderno
 
 #### Identidade visual
 
