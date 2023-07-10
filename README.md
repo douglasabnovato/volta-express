@@ -26,7 +26,7 @@ Informações do primeiro cadastro
 - preencher informações de pedido, enviar email, resposta de enviado.
 - ferramenta de disparo de emails, emailsJS.
 - informações do primeiro cadastro
-- design intuitivo e moderno
+- design intuitivo e moderno com componentes inteligentes
 
 #### Identidade visual
 
@@ -43,6 +43,7 @@ Informações do primeiro cadastro
 - [ ] feature/login: Página login
 - [ ] feature/register: Página register
 - [ ] feature/pedido: Página pedido
+- [ ] feature/pedido-components: componentes do formulário da Página pedido
 - [ ] feature/identidade-visual: Identidade visual
 - [ ] feature/responsividade: Responsividade
 
