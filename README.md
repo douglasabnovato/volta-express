@@ -25,7 +25,7 @@ Informações de cadastro com validação de código via email.
 
 #### Página pedido
 
-- preencher informações de pedido, enviar email, resposta de enviado.
+Preencher informações de pedido, enviar email, resposta de enviado.
 - ferramenta de disparo de emails, emailsJS.
 - informações de login e cadastro já preenchidas em tela. 
 
@@ -63,10 +63,6 @@ Elementos de cores e combinações para melhor compor o design do frontend.
 - [Color Style](https://htmlcolorcodes.com/color-chart/material-design-color-chart/)
 - [Color Style](https://materialui.co/colors/)
 - [Color Style](https://mui.com/material-ui/customization/color/) 
-
-Inspirações para composição de conteúdo e fluxo de telas.
-- [inspiração](https://www.brado.com.br/)
-- [design](https://www.brado.com.br/wp-content/uploads/2016/10/AF_BRA_MANUAL_AGENDAMENTO_RODOV_170412.pdf)
 
 #### Responsividade
 
@@ -124,6 +120,8 @@ Como baixar, instalar as dependências e rodar o projeto na máquina local.
 
 - [Bonieky Lacerda](https://www.youtube.com/watch?v=iD94avNeoXM)
 - [Sujeito programador](https://www.youtube.com/watch?v=Zbg1BHOVzRg)
+- [Inspiração portal](https://www.brado.com.br/)
+- [Docs Design](https://www.brado.com.br/wp-content/uploads/2016/10/AF_BRA_MANUAL_AGENDAMENTO_RODOV_170412.pdf)
 
 ### Desenvolvedores
 
