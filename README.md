@@ -15,35 +15,58 @@ Um formulário de pedido com informações importantes para enviar por email.
 
 #### Página login
 
-- email e senha para entrar.
+- email e senha para entrar
 
 #### Página register
 
-Informações do primeiro cadastro
+Informações de cadastro com validação de código via email.
+- Validação de novo usuário
+- Telefone de contato e email de contato para validar via código por email
 
 #### Página pedido
 
 - preencher informações de pedido, enviar email, resposta de enviado.
 - ferramenta de disparo de emails, emailsJS.
-- informações do primeiro cadastro
-- design intuitivo e moderno com componentes inteligentes
+- informações de login e cadastro já preenchidas em tela. 
 
-#### Componentes da Página pedido
+#### Componentes da página de pedido
 
-- Elementos no input para melhor o preenchimento do formulário de pedido
-- Calendário, Lista de opções
-- Mensagem de envio com sucesso ou erro
-- Botão Sair redirecionar para o início com mensagem de agradecimento
+- [Elementos no input para melhor o preenchimento do formulário de pedido](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
+- [Calendário, Lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg)
+- [Mensagem de envio com sucesso ou erro](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13)
+- [Botão Sair redirecionar para o início com mensagem de agradecimento](https://www.freecodecamp.org/news/how-to-build-forms-in-react/)
 - Campo mais informações sem obrigatoriedade 
-- Validação de novo usuário
-- Telefone de contato e email de contato para validar via código
-- Autopreenchimento de nome e email vindo de login
+- [Autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s)
+- [submit form](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=14&t=408s)
+- [validation form](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
+- [components form](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
+- [components form](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
+- [state form](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)
+- [Upload de imagens](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/****)
+- [autenticacao jwt](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
 
 #### Identidade visual
 
-- cores
-- logo
-- icon
+Inspiração de logo e icon para construir a identidade da aplicação.
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-logo.jpg" width="400px"> 
+</p>  
+
+Sugestão de paleta de cores para inspiração inicial.
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/tabela-de-cores.jpg" width="400px"> 
+</p> 
+
+Elementos de cores e combinações para melhor compor o design do frontend.
+- [Color Style](https://m1.material.io/style/color.html#color-usability)
+- [Color Style](https://m2.material.io/design/color/the-color-system.html)
+- [Color Style](https://htmlcolorcodes.com/color-chart/material-design-color-chart/)
+- [Color Style](https://materialui.co/colors/)
+- [Color Style](https://mui.com/material-ui/customization/color/) 
+
+Inspirações para composição de conteúdo e fluxo de telas.
+- [inspiração](https://www.brado.com.br/)
+- [design](https://www.brado.com.br/wp-content/uploads/2016/10/AF_BRA_MANUAL_AGENDAMENTO_RODOV_170412.pdf)
 
 #### Responsividade
 
@@ -64,7 +87,6 @@ Informações do primeiro cadastro
 - Typescript
 - Tailwindcss
 - EmailJS
-
 
 ### Telas da aplicação
 Estão na ordem do fluxo perfeito de uso.
