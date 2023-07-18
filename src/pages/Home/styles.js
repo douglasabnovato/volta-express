@@ -11,6 +11,9 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
+  width: 100%;
+  border: 1px solid red;
   padding-block-start: 20px;
+  display: flex;
+  justify-content: space-between;
 `;
-
