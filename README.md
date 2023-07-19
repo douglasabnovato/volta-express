@@ -34,17 +34,15 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 
 - [x] [dimensão, background, cores](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13)
 - [ ] [a mensagem de registrar-se e a mensagem de pedido enviado com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
-- [ ] [Calendário, Lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg)
-- [ ] [Botão Sair redirecionar para o início com mensagem de agradecimento](https://www.freecodecamp.org/news/how-to-build-forms-in-react/)
-- [ ] Campo mais informações sem obrigatoriedade 
-- [ ] [Autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s)
-- [ ] [submit form](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=14&t=408s)
-- [ ] [validation form](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
-- [ ] [components form](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
-- [ ] [components form](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
-- [ ] [state form](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)
-- [ ] [Upload de imagens](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/****)
-- [ ] [autenticacao jwt](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
+- [ ] [nome, email, senha, lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg) 
+- [ ] [autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s)
+- [ ] [register com código](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=14&t=408s)
+- [ ] [validation form onde mais informações não obrigatório](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
+- [ ] [components form calendário, list](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
+- [ ] [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
+- [ ] [state form validation mensagem de alerta por label ](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)
+- [ ] [upload de imagens para documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
+- [ ] [autenticacao jwt para segurança de registro e login](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
 
 #### Identidade visual
 
