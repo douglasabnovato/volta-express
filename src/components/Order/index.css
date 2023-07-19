@@ -15,7 +15,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: white;
-  color: #fff;
+  color: #5e5757;
   padding: 10px 60px;
   border-radius: 10px;
 }
@@ -40,6 +40,16 @@ body {
   padding: 0 8px;
 }
 
+label.labelDocs {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.inputDocs,
+.labelDocs {
+  margin: 0.4rem 0;
+}
+ 
 .textarea {
   margin-bottom: 14px;
   border-radius: 4px;

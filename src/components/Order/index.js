@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./index.css";
-import emailjs from "@emailjs/browser"; 
+import emailjs from "@emailjs/browser";
 
 function Order() {
   const [name, setName] = useState("");
@@ -176,34 +176,54 @@ function Order() {
         />
         <h3 className="title">Documentos para anexar</h3>
 
+        <label className="labelDocs" for="doc_1">Danfe Nota Fiscal:</label>  
         <input
-          className="input"
+          className="input inputDocs"
           type="file"
           placeholder="Danfe Nota Fiscal"
+          id="doc_1"
+          name="doc_1"
+          accept="image/png, image/jpeg"
+          multiple
           onChange={(e) => setDanfefiscal(e.target.value)}
           value={danfefiscal}
         />
 
+        <label  className="labelDocs" for="doc_2">Documento de Importação:</label>  
         <input
-          className="input"
+          className="input inputDocs"
           type="file"
           placeholder="Documento de Importação"
+          id="doc_2"
+          name="doc_2"
+          accept="image/png, image/jpeg"
+          multiple
           onChange={(e) => setDocimportacao(e.target.value)}
           value={docimportacao}
         />
 
+        <label  className="labelDocs" for="doc_3">Documento de Exportação:</label>
         <input
-          className="input"
+          className="input inputDocs"
           type="file"
           placeholder="Documento de Exportação"
+          id="doc_3"
+          name="doc_3"
+          accept="image/png, image/jpeg"
+          multiple
           onChange={(e) => setDocexportacao(e.target.value)}
           value={docexportacao}
         />
 
+        <label  className="labelDocs" for="doc_4">Imagens do Container Aberto:</label> 
         <input
-          className="input"
+          className="input inputDocs"
           type="file"
           placeholder="Imagens do Container Aberto"
+          id="doc_4"
+          name="doc_4"
+          accept="image/png, image/jpeg"
+          multiple
           onChange={(e) => setImgcontaineraberto(e.target.value)}
           value={imgcontaineraberto}
         />
