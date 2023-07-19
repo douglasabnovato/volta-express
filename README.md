@@ -33,7 +33,7 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 #### Componentes da página de pedido
 
 - [x] [dimensão, background, cores](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13)
-- [ ] [Elementos no input para melhor o preenchimento do formulário de pedido](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
+- [ ] [a mensagem de registrar-se e a mensagem de pedido enviado com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
 - [ ] [Calendário, Lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg)
 - [ ] [Botão Sair redirecionar para o início com mensagem de agradecimento](https://www.freecodecamp.org/news/how-to-build-forms-in-react/)
 - [ ] Campo mais informações sem obrigatoriedade 
