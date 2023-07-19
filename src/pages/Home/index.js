@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <C.Container className="app">
       <C.Title>
-        Ferrex
+        <h2>Ferrex</h2>
         <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
           Sair
         </Button>

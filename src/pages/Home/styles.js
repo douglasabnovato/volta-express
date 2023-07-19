@@ -15,5 +15,5 @@ export const Title = styled.h1`
   border: 1px solid red;
   padding-block-start: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `;

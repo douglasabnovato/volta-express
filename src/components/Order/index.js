@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./index.css";
-import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser"; 
 
 function Order() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [namemerchandise, setNamemerchandise] = useState("");
 
-  const [typemerchandise, setTypemerchandise] = useState(""); 
+  const [typemerchandise, setTypemerchandise] = useState("");
 
   const [volumemerchandise, setVolumemerchandise] = useState("");
   const [dataembarque, setDataembarque] = useState("");
@@ -19,11 +19,11 @@ function Order() {
   const [docexportacao, setDocexportacao] = useState("");
   const [imgcontaineraberto, setImgcontaineraberto] = useState("");
   const [message, setMessage] = useState("");
- 
+
   const handleMyTypemerchandise = (event) => {
-    console.log("atualizar: ",typemerchandise)
-    setTypemerchandise(event.target.value)
-  }
+    console.log("atualizar: ", typemerchandise);
+    setTypemerchandise(event.target.value);
+  };
 
   function sendEmail(e) {
     e.preventDefault();
@@ -98,8 +98,8 @@ function Order() {
 
   return (
     <div className="container">
-      <h1 className="title">Pedido de transporte</h1>
       <form className="form" onSubmit={sendEmail}>
+        <h3 className="title">Responsável</h3>
         <input
           className="input"
           type="text"
@@ -121,16 +121,23 @@ function Order() {
           placeholder="O nome da mercadoria"
           onChange={(e) => setNamemerchandise(e.target.value)}
           value={namemerchandise}
-        />        
-        <select className="input" type="text" value={typemerchandise} onChange={handleMyTypemerchandise}>
+        />
+        <select
+          className="input"
+          type="text"
+          value={typemerchandise}
+          onChange={handleMyTypemerchandise}
+        >
           <option value={0}>O tipo da mercadoria</option>
           <option value="Eletro_Eletronicos">Eletro e Eletrônicos</option>
           <option value="Alimento_Nao_Perecivel">Alimento Não Perecível</option>
           <option value="Pecas_Industria">Peças e Indústria</option>
-          <option value="Material_Limpeza_e_Descartaveis">Material de Limpeza e Descartáveis</option>
+          <option value="Material_Limpeza_e_Descartaveis">
+            Material de Limpeza e Descartáveis
+          </option>
           <option value="Outros">Outros - Adicionar em mais informações</option>
-        </select> 
-        
+        </select>
+
         <input
           className="input"
           type="text"
@@ -141,7 +148,7 @@ function Order() {
         <h3 className="title">Viagem</h3>
         <input
           className="input"
-          type="text"
+          type="date"
           placeholder="Data Embarque"
           onChange={(e) => setDataembarque(e.target.value)}
           value={dataembarque}
@@ -155,7 +162,7 @@ function Order() {
         />
         <input
           className="input"
-          type="text"
+          type="date"
           placeholder="Data Desembarque"
           onChange={(e) => setDatadesembarque(e.target.value)}
           value={datadesembarque}
@@ -171,7 +178,7 @@ function Order() {
 
         <input
           className="input"
-          type="text"
+          type="file"
           placeholder="Danfe Nota Fiscal"
           onChange={(e) => setDanfefiscal(e.target.value)}
           value={danfefiscal}
@@ -179,7 +186,7 @@ function Order() {
 
         <input
           className="input"
-          type="text"
+          type="file"
           placeholder="Documento de Importação"
           onChange={(e) => setDocimportacao(e.target.value)}
           value={docimportacao}
@@ -187,7 +194,7 @@ function Order() {
 
         <input
           className="input"
-          type="text"
+          type="file"
           placeholder="Documento de Exportação"
           onChange={(e) => setDocexportacao(e.target.value)}
           value={docexportacao}
@@ -195,7 +202,7 @@ function Order() {
 
         <input
           className="input"
-          type="text"
+          type="file"
           placeholder="Imagens do Container Aberto"
           onChange={(e) => setImgcontaineraberto(e.target.value)}
           value={imgcontaineraberto}

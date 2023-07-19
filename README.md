@@ -32,6 +32,11 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 
 #### Componentes da página de pedido
 
+- [ ] input text 
+- [ ] list
+- [ ] calendar
+- [ ] upload files
+
 - [x] [dimensão, background, cores](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13)
 - [ ] [a mensagem de registrar-se e a mensagem de pedido enviado com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
 - [ ] [nome, email, senha, lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg) 
@@ -43,25 +48,35 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 - [ ] [state form validation mensagem de alerta por label ](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)
 - [ ] [upload de imagens para documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
 - [ ] [autenticacao jwt para segurança de registro e login](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
+- [ ] [header com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk)
 
 #### Identidade visual
 
+Elementos principais de cores e combinações para melhor compor o design do frontend: [Color Style System](https://m1.material.io/style/color.html#color-color-system), [Material Design System](https://m2.material.io/design/color/the-color-system.html), [color Style Codes](https://htmlcolorcodes.com/color-chart/material-design-color-chart/), [Colors Style](https://materialui.co/colors/) e [Materia UI](https://mui.com/material-ui/customization/color/).
+
+- rgb(18, 70, 28)
+- rgb(25, 209, 31)
+- rgb(35, 247, 42)
+  
 Inspiração de logo e icon para construir a identidade da aplicação.
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="ferrex" title="#ferrex" src="./.github/ferrex-logo.jpg" width="400px"> 
 </p>  
 
+- rgb(18, 61, 70)
+- rgb(109, 133, 119)
+- rgb(199, 91, 62)
+- rgb(213, 123, 71)
+
 Sugestão de paleta de cores para inspiração inicial.
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="ferrex" title="#ferrex" src="./.github/tabela-de-cores.jpg" width="400px"> 
-</p> 
+</p>
 
-Elementos de cores e combinações para melhor compor o design do frontend.
-- [Color Style](https://m1.material.io/style/color.html#color-usability)
-- [Color Style](https://m2.material.io/design/color/the-color-system.html)
-- [Color Style](https://htmlcolorcodes.com/color-chart/material-design-color-chart/)
-- [Color Style](https://materialui.co/colors/)
-- [Color Style](https://mui.com/material-ui/customization/color/) 
+- rgb(38,48,60)
+- rgb(255, 109, 29)
+- rgb(255, 165, 25)
+- rgb(226, 222, 221)
 
 #### Responsividade
 
