@@ -17,11 +17,25 @@ Um formulário de pedido com informações importantes para enviar por email.
 
 - email e senha para entrar
 
+#### Componentes da página de login
+
+- [ ] 1. modo dark: [form dark](https://www.youtube.com/watch?v=XSbMSSdGSdg), [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
+- [ ] 2. [autenticacao jwt para segurança de login](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
+
 #### Página register
 
 Informações de cadastro com validação de código via email.
 - Validação de novo usuário
 - Telefone de contato e email de contato para validar via código por email
+
+#### Componentes da página de register
+
+- [ ] 1. design com form e image: [form em duas partes](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=24)
+- [ ] 2. modo dark: [form dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
+- [ ] 3. separar em categorias de informações: [form de múltiplas etapas](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=136s)
+- [ ] 4. mensagem de sucesso enviada por email: [confirmação de registro](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=16&t=408s)
+- [ ] 5. inputs design: [forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
+- [ ] 6. register com código via email: [register com código via email](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=14&t=408s), [autenticacao jwt para segurança de registro](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
 
 #### Página pedido
 
@@ -32,14 +46,14 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 
 #### Componentes da página de pedido
 
-- [ ] 1. inputs design: [inputs design](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13), [nome, email, senha, lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg), [components form calendário, list](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29), [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
+- [ ] 1. inputs design: [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30), [forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30), [inputs design](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13), [nome, email, senha, lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg), [components form calendário, list](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29), [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s), [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
 - [ ] 2. upload de imagens de documentos: [upload de imagens para documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/), [Upload de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ), [formulário upload](https://www.youtube.com/watch?v=kBSckls-Ih4), [Upload de Arquivos](https://www.youtube.com/watch?v=ApRCFrUuE80) 
 - [ ] 3. mensagem de validação: [a mensagem de registrar-se com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22), [a mensagem de pedido enviado com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22), [validation form onde mais informações não obrigatório](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29), [state form validation mensagem de alerta por label ](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)  
 - [ ] 4. opções de localidade em lista: [local de embarque e local de desembarque por list](https://www.google.com.br)
-- [ ] 5. informações de register/login em toda aplicação: [autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s)
-- [ ] 6. register com código via email: [register com código via email](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=14&t=408s), [autenticacao jwt para segurança de registro e login](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
-- [ ] 7. header: [header com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk)
-- [ ] 8. footer: [footer com links e informações](https://www.youtube.com/watch?v=23BHwAFIZmk) 
+- [ ] 5. informações de register/login em toda aplicação: [autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s) 
+- [ ] 6. header: [header (navbar) com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk) 
+- [ ] 7. footer: [footer com links e informações](https://www.youtube.com/watch?v=23BHwAFIZmk) 
+- [ ] 8. state forms: [state form](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=36&t=2s) 
 
 #### Identidade visual
 
