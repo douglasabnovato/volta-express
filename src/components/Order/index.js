@@ -100,21 +100,24 @@ function Order() {
     <div className="container">
       <form className="form" onSubmit={sendEmail}>
         <h3 className="title">Responsável</h3>
+        <label>Quem é a pesssoa responsável pela mercadoria?</label>
         <input
           className="input"
           type="text"
-          placeholder="O nome do responsável"
+          placeholder="O nome completo"
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
+        <label>Informe o seu melhor e-mail </label>
         <input
           className="input"
           type="text"
-          placeholder="O melhor e-mail do responsável"
+          placeholder="Um e-mail para contato"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
         <h3 className="title">Mercadoria</h3>
+        <label>Qual é a mercadoria que quer transportar?</label>
         <input
           className="input"
           type="text"
@@ -122,13 +125,14 @@ function Order() {
           onChange={(e) => setNamemerchandise(e.target.value)}
           value={namemerchandise}
         />
+        <label>Qual é o tipo da mercadoria transportada?</label>
         <select
           className="input"
           type="text"
           value={typemerchandise}
           onChange={handleMyTypemerchandise}
         >
-          <option value={0}>O tipo da mercadoria</option>
+          <option value={0}>Escolha o tipo da mercadoria</option>
           <option value="Eletro_Eletronicos">Eletro e Eletrônicos</option>
           <option value="Alimento_Nao_Perecivel">Alimento Não Perecível</option>
           <option value="Pecas_Industria">Peças e Indústria</option>
@@ -138,6 +142,7 @@ function Order() {
           <option value="Outros">Outros - Adicionar em mais informações</option>
         </select>
 
+        <label>Volume (pés)</label>
         <input
           className="input"
           type="text"
@@ -146,24 +151,27 @@ function Order() {
           value={volumemerchandise}
         />
         <h3 className="title">Viagem</h3>
+        <label>Data embarque</label>
         <input
           className="input"
           type="date"
-          placeholder="Data Embarque"
+          placeholder="Escolha o melhor dia"
           onChange={(e) => setDataembarque(e.target.value)}
           value={dataembarque}
         />
+        <label>Local embarque</label>
         <input
           className="input"
           type="text"
-          placeholder="Local Embarque"
+          placeholder="Escolha o melhor local"
           onChange={(e) => setLocalembarque(e.target.value)}
           value={localembarque}
         />
+        <label>Data desembarque</label>
         <input
           className="input"
           type="date"
-          placeholder="Data Desembarque"
+          placeholder="Escolha a mehor data"
           onChange={(e) => setDatadesembarque(e.target.value)}
           value={datadesembarque}
         />
