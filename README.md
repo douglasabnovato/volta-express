@@ -51,13 +51,14 @@ Informações de cadastro com validação de código via email.
 
 Preencher informações de pedido, enviar email, resposta de enviado.
 - ferramenta de disparo de emails, emailsJS.
+- configurar emailsJS com informações do formulário.
 - informações de login e cadastro já preenchidas em tela. 
 - header com logo e nome da aplicação, botão de sair.
 
 #### Componentes da página de pedido
 
 - [ ] 1. inputs design: 
-  - [ ] [react forms lama dev](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
+  - [x] [layout e tipos de inputs](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
   - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
   - [ ] [forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
   - [ ] [inputs design](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13)
@@ -65,7 +66,7 @@ Preencher informações de pedido, enviar email, resposta de enviado.
   - [ ] [components form calendário, list](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
   - [ ] [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
   - [ ] [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
-- [ ] 2. upload de imagens de documentos: 
+- [ ] 2. upload de imagens de documentos para receber no email: 
   - [ ] [upload de imagens para documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
   - [ ] [Upload de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ)
   - [ ] [formulário upload](https://www.youtube.com/watch?v=kBSckls-Ih4)

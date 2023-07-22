@@ -18,8 +18,19 @@ function Order() {
   const [imgcontaineraberto, setImgcontaineraberto] = useState("");
   const [message, setMessage] = useState("");
 
+  const handleMyLocaldesembarque = (event) => {
+    setLocaldesembarque(event.target.value);
+  };
+
+  const handleMyLocalembarque = (event) => {
+    setLocalembarque(event.target.value);
+  };
+
+  const handleMyVolumemerchandise = (event) => {
+    setVolumemerchandise(event.target.value);
+  };
+
   const handleMyTypemerchandise = (event) => {
-    console.log("atualizar: ", typemerchandise);
     setTypemerchandise(event.target.value);
   };
 
@@ -72,7 +83,7 @@ function Order() {
       )
       .then(
         (response) => {
-          console.log("EMAIL ENVIADO", response.status, response.text);
+          console.log("EMAIL ENVIADO COM SUCESSO.", response.status, response.text);
           setName("");
           setEmail("");
           setNamemerchandise("");
@@ -89,7 +100,7 @@ function Order() {
           setImgcontaineraberto("");
         },
         (err) => {
-          console.log("ERRO: ", err);
+          console.log("ERRO AO TENTAR ENVIAR EMAIL: ", err);
         }
       );
   }
@@ -99,6 +110,16 @@ function Order() {
       <form className="form" onSubmit={sendEmail}>
 
         <h3 className="title">Responsável</h3>
+
+        {/*
+          Vindo do login
+
+          razão social
+          cnpj
+          endereço matriz
+          responsável pela logística
+          contato do responsável      
+        */}
 
         <div className="info">
           <label className="formLabel">
@@ -172,7 +193,7 @@ function Order() {
             className="formSelect"
             type="text"
             value={volumemerchandise}
-            onChange={(e) => setVolumemerchandise(e.target.value)}
+            onChange={handleMyVolumemerchandise}
           >
             <option value={0}>Escolha o volume transportado</option>
             <option value="container_vazio_20_pes">Container vazio: 20 Pés</option>
@@ -205,7 +226,7 @@ function Order() {
           <select
             className="formSelect"
             type="text"
-            onChange={(e) => setLocalembarque(e.target.value)}
+            onChange={handleMyLocalembarque}
             value={localembarque}
           >
             <option value={0}>Escolha o melhor local de embarque</option>
@@ -240,7 +261,7 @@ function Order() {
           <select
             className="formSelect"
             type="text"
-            onChange={(e) => setLocaldesembarque(e.target.value)}
+            onChange={handleMyLocaldesembarque}
             value={localdesembarque}
           >
             <option value={0}>Escolha o melhor local de desembarque</option>
@@ -342,6 +363,7 @@ function Order() {
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         />
+
         <input className="button" type="submit" value="ENVIAR" />
       </form>
     </div>
