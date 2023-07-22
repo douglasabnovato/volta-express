@@ -6,9 +6,7 @@ function Order() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [namemerchandise, setNamemerchandise] = useState("");
-
   const [typemerchandise, setTypemerchandise] = useState("");
-
   const [volumemerchandise, setVolumemerchandise] = useState("");
   const [dataembarque, setDataembarque] = useState("");
   const [localembarque, setLocalembarque] = useState("");
@@ -19,10 +17,6 @@ function Order() {
   const [docexportacao, setDocexportacao] = useState("");
   const [imgcontaineraberto, setImgcontaineraberto] = useState("");
   const [message, setMessage] = useState("");
-
-  const [errorMessage, setErrorMessage] = useState(
-    "verificar o preenchimento."
-  );
 
   const handleMyTypemerchandise = (event) => {
     console.log("atualizar: ", typemerchandise);
@@ -103,13 +97,14 @@ function Order() {
   return (
     <div className="container">
       <form className="form" onSubmit={sendEmail}>
-        
+
+        <h3 className="title">Responsável</h3>
+
         <div className="info">
           <label className="formLabel">
             Quem é a pesssoa responsável pela mercadoria?
           </label>
           <input
-            id={5}
             name="nomeCompleto"
             className="formInput"
             type="text"
@@ -117,70 +112,71 @@ function Order() {
             onChange={(e) => setName(e.target.value)}
             value={name}
           />
-          <span className="formSpan">{errorMessage}</span>
+          <span className="formSpan">{/*{errorMessage}*/}</span>
         </div>
 
-        <h3 className="title">Responsável</h3>
+        <div className="info">
+          <label className="formLabel">Informe o seu melhor e-mail </label>
+          <input
+            className="formInput"
+            type="email"
+            placeholder="Um e-mail para contato"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+          <span className="formSpan">{/*{errorMessage}*/}</span>
+        </div>
 
-        <label className="formLabel">
-          Quem é a pesssoa responsável pela mercadoria?
-        </label>
-        <input
-          id={5}
-          name="nomeCompleto"
-          className="input"
-          type="text"
-          placeholder="O nome completo"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
-
-        <label className="formLabel">Informe o seu melhor e-mail </label>
-        <input
-          className="input"
-          type="text"
-          placeholder="Um e-mail para contato"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
         <h3 className="title">Mercadoria</h3>
-        <label className="formLabel">
-          Qual é a mercadoria que quer transportar?
-        </label>
-        <input
-          className="input"
-          type="text"
-          placeholder="O nome da mercadoria"
-          onChange={(e) => setNamemerchandise(e.target.value)}
-          value={namemerchandise}
-        />
-        <label className="formLabel">
-          Qual é o tipo da mercadoria transportada?
-        </label>
-        <select
-          className="input"
-          type="text"
-          value={typemerchandise}
-          onChange={handleMyTypemerchandise}
-        >
-          <option value={0}>Escolha o tipo da mercadoria</option>
-          <option value="Eletro_Eletronicos">Eletro e Eletrônicos</option>
-          <option value="Alimento_Nao_Perecivel">Alimento Não Perecível</option>
-          <option value="Pecas_Industria">Peças e Indústria</option>
-          <option value="Material_Limpeza_e_Descartaveis">
-            Material de Limpeza e Descartáveis
-          </option>
-          <option value="Outros">Outros - Adicionar em mais informações</option>
-        </select>
+       
+        <div className="info">
+          <label className="formLabel">
+            Qual é a mercadoria que quer transportar?
+          </label>
+          <input
+            className="formInput"
+            type="text"
+            placeholder="O nome da mercadoria"
+            onChange={(e) => setNamemerchandise(e.target.value)}
+            value={namemerchandise}
+          />
+          <span className="formSpan">{/*{errorMessage}*/}</span>
+        </div>
 
-        <label className="formLabel">Volume (pés)</label>
-        <input
-          className="input"
-          type="text"
-          placeholder="O volume da mercadoria"
-          onChange={(e) => setVolumemerchandise(e.target.value)}
-          value={volumemerchandise}
-        />
+        <div className="info">
+          <label className="formLabel">
+            Qual é o tipo da mercadoria transportada?
+          </label>
+          <select
+            className="formSelect"
+            type="text"
+            value={typemerchandise}
+            onChange={handleMyTypemerchandise}
+          >
+            <option value={0}>Escolha o tipo da mercadoria</option>
+            <option value="Eletro_Eletronicos">Eletro e Eletrônicos</option>
+            <option value="Alimento_Nao_Perecivel">Alimento Não Perecível</option>
+            <option value="Pecas_Industria">Peças e Indústria</option>
+            <option value="Material_Limpeza_e_Descartaveis">
+              Material de Limpeza e Descartáveis
+            </option>
+            <option value="Outros">Outros - Adicionar em mais informações</option>
+          </select>
+          <span className="formSpan">{/*{errorMessage}*/}</span>
+        </div>
+
+        <div className="info">
+          <label className="formLabel">Volume (pés)</label>
+          <input
+            className="formInput"
+            type="text"
+            placeholder="O volume da mercadoria"
+            onChange={(e) => setVolumemerchandise(e.target.value)}
+            value={volumemerchandise}
+          />
+          <span className="formSpan">{/*{errorMessage}*/}</span>
+        </div>
+
         <h3 className="title">Viagem</h3>
         <label className="formLabel">Data embarque</label>
         <input
@@ -191,13 +187,27 @@ function Order() {
           value={dataembarque}
         />
         <label className="formLabel">Local embarque</label>
-        <input
+        <select
           className="input"
           type="text"
-          placeholder="Escolha o melhor local"
           onChange={(e) => setLocalembarque(e.target.value)}
           value={localembarque}
-        />
+        >
+          <option value={0}>Escolha o melhor local de embarque</option>
+          <option value="porto_iguai">
+            Porto Iguaí - Estrada Prefeito Wilson Pedro Francisco - Itaguaí - RJ
+            BR CEP 23825-410
+          </option>
+          <option value="porto_santos">
+            Porto de Santos - Avenida Cnso. Rodrigues Alves - Santos - SP BR CEP
+            11015-900
+          </option>
+          <option value="porto_granbel">
+            Porto Seco Granbel - Rodovia BR-381 433000 - Betim - MG BR CEP
+            32530-000
+          </option>
+        </select>
+
         <label className="formLabel">Data desembarque</label>
         <input
           className="input"
@@ -207,13 +217,27 @@ function Order() {
           value={datadesembarque}
         />
         <label className="formLabel">Local desembarque</label>
-        <input
+        <select
           className="input"
           type="text"
-          placeholder="Local Desembarque"
           onChange={(e) => setLocaldesembarque(e.target.value)}
           value={localdesembarque}
-        />
+        >
+          <option value={0}>Escolha o melhor local de desembarque</option>
+          <option value="porto_iguai">
+            Porto Iguaí - Estrada Prefeito Wilson Pedro Francisco - Itaguaí - RJ
+            BR CEP 23825-410
+          </option>
+          <option value="porto_santos">
+            Porto de Santos - Avenida Cnso. Rodrigues Alves - Santos - SP BR CEP
+            11015-900
+          </option>
+          <option value="porto_granbel">
+            Porto Seco Granbel - Rodovia BR-381 433000 - Betim - MG BR CEP
+            32530-000
+          </option>
+        </select>
+
         <h3 className="title">Documentos para anexar</h3>
 
         <label className="labelDocs" for="doc_1">

@@ -31,15 +31,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.info{
-  width: 100%;
-  margin-block: 14px;
-}
-
-.info input{
-  width: 100%;
-}
+ 
 
 .info label {
   display: block;
@@ -48,10 +40,18 @@ body {
 }
 
 .info input {
+  width: 100%;
   margin-bottom: 8px;
   border-radius: 4px;  
   padding: 20px 18px;
 }
+
+.info .formSelect {
+  width: 100%;
+  margin-bottom: 14px;
+  border-radius: 4px;  
+  padding: 20px 18px;
+} 
 
 .info span {
   display: block;
@@ -59,17 +59,16 @@ body {
   font: .8rem 'Fira Sans', sans-serif;
 }
 
+
+
+
+
+
 .input {
   margin-bottom: 14px;
   border-radius: 4px;  
   padding: 20px 18px;
-}
-
-label.formLabel {
-  display: block;
-  margin-bottom: 8px;
-  font: 1rem 'Fira Sans', sans-serif;
-}
+} 
 
 label.labelDocs {
   display: block;
@@ -81,6 +80,10 @@ label.labelDocs {
   margin: 0.4rem 0;
 }
  
+
+
+
+
 .textarea {
   margin-bottom: 14px;
   border-radius: 4px;
@@ -88,6 +91,8 @@ label.labelDocs {
   height: 94px;
   resize: none;
 }
+
+
 
 .button {
   padding: 20px 20px;
