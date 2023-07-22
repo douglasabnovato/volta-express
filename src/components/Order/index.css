@@ -16,8 +16,9 @@ body {
   flex-direction: column;
   background-color: white;
   color: #5e5757;
-  padding: 10px 60px;
   border-radius: 10px;
+  padding: 45px 40px;
+  margin: 15px 25px;
 }
 
 .container h3.title {
@@ -26,12 +27,11 @@ body {
 }
 
 .form {
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
-}
- 
+} 
 
 .info label {
   display: block;
@@ -53,36 +53,19 @@ body {
   padding: 20px 18px;
 } 
 
+.info .formFile {
+  width: 100%;
+  margin-bottom: 14px;
+  border: 1px solid black;
+  border-radius: 4px;  
+  padding: 20px 18px;
+} 
+
 .info span {
   display: block;
   margin-bottom: 8px;
   font: .8rem 'Fira Sans', sans-serif;
 }
-
-
-
-
-
-
-.input {
-  margin-bottom: 14px;
-  border-radius: 4px;  
-  padding: 20px 18px;
-} 
-
-label.labelDocs {
-  display: block;
-  font: 1rem 'Fira Sans', sans-serif;
-}
-
-.inputDocs,
-.labelDocs {
-  margin: 0.4rem 0;
-}
- 
-
-
-
 
 .textarea {
   margin-bottom: 14px;
@@ -92,20 +75,18 @@ label.labelDocs {
   resize: none;
 }
 
-
-
 .button {
   padding: 20px 20px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   background-color: #22D511;
-  font-size: 18px;
+  color: white;
+  font-size: 22px;
   font-weight: bold;
   transition: background-color, transform 0.8s;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .button:hover {
