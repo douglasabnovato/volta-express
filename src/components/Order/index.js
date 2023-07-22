@@ -20,6 +20,10 @@ function Order() {
   const [imgcontaineraberto, setImgcontaineraberto] = useState("");
   const [message, setMessage] = useState("");
 
+  const [errorMessage, setErrorMessage] = useState(
+    "verificar o preenchimento."
+  );
+
   const handleMyTypemerchandise = (event) => {
     console.log("atualizar: ", typemerchandise);
     setTypemerchandise(event.target.value);
@@ -99,16 +103,39 @@ function Order() {
   return (
     <div className="container">
       <form className="form" onSubmit={sendEmail}>
+        
+        <div className="info">
+          <label className="formLabel">
+            Quem é a pesssoa responsável pela mercadoria?
+          </label>
+          <input
+            id={5}
+            name="nomeCompleto"
+            className="formInput"
+            type="text"
+            placeholder="O nome completo"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
+          <span className="formSpan">{errorMessage}</span>
+        </div>
+
         <h3 className="title">Responsável</h3>
-        <label>Quem é a pesssoa responsável pela mercadoria?</label>
+
+        <label className="formLabel">
+          Quem é a pesssoa responsável pela mercadoria?
+        </label>
         <input
+          id={5}
+          name="nomeCompleto"
           className="input"
           type="text"
           placeholder="O nome completo"
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
-        <label>Informe o seu melhor e-mail </label>
+
+        <label className="formLabel">Informe o seu melhor e-mail </label>
         <input
           className="input"
           type="text"
@@ -117,7 +144,9 @@ function Order() {
           value={email}
         />
         <h3 className="title">Mercadoria</h3>
-        <label>Qual é a mercadoria que quer transportar?</label>
+        <label className="formLabel">
+          Qual é a mercadoria que quer transportar?
+        </label>
         <input
           className="input"
           type="text"
@@ -125,7 +154,9 @@ function Order() {
           onChange={(e) => setNamemerchandise(e.target.value)}
           value={namemerchandise}
         />
-        <label>Qual é o tipo da mercadoria transportada?</label>
+        <label className="formLabel">
+          Qual é o tipo da mercadoria transportada?
+        </label>
         <select
           className="input"
           type="text"
@@ -142,7 +173,7 @@ function Order() {
           <option value="Outros">Outros - Adicionar em mais informações</option>
         </select>
 
-        <label>Volume (pés)</label>
+        <label className="formLabel">Volume (pés)</label>
         <input
           className="input"
           type="text"
@@ -151,7 +182,7 @@ function Order() {
           value={volumemerchandise}
         />
         <h3 className="title">Viagem</h3>
-        <label>Data embarque</label>
+        <label className="formLabel">Data embarque</label>
         <input
           className="input"
           type="date"
@@ -159,7 +190,7 @@ function Order() {
           onChange={(e) => setDataembarque(e.target.value)}
           value={dataembarque}
         />
-        <label>Local embarque</label>
+        <label className="formLabel">Local embarque</label>
         <input
           className="input"
           type="text"
@@ -167,7 +198,7 @@ function Order() {
           onChange={(e) => setLocalembarque(e.target.value)}
           value={localembarque}
         />
-        <label>Data desembarque</label>
+        <label className="formLabel">Data desembarque</label>
         <input
           className="input"
           type="date"
@@ -175,6 +206,7 @@ function Order() {
           onChange={(e) => setDatadesembarque(e.target.value)}
           value={datadesembarque}
         />
+        <label className="formLabel">Local desembarque</label>
         <input
           className="input"
           type="text"
@@ -184,7 +216,9 @@ function Order() {
         />
         <h3 className="title">Documentos para anexar</h3>
 
-        <label className="labelDocs" for="doc_1">Danfe Nota Fiscal:</label>  
+        <label className="labelDocs" for="doc_1">
+          Danfe Nota Fiscal:
+        </label>
         <input
           className="input inputDocs"
           type="file"
@@ -197,7 +231,9 @@ function Order() {
           value={danfefiscal}
         />
 
-        <label  className="labelDocs" for="doc_2">Documento de Importação:</label>  
+        <label className="labelDocs" for="doc_2">
+          Documento de Importação:
+        </label>
         <input
           className="input inputDocs"
           type="file"
@@ -210,7 +246,9 @@ function Order() {
           value={docimportacao}
         />
 
-        <label  className="labelDocs" for="doc_3">Documento de Exportação:</label>
+        <label className="labelDocs" for="doc_3">
+          Documento de Exportação:
+        </label>
         <input
           className="input inputDocs"
           type="file"
@@ -223,7 +261,9 @@ function Order() {
           value={docexportacao}
         />
 
-        <label  className="labelDocs" for="doc_4">Imagens do Container Aberto:</label> 
+        <label className="labelDocs" for="doc_4">
+          Imagens do Container Aberto:
+        </label>
         <input
           className="input inputDocs"
           type="file"

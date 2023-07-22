@@ -32,10 +32,43 @@ body {
   flex-direction: column;
 }
 
+.info{
+  width: 100%;
+  margin-block: 14px;
+}
+
+.info input{
+  width: 100%;
+}
+
+.info label {
+  display: block;
+  margin-bottom: 8px;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.info input {
+  margin-bottom: 8px;
+  border-radius: 4px;  
+  padding: 20px 18px;
+}
+
+.info span {
+  display: block;
+  margin-bottom: 8px;
+  font: .8rem 'Fira Sans', sans-serif;
+}
+
 .input {
   margin-bottom: 14px;
   border-radius: 4px;  
   padding: 20px 18px;
+}
+
+label.formLabel {
+  display: block;
+  margin-bottom: 8px;
+  font: 1rem 'Fira Sans', sans-serif;
 }
 
 label.labelDocs {
