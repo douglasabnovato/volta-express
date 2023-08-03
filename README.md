@@ -5,8 +5,8 @@ Um formulário de pedido com informações importantes para enviar por email.
 
 ### Tarefas
 
-- [ ] Página login
-- [ ] Página register
+- [x] Página login
+- [x] Página register
 - [x] Página pedido
 - [ ] Identidade visual
 - [ ] Responsividade
@@ -120,10 +120,10 @@ Sugestão de paleta de cores para inspiração inicial.
 
 ### Gestão do projeto
 
-- [ ] feature/login: Página login
-- [ ] feature/register: Página register
-- [ ] feature/pedido: Página pedido
-- [ ] feature/pedido-components: componentes do formulário da Página pedido
+- [x] feature/login: Página login
+- [x] feature/register: Página register
+- [x] feature/pedido: Página pedido
+- [x] feature/pedido-components: componentes do formulário da Página pedido
 - [ ] feature/identidade-visual: Identidade visual
 - [ ] feature/responsividade: Responsividade
 
