@@ -53,35 +53,28 @@ Preencher informações de pedido, enviar email, resposta de enviado.
   - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)  
   - [ ] [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
   - [ ] [persistência das informações](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
-- [ ] 2. upload de imagens de documentos para receber no email: 
-  - [ ] [upload de imagens para documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
-  - [ ] [Upload de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ)
-  - [ ] [formulário upload](https://www.youtube.com/watch?v=kBSckls-Ih4)
-  - [ ] [Upload de Arquivos](https://www.youtube.com/watch?v=ApRCFrUuE80)
-  - [ ] [uploading files](https://www.youtube.com/watch?v=O4ybhvtUbCE)
-  - [ ] [upload file](https://codefrontend.com/file-upload-reactjs/)
-  - [ ] [upload file](https://github.com/vincaslt/twitter-code/blob/main/src/file-upload/CustomFileInput.tsx)
-  - [ ] [upload file](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
-  - [ ] [upload file](https://www.w3schools.com/tags/att_input_type_file.asp)
-  - [ ] [upload file](https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react)
+- [ ] 2. [Upload de imagens de documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
+  - [ ] [Upload de arquivos por janela de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ)
+  - [ ] [Upload arrrastando](https://www.youtube.com/watch?v=kBSckls-Ih4)
+  - [ ] [Upload selecionando mais de um arquivo](https://www.youtube.com/watch?v=ApRCFrUuE80)
+  - [ ] [Uploading files](https://www.youtube.com/watch?v=O4ybhvtUbCE)
+  - [ ] [upload file codefrontend](https://codefrontend.com/file-upload-reactjs/)
+  - [ ] [upload file twitter-code](https://github.com/vincaslt/twitter-code/blob/main/src/file-upload/CustomFileInput.tsx)
+  - [ ] [upload file developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+  - [ ] [upload file w3schools](https://www.w3schools.com/tags/att_input_type_file.asp)
+  - [ ] [upload file pluralsight](https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react)
 - [ ] 3. mensagem de validação: 
   - [ ] [a mensagem de registrar-se com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
   - [ ] [a mensagem de pedido enviado com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
   - [ ] [validation form onde mais informações não obrigatório](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
   - [ ] [state form validation mensagem de alerta por label ](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)  
-- [ ] 4. opções de localidade em lista: 
-  - [ ] [local de embarque e local de desembarque por list](https://www.google.com.br)
-- [ ] 5. informações de register/login em toda aplicação: 
-  - [ ] [autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s) 
-- [ ] 6. header: 
-  - [ ] [header (navbar) com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk) 
-- [ ] 7. footer: 
-  - [ ] [footer com links e informações](https://www.youtube.com/watch?v=23BHwAFIZmk) 
-- [ ] 8. form structure in react: 
-  - [ ] [handling multiple inputs](https://legacy.reactjs.org/docs/forms.html)
+- [ ] 4. [opções de localidade em lista local de embarque e local de desembarque por list](https://www.google.com.br)
+- [ ] 5. [informações de register/login em toda aplicação para autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s) 
+- [ ] 6. [header (navbar) com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk) 
+- [ ] 7. [footer com links e informações](https://www.youtube.com/watch?v=23BHwAFIZmk) 
+- [ ] 8. [handling multiple inputs](https://legacy.reactjs.org/docs/forms.html)
   - [ ] [state form](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=36&t=2s)
-- [ ] 9. componentização: 
-  - [ ] [componentização](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16) 
+- [ ] 9. [estrutura componentização](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16) 
 
 #### Identidade visual
 
