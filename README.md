@@ -120,6 +120,7 @@ Sugestão de paleta de cores para inspiração inicial.
 
 ### Gestão do projeto
 
+- [x] feature/developer: tratar estabilidade
 - [x] feature/login: Página login
 - [x] feature/register: Página register
 - [x] feature/pedido: Página pedido
