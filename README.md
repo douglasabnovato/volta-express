@@ -19,33 +19,23 @@ Um formulário de pedido com informações importantes para enviar por email.
 
 #### Componentes da página de login
 
-- [ ] 1. modo dark: 
-  - [ ] [form dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
-  - [ ] [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
-- [ ] 2. autenticacao: 
-  - [ ] [autenticacao jwt para segurança de login](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
+- [ ] 1. [form modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg), [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
+- [ ] 2. [autenticacao jwt para segurança de login/logout/esqueci a senha](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
 
 #### Página register
 
 Informações de cadastro com validação de código via email.
 - Validação de novo usuário
-- Telefone de contato e email de contato para validar via código por email
+- Telefone de contato e email de contato para validar via código por email (input de type tel)
 
 #### Componentes da página de register
 
-- [ ] 1. design com form e image: 
-  - [ ] [form em duas partes](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=24)
-- [ ] 2. modo dark: 
-  - [ ] [form dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
-- [ ] 3. separar em categorias de informações: 
-  - [ ] [form de múltiplas etapas](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=136s)
-- [ ] 4. mensagem de sucesso enviada por email: 
-  - [ ] [confirmação de registro](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=16&t=408s)
-- [ ] 5. inputs design: 
-  - [ ] [forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
-- [ ] 6. register com código via email: 
-  - [ ] [register com código via email](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=14&t=408s)
-  - [ ] [autenticacao jwt para segurança de registro](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
+- [ ] 1. [design com form e image em duas partes](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=24)
+- [ ] 2. [form modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
+- [ ] 3. [separar em categorias de informações com um form de múltiplas etapas](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=136s)
+- [ ] 4. [mensagem de sucesso enviada por email para confirmação de registro](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=16&t=408s)
+- [ ] 5. [inputs forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30) e [form register](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=21)
+- [ ] 6. [autenticacao jwt para segurança de registro](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
 
 #### Página pedido
 
@@ -157,14 +147,19 @@ Estão na ordem do fluxo perfeito de uso.
   <img alt="ferrex" title="#ferrex" src="./.github/ferrex-2.jpg" width="400px"> 
 </p>  
 
-- Pedido de transporte
+- Pedido de transporte v2-desktop
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3.jpg" width="400px"> 
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-desktop.jpg" width="400px"> 
+</p>  
+
+- Pedido de transporte v2-mobile
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-mobile.jpg" height="400px"> 
 </p>  
 
 - Pedido preenchido
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-4.jpg" width="400px"> 
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-4.jpg" height="400px"> 
 </p>
 
 - Pedido recebido  

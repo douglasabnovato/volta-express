@@ -12,13 +12,15 @@ const Home = () => {
 
   return (
     <C.Container className="app">
-      <C.Title>
+      <C.Header>
         <h2>Ferrex</h2>
+      </C.Header>
+      <Order />
+      <C.Footer>
         <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
           Sair
         </Button>
-      </C.Title>
-      <Order />
+      </C.Footer>
     </C.Container>
   );
 };
