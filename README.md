@@ -125,6 +125,7 @@ Sugestão de paleta de cores para inspiração inicial.
 - [x] feature/register: Página register
 - [x] feature/pedido: Página pedido
 - [x] feature/pedido-components: componentes do formulário da Página pedido
+- [ ] feature/form-components: aperfeiçoar design dos componentes dos formulários
 - [ ] feature/identidade-visual: Identidade visual
 - [ ] feature/responsividade: Responsividade
 
