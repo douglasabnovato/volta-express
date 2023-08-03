@@ -14,6 +14,14 @@ Um formulário de pedido com informações importantes para enviar por email.
 
 ### Descrição de tarefas
 
+#### Componentes
+
+- [ ] Register/Login/Esqueci Senha:
+- [ ] Header:
+- [ ] Home: 
+- [ ] Footer:
+- [ ] Conteúdos Off:
+
 #### Página login
 
 - email e senha para entrar
