@@ -35,7 +35,8 @@ Informações de cadastro com validação de código via email.
 - [ ] 2. [form avançados modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
 - [ ] 3. [separar em categorias de informações com um form de múltiplas etapas](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=136s)
 - [ ] 4. [mensagem de sucesso enviada por email para confirmação de registro](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=16&t=408s)
-- [ ] 5. [inputs forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30) e [form register](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=21)
+- [ ] 5. [inputs forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
+  - [ ] [form register](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=21)
 - [ ] 6. [autenticacao jwt para segurança de registro](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
 
 #### Página pedido
@@ -49,11 +50,9 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 #### Componentes da página de pedido
 
 - [ ] 1. [inputs e Validate React Forms](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
-  - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
-  - [ ] [nome, email, senha, lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg)
-  - [ ] [components form calendário, list](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
+  - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)  
   - [ ] [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
-  - [ ] [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
+  - [ ] [persistência das informações](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
 - [ ] 2. upload de imagens de documentos para receber no email: 
   - [ ] [upload de imagens para documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
   - [ ] [Upload de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ)
