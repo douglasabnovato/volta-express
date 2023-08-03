@@ -154,7 +154,7 @@ Estão na ordem do fluxo perfeito de uso.
 
 - Pedido de transporte v2-mobile
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-mobile.jpg" width="400px"> 
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-mobile.jpg" height="400px"> 
 </p>  
 
 - Pedido preenchido
