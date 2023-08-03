@@ -29,7 +29,7 @@ Um formulário de pedido com informações importantes para enviar por email.
 
 Informações de cadastro com validação de código via email.
 - Validação de novo usuário
-- Telefone de contato e email de contato para validar via código por email
+- Telefone de contato e email de contato para validar via código por email (input de type tel)
 
 #### Componentes da página de register
 
