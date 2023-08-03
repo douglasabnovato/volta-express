@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Header = styled.h1`
+  width: 100%;
+  padding-block-start: 20px;
+  display: flex;
+  justify-content: space-around;
+`;
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -10,9 +17,9 @@ export const Container = styled.div`
   padding-inline: 20px;
 `;
 
-export const Title = styled.h1`
+
+export const Footer = styled.h1`
   width: 100%;
-  border: 1px solid red;
   padding-block-start: 20px;
   display: flex;
   justify-content: space-around;
