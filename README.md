@@ -8,6 +8,7 @@ Um formulário de pedido com informações importantes para enviar por email.
 - [x] Página login
 - [x] Página register
 - [x] Página pedido
+- [ ] Performance
 - [ ] Identidade visual
 - [ ] Responsividade
 
@@ -31,7 +32,7 @@ Informações de cadastro com validação de código via email.
 #### Componentes da página de register
 
 - [ ] 1. [design com form e image em duas partes](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=24)
-- [ ] 2. [form modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
+- [ ] 2. [form avançados modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
 - [ ] 3. [separar em categorias de informações com um form de múltiplas etapas](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=136s)
 - [ ] 4. [mensagem de sucesso enviada por email para confirmação de registro](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=16&t=408s)
 - [ ] 5. [inputs forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30) e [form register](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=21)
@@ -47,11 +48,8 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 
 #### Componentes da página de pedido
 
-- [ ] 1. inputs design: 
-  - [x] [layout e tipos de inputs](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
+- [ ] 1. [inputs e Validate React Forms](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
   - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
-  - [ ] [forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
-  - [ ] [inputs design](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13)
   - [ ] [nome, email, senha, lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg)
   - [ ] [components form calendário, list](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
   - [ ] [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
