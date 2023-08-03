@@ -147,14 +147,19 @@ Estão na ordem do fluxo perfeito de uso.
   <img alt="ferrex" title="#ferrex" src="./.github/ferrex-2.jpg" width="400px"> 
 </p>  
 
-- Pedido de transporte
+- Pedido de transporte v2-desktop
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3.jpg" width="400px"> 
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-desktop.jpg" width="400px"> 
+</p>  
+
+- Pedido de transporte v2-mobile
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-mobile.jpg" width="400px"> 
 </p>  
 
 - Pedido preenchido
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-4.jpg" width="400px"> 
+  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-4.jpg" height="400px"> 
 </p>
 
 - Pedido recebido  
