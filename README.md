@@ -80,6 +80,10 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 
 Elementos principais de cores e combinações para melhor compor o design do frontend: [Color Style System](https://m1.material.io/style/color.html#color-color-system), [Material Design System](https://m2.material.io/design/color/the-color-system.html), [color Style Codes](https://htmlcolorcodes.com/color-chart/material-design-color-chart/), [Colors Style](https://materialui.co/colors/) e [Materia UI](https://mui.com/material-ui/customization/color/).
 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/color-a.jpg" width="400px"> 
+</p> 
+
 - rgb(18, 70, 28)
 - rgb(25, 209, 31)
 - rgb(35, 247, 42)
@@ -89,6 +93,10 @@ Inspiração de logo e icon para construir a identidade da aplicação.
   <img alt="ferrex" title="#ferrex" src="./.github/ferrex-logo.jpg" width="400px"> 
 </p>  
 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/color-b.jpg" width="400px"> 
+</p> 
+
 - rgb(18, 61, 70)
 - rgb(109, 133, 119)
 - rgb(199, 91, 62)
@@ -97,7 +105,11 @@ Inspiração de logo e icon para construir a identidade da aplicação.
 Sugestão de paleta de cores para inspiração inicial.
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="ferrex" title="#ferrex" src="./.github/tabela-de-cores.jpg" width="400px"> 
-</p>
+</p>  
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/color-c.jpg" width="400px"> 
+</p> 
 
 - rgb(38,48,60)
 - rgb(255, 109, 29)
