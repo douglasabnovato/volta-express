@@ -130,6 +130,12 @@ Sugestão de paleta de cores para inspiração inicial.
 
 ### Gestão do projeto
 
+#### design e sprints
+
+Os detalhes do design do projeto no [Figma](https://www.figma.com/file/xpTJKLI61qJIrzvCWYnYXi/Ferrex?type=whiteboard&node-id=0-1&t=69l0HPss8LZuSUi5-0) e todas as tarefas e atividades listadas no [Trello](https://trello.com/b/7F7VjYLS/roadmap-solu%C3%A7%C3%A3o).
+
+#### branches e funcionalidades
+
 - [x] feature/developer: tratar estabilidade
 - [x] feature/login: Página login
 - [x] feature/register: Página register
@@ -189,6 +195,12 @@ Como baixar, instalar as dependências e rodar o projeto na máquina local.
 - [Sujeito programador](https://www.youtube.com/watch?v=Zbg1BHOVzRg)
 - [Inspiração portal](https://www.brado.com.br/)
 - [Docs Design](https://www.brado.com.br/wp-content/uploads/2016/10/AF_BRA_MANUAL_AGENDAMENTO_RODOV_170412.pdf)
+- [gofretes](https://gofretes.com.br/) 
+- [fretebras](https://www.fretebras.com.br/) 
+- [Rodoviário – ONTL](https://ontl.epl.gov.br/paineis-analiticos/painel-de-indicadores-de-transporte-e-logistica/movimentacao-e-trafego/rodoviario/)
+- [zero40](https://zero40.com.br/startups/intelus/)  
+- [smashinglogo](https://smashinglogo.com/en/logo-maker/#tour-name)  
+- [truckpad](https://www.truckpad.com.br/)  
 
 ### Desenvolvedores
 
