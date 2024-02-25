@@ -206,3 +206,8 @@ Como baixar, instalar as dependências e rodar o projeto na máquina local.
 
 - Douglas A. B. Novato - @douglasabnovato
 - João Pedro Garcia - @jpedro_g2
+
+### Pivotar o projeto
+
+Devido a análises do projeto e demanda comercial, seguimos para outro nível do negócio.
+
