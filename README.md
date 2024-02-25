@@ -8,10 +8,19 @@ Um formulário de pedido com informações importantes para enviar por email.
 - [x] Página login
 - [x] Página register
 - [x] Página pedido
+- [ ] Performance
 - [ ] Identidade visual
 - [ ] Responsividade
 
 ### Descrição de tarefas
+
+#### Componentes
+
+- [ ] Register/Login/Esqueci Senha:
+- [ ] Header:
+- [ ] Home: 
+- [ ] Footer:
+- [ ] Conteúdos Off:
 
 #### Página login
 
@@ -31,10 +40,11 @@ Informações de cadastro com validação de código via email.
 #### Componentes da página de register
 
 - [ ] 1. [design com form e image em duas partes](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=24)
-- [ ] 2. [form modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
+- [ ] 2. [form avançados modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
 - [ ] 3. [separar em categorias de informações com um form de múltiplas etapas](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=136s)
 - [ ] 4. [mensagem de sucesso enviada por email para confirmação de registro](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=16&t=408s)
-- [ ] 5. [inputs forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30) e [form register](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=21)
+- [ ] 5. [inputs forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
+  - [ ] [form register](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=21)
 - [ ] 6. [autenticacao jwt para segurança de registro](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
 
 #### Página pedido
@@ -47,48 +57,40 @@ Preencher informações de pedido, enviar email, resposta de enviado.
 
 #### Componentes da página de pedido
 
-- [ ] 1. inputs design: 
-  - [x] [layout e tipos de inputs](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
-  - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
-  - [ ] [forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
-  - [ ] [inputs design](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=13)
-  - [ ] [nome, email, senha, lista de opções](https://www.youtube.com/watch?v=XSbMSSdGSdg)
-  - [ ] [components form calendário, list](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
+- [ ] 1. [inputs e Validate React Forms](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
+  - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)  
   - [ ] [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
-  - [ ] [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
-- [ ] 2. upload de imagens de documentos para receber no email: 
-  - [ ] [upload de imagens para documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
-  - [ ] [Upload de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ)
-  - [ ] [formulário upload](https://www.youtube.com/watch?v=kBSckls-Ih4)
-  - [ ] [Upload de Arquivos](https://www.youtube.com/watch?v=ApRCFrUuE80)
-  - [ ] [uploading files](https://www.youtube.com/watch?v=O4ybhvtUbCE)
-  - [ ] [upload file](https://codefrontend.com/file-upload-reactjs/)
-  - [ ] [upload file](https://github.com/vincaslt/twitter-code/blob/main/src/file-upload/CustomFileInput.tsx)
-  - [ ] [upload file](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
-  - [ ] [upload file](https://www.w3schools.com/tags/att_input_type_file.asp)
-  - [ ] [upload file](https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react)
+  - [ ] [persistência das informações](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
+- [ ] 2. [Upload de imagens de documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
+  - [ ] [Upload de arquivos por janela de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ)
+  - [ ] [Upload arrrastando](https://www.youtube.com/watch?v=kBSckls-Ih4)
+  - [ ] [Upload selecionando mais de um arquivo](https://www.youtube.com/watch?v=ApRCFrUuE80)
+  - [ ] [Uploading files](https://www.youtube.com/watch?v=O4ybhvtUbCE)
+  - [ ] [upload file codefrontend](https://codefrontend.com/file-upload-reactjs/)
+  - [ ] [upload file twitter-code](https://github.com/vincaslt/twitter-code/blob/main/src/file-upload/CustomFileInput.tsx)
+  - [ ] [upload file developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+  - [ ] [upload file w3schools](https://www.w3schools.com/tags/att_input_type_file.asp)
+  - [ ] [upload file pluralsight](https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react)
 - [ ] 3. mensagem de validação: 
   - [ ] [a mensagem de registrar-se com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
   - [ ] [a mensagem de pedido enviado com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
   - [ ] [validation form onde mais informações não obrigatório](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
   - [ ] [state form validation mensagem de alerta por label ](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)  
-- [ ] 4. opções de localidade em lista: 
-  - [ ] [local de embarque e local de desembarque por list](https://www.google.com.br)
-- [ ] 5. informações de register/login em toda aplicação: 
-  - [ ] [autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s) 
-- [ ] 6. header: 
-  - [ ] [header (navbar) com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk) 
-- [ ] 7. footer: 
-  - [ ] [footer com links e informações](https://www.youtube.com/watch?v=23BHwAFIZmk) 
-- [ ] 8. form structure in react: 
-  - [ ] [handling multiple inputs](https://legacy.reactjs.org/docs/forms.html)
+- [ ] 4. [opções de localidade em lista local de embarque e local de desembarque por list](https://www.google.com.br)
+- [ ] 5. [informações de register/login em toda aplicação para autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s) 
+- [ ] 6. [header (navbar) com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk) 
+- [ ] 7. [footer com links e informações](https://www.youtube.com/watch?v=23BHwAFIZmk) 
+- [ ] 8. [handling multiple inputs](https://legacy.reactjs.org/docs/forms.html)
   - [ ] [state form](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=36&t=2s)
-- [ ] 9. componentização: 
-  - [ ] [componentização](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16) 
+- [ ] 9. [estrutura componentização](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16) 
 
 #### Identidade visual
 
 Elementos principais de cores e combinações para melhor compor o design do frontend: [Color Style System](https://m1.material.io/style/color.html#color-color-system), [Material Design System](https://m2.material.io/design/color/the-color-system.html), [color Style Codes](https://htmlcolorcodes.com/color-chart/material-design-color-chart/), [Colors Style](https://materialui.co/colors/) e [Materia UI](https://mui.com/material-ui/customization/color/).
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/color-a.jpg" width="400px"> 
+</p> 
 
 - rgb(18, 70, 28)
 - rgb(25, 209, 31)
@@ -99,6 +101,10 @@ Inspiração de logo e icon para construir a identidade da aplicação.
   <img alt="ferrex" title="#ferrex" src="./.github/ferrex-logo.jpg" width="400px"> 
 </p>  
 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/color-b.jpg" width="400px"> 
+</p> 
+
 - rgb(18, 61, 70)
 - rgb(109, 133, 119)
 - rgb(199, 91, 62)
@@ -107,7 +113,11 @@ Inspiração de logo e icon para construir a identidade da aplicação.
 Sugestão de paleta de cores para inspiração inicial.
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="ferrex" title="#ferrex" src="./.github/tabela-de-cores.jpg" width="400px"> 
-</p>
+</p>  
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="ferrex" title="#ferrex" src="./.github/color-c.jpg" width="400px"> 
+</p> 
 
 - rgb(38,48,60)
 - rgb(255, 109, 29)
@@ -120,10 +130,18 @@ Sugestão de paleta de cores para inspiração inicial.
 
 ### Gestão do projeto
 
+#### design e sprints
+
+Os detalhes do design do projeto no [Figma](https://www.figma.com/file/xpTJKLI61qJIrzvCWYnYXi/Ferrex?type=whiteboard&node-id=0-1&t=69l0HPss8LZuSUi5-0) e todas as tarefas e atividades listadas no [Trello](https://trello.com/b/7F7VjYLS/roadmap-solu%C3%A7%C3%A3o).
+
+#### branches e funcionalidades
+
+- [x] feature/developer: tratar estabilidade
 - [x] feature/login: Página login
 - [x] feature/register: Página register
 - [x] feature/pedido: Página pedido
 - [x] feature/pedido-components: componentes do formulário da Página pedido
+- [ ] feature/form-components: aperfeiçoar design dos componentes dos formulários
 - [ ] feature/identidade-visual: Identidade visual
 - [ ] feature/responsividade: Responsividade
 
@@ -177,8 +195,19 @@ Como baixar, instalar as dependências e rodar o projeto na máquina local.
 - [Sujeito programador](https://www.youtube.com/watch?v=Zbg1BHOVzRg)
 - [Inspiração portal](https://www.brado.com.br/)
 - [Docs Design](https://www.brado.com.br/wp-content/uploads/2016/10/AF_BRA_MANUAL_AGENDAMENTO_RODOV_170412.pdf)
+- [gofretes](https://gofretes.com.br/) 
+- [fretebras](https://www.fretebras.com.br/) 
+- [Rodoviário – ONTL](https://ontl.epl.gov.br/paineis-analiticos/painel-de-indicadores-de-transporte-e-logistica/movimentacao-e-trafego/rodoviario/)
+- [zero40](https://zero40.com.br/startups/intelus/)  
+- [smashinglogo](https://smashinglogo.com/en/logo-maker/#tour-name)  
+- [truckpad](https://www.truckpad.com.br/)  
 
 ### Desenvolvedores
 
 - Douglas A. B. Novato - @douglasabnovato
 - João Pedro Garcia - @jpedro_g2
+
+### Pivotar o projeto
+
+Devido a análises do projeto e demanda comercial, seguimos para outro nível do negócio.
+
