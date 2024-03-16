@@ -1,213 +1,70 @@
-## Ferrex 
+# Getting Started with Create React App
 
-O desafio desse projeto é para uma página de login e cadastro.
-Um formulário de pedido com informações importantes para enviar por email.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Tarefas
+## Available Scripts
 
-- [x] Página login
-- [x] Página register
-- [x] Página pedido
-- [ ] Performance
-- [ ] Identidade visual
-- [ ] Responsividade
+In the project directory, you can run:
 
-### Descrição de tarefas
+### `npm start`
 
-#### Componentes
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [ ] Register/Login/Esqueci Senha:
-- [ ] Header:
-- [ ] Home: 
-- [ ] Footer:
-- [ ] Conteúdos Off:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-#### Página login
+### `npm test`
 
-- email e senha para entrar
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### Componentes da página de login
+### `npm run build`
 
-- [ ] 1. [form modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg), [Hook form dark](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
-- [ ] 2. [autenticacao jwt para segurança de login/logout/esqueci a senha](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-#### Página register
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Informações de cadastro com validação de código via email.
-- Validação de novo usuário
-- Telefone de contato e email de contato para validar via código por email (input de type tel)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### Componentes da página de register
+### `npm run eject`
 
-- [ ] 1. [design com form e image em duas partes](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=24)
-- [ ] 2. [form avançados modo dark](https://www.youtube.com/watch?v=XSbMSSdGSdg)
-- [ ] 3. [separar em categorias de informações com um form de múltiplas etapas](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=136s)
-- [ ] 4. [mensagem de sucesso enviada por email para confirmação de registro](https://www.youtube.com/watch?v=NVc_xY_dP-M&list=WL&index=16&t=408s)
-- [ ] 5. [inputs forms design](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)
-  - [ ] [form register](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=21)
-- [ ] 6. [autenticacao jwt para segurança de registro](https://www.youtube.com/watch?v=pvrKHpXGO8E&list=WL&index=21)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-#### Página pedido
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Preencher informações de pedido, enviar email, resposta de enviado.
-- ferramenta de disparo de emails, emailsJS.
-- configurar emailsJS com informações do formulário.
-- informações de login e cadastro já preenchidas em tela. 
-- header com logo e nome da aplicação, botão de sair.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-#### Componentes da página de pedido
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- [ ] 1. [inputs e Validate React Forms](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16)
-  - [ ] [forms abas](https://www.youtube.com/watch?v=5Heyc1z3ZAM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=30)  
-  - [ ] [components form radio, checkbox](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=35&t=2s)
-  - [ ] [persistência das informações](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=34&t=1886s)
-- [ ] 2. [Upload de imagens de documentos](https://blog.rocketseat.com.br/upload-de-imagens-no-front-end-com-react-js-e-context-api-3/)
-  - [ ] [Upload de arquivos por janela de arquivos](https://www.youtube.com/watch?v=G5UZmvkLWSQ)
-  - [ ] [Upload arrrastando](https://www.youtube.com/watch?v=kBSckls-Ih4)
-  - [ ] [Upload selecionando mais de um arquivo](https://www.youtube.com/watch?v=ApRCFrUuE80)
-  - [ ] [Uploading files](https://www.youtube.com/watch?v=O4ybhvtUbCE)
-  - [ ] [upload file codefrontend](https://codefrontend.com/file-upload-reactjs/)
-  - [ ] [upload file twitter-code](https://github.com/vincaslt/twitter-code/blob/main/src/file-upload/CustomFileInput.tsx)
-  - [ ] [upload file developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
-  - [ ] [upload file w3schools](https://www.w3schools.com/tags/att_input_type_file.asp)
-  - [ ] [upload file pluralsight](https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react)
-- [ ] 3. mensagem de validação: 
-  - [ ] [a mensagem de registrar-se com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
-  - [ ] [a mensagem de pedido enviado com sucesso](https://www.youtube.com/watch?v=oPteQFUK42w&list=WL&index=22)
-  - [ ] [validation form onde mais informações não obrigatório](https://www.youtube.com/watch?v=ajp8hmAKEhM&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=29)
-  - [ ] [state form validation mensagem de alerta por label ](https://www.youtube.com/watch?v=qH272VSWje4&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=33&t=1886s)  
-- [ ] 4. [opções de localidade em lista local de embarque e local de desembarque por list](https://www.google.com.br)
-- [ ] 5. [informações de register/login em toda aplicação para autopreenchimento de nome e email vindo de login](https://www.youtube.com/watch?v=PRSruHX_eig&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=32&t=136s) 
-- [ ] 6. [header (navbar) com logo, nome, botão](https://www.youtube.com/watch?v=23BHwAFIZmk) 
-- [ ] 7. [footer com links e informações](https://www.youtube.com/watch?v=23BHwAFIZmk) 
-- [ ] 8. [handling multiple inputs](https://legacy.reactjs.org/docs/forms.html)
-  - [ ] [state form](https://www.youtube.com/watch?v=Uv4h8IJhQUg&list=PLs_UfelOxGL25jmkIJ4pU16Ku-jfdFGC4&index=36&t=2s)
-- [ ] 9. [estrutura componentização](https://www.youtube.com/watch?v=tIdNeoHniEY&list=WL&index=16) 
+## Learn More
 
-#### Identidade visual
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Elementos principais de cores e combinações para melhor compor o design do frontend: [Color Style System](https://m1.material.io/style/color.html#color-color-system), [Material Design System](https://m2.material.io/design/color/the-color-system.html), [color Style Codes](https://htmlcolorcodes.com/color-chart/material-design-color-chart/), [Colors Style](https://materialui.co/colors/) e [Materia UI](https://mui.com/material-ui/customization/color/).
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/color-a.jpg" width="400px"> 
-</p> 
+### Code Splitting
 
-- rgb(18, 70, 28)
-- rgb(25, 209, 31)
-- rgb(35, 247, 42)
-  
-Inspiração de logo e icon para construir a identidade da aplicação.
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-logo.jpg" width="400px"> 
-</p>  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/color-b.jpg" width="400px"> 
-</p> 
+### Analyzing the Bundle Size
 
-- rgb(18, 61, 70)
-- rgb(109, 133, 119)
-- rgb(199, 91, 62)
-- rgb(213, 123, 71)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Sugestão de paleta de cores para inspiração inicial.
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/tabela-de-cores.jpg" width="400px"> 
-</p>  
+### Making a Progressive Web App
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/color-c.jpg" width="400px"> 
-</p> 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- rgb(38,48,60)
-- rgb(255, 109, 29)
-- rgb(255, 165, 25)
-- rgb(226, 222, 221)
+### Advanced Configuration
 
-#### Responsividade
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- fluidez em smartphone e desktop.
+### Deployment
 
-### Gestão do projeto
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-#### design e sprints
+### `npm run build` fails to minify
 
-Os detalhes do design do projeto no [Figma](https://www.figma.com/file/xpTJKLI61qJIrzvCWYnYXi/Ferrex?type=whiteboard&node-id=0-1&t=69l0HPss8LZuSUi5-0) e todas as tarefas e atividades listadas no [Trello](https://trello.com/b/7F7VjYLS/roadmap-solu%C3%A7%C3%A3o).
-
-#### branches e funcionalidades
-
-- [x] feature/developer: tratar estabilidade
-- [x] feature/login: Página login
-- [x] feature/register: Página register
-- [x] feature/pedido: Página pedido
-- [x] feature/pedido-components: componentes do formulário da Página pedido
-- [ ] feature/form-components: aperfeiçoar design dos componentes dos formulários
-- [ ] feature/identidade-visual: Identidade visual
-- [ ] feature/responsividade: Responsividade
-
-### Tecnologias
-
-- NextJS
-- Typescript
-- Tailwindcss
-- EmailJS
-
-### Telas da aplicação
-Estão na ordem do fluxo perfeito de uso.
-
-- Registrar
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-1.jpg" width="400px"> 
-</p> 
-
-- Entrar 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-2.jpg" width="400px"> 
-</p>  
-
-- Pedido de transporte v2-desktop
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-desktop.jpg" width="400px"> 
-</p>  
-
-- Pedido de transporte v2-mobile
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-3-v2-mobile.jpg" height="400px"> 
-</p>  
-
-- Pedido preenchido
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-4.jpg" height="400px"> 
-</p>
-
-- Pedido recebido  
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="ferrex" title="#ferrex" src="./.github/ferrex-5.jpg" height="400px"> 
-</p>  
-
-### Instruções de como usar
-
-Como baixar, instalar as dependências e rodar o projeto na máquina local.
-
-### Referências
-
-- [Bonieky Lacerda](https://www.youtube.com/watch?v=iD94avNeoXM)
-- [Sujeito programador](https://www.youtube.com/watch?v=Zbg1BHOVzRg)
-- [Inspiração portal](https://www.brado.com.br/)
-- [Docs Design](https://www.brado.com.br/wp-content/uploads/2016/10/AF_BRA_MANUAL_AGENDAMENTO_RODOV_170412.pdf)
-- [gofretes](https://gofretes.com.br/) 
-- [fretebras](https://www.fretebras.com.br/) 
-- [Rodoviário – ONTL](https://ontl.epl.gov.br/paineis-analiticos/painel-de-indicadores-de-transporte-e-logistica/movimentacao-e-trafego/rodoviario/)
-- [zero40](https://zero40.com.br/startups/intelus/)  
-- [smashinglogo](https://smashinglogo.com/en/logo-maker/#tour-name)  
-- [truckpad](https://www.truckpad.com.br/)  
-
-### Desenvolvedores
-
-- Douglas A. B. Novato - @douglasabnovato
-- João Pedro Garcia - @jpedro_g2
-
-### Pivotar o projeto
-
-Devido a análises do projeto e demanda comercial, seguimos para outro nível do negócio.
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
