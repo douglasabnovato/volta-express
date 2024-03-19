@@ -49,7 +49,6 @@ function Header(props) {
             variant="h6"
             noWrap
             component="a"
-            href="#voltaexpressONE"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -103,7 +102,6 @@ function Header(props) {
             variant="h5"
             noWrap
             component="a"
-            href="#voltaexpressONE"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -124,7 +122,7 @@ function Header(props) {
                 size="medium"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block" }}              
               >
                 {page}
               </Button>

@@ -21,7 +21,8 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-import Checkout from "./Checkout";
+import AnunciantesForm from "./Anunciantes/Checkout";
+import TransportadoresForm from "./Transportadores/Checkout";
 // CustomTabPanel - theend
 
 // AccordionTransportadores - start
@@ -280,7 +281,6 @@ function CustomizedAccordionsAnunc() {
 }
 // CustomizedAccordionsAnunc - theend
 
-
 // MediaCardTransp - start
 function MediaCardTransp() {
   const theme = useTheme();
@@ -308,9 +308,7 @@ function MediaCardTransp() {
           <Typography>
             Origem: Av. Prof. Alfredo Balena, 400 - Centro - Belo Horizonte - MG
           </Typography>
-          <Typography>
-            Atuação em: 120km
-          </Typography>
+          <Typography>Atuação em: 120km</Typography>
           <Typography>IDA:0506987220240215</Typography>
         </CardContent>
       </Box>
@@ -476,10 +474,10 @@ function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Checkout funcionalidade="Anunciante" />
+        <AnunciantesForm funcionalidade="Anunciante"/>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Checkout funcionalidade="Transportador" />
+        <TransportadoresForm funcionalidade="Transportador"/>
       </CustomTabPanel>
     </Box>
   );
