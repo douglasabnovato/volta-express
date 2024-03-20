@@ -2,8 +2,8 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton"; 
-import Typography from "@mui/material/Typography"; 
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
 
 // ResponsiveAppBar - start
 import AppBar from "@mui/material/AppBar";
@@ -14,6 +14,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import ApprovalIcon from "@mui/icons-material/Approval";
 // ResponsiveAppBar - theend
+
+import { styled } from '@mui/material/styles';
+import { purple } from '@mui/material/colors';
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
+  backgroundColor: purple[500],
+  '&:hover': {
+    backgroundColor: purple[700],
+  },
+}));
 
 function Header(props) {
   const { pages, settings, sections, title } = props;
@@ -39,6 +50,7 @@ function Header(props) {
         <Toolbar disableGutters>
           <ApprovalIcon sx={{ display: { xs: "none", md: "flex" }, mr: 2 }} />
           <Typography
+            href="#voltaexpressTOP"
             variant="h6"
             noWrap
             component="a"
@@ -110,15 +122,16 @@ function Header(props) {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                variant="outlined"
+              <ColorButton 
+                href="#voltaexpressACTION"
+                variant="contained"
                 size="medium"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
               >
                 {page}
-              </Button>
+              </ColorButton >
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>

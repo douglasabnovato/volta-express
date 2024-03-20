@@ -118,7 +118,7 @@ const sections = [
   { title: "Travel", url: "#" },
 ];
 
-const pages = ["ANUNCIE SUA CARGA", "Transportadores"];
+const pages = ["ANUNCIE SUA CARGA", "COMPLETE SUA VIAGEM"];
 
 const settings = ["Alertas", "Mensagens Importantes"];
 
@@ -465,12 +465,13 @@ function BasicTabs() {
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
+          id="voltaexpressACTION"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="ANUNCIANTES" {...a11yProps(0)} />
-          <Tab label="TRANSPORTADORES" {...a11yProps(1)} />
+          <Tab label="ANUNCIE SUA CARGA" {...a11yProps(0)} />
+          <Tab label="COMPLETE SUA VIAGEM" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
