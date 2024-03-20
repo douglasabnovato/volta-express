@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"; 
 
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
@@ -45,6 +45,11 @@ import CardMedia from "@mui/material/CardMedia";
  */
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
+import anuncio2 from "./../assets/anunciantes/objetos-2.webp";
+import anuncio3 from "./../assets/anunciantes/objetos-3.webp";
+import anuncio4 from "./../assets/anunciantes/objetos-4.webp";
+import anuncio5 from "./../assets/anunciantes/objetos-5.webp";
+import anuncio6 from "./../assets/anunciantes/objetos-6.webp";
 
 import parceiro1 from "./../assets/transportadores/caminhao-de-mudanca-1.jpg";
 
@@ -118,6 +123,72 @@ const sections = [
   { title: "Travel", url: "#" },
 ];
 
+/**
+ * Imagens Anuncios
+ */
+const anunciosImage = [
+  { imageA: {anuncio1}},
+  { imageA: {anuncio2}},
+  { imageA: {anuncio3}},
+  { imageA: {anuncio4}},
+  { imageA: {anuncio5}},
+  { imageA: {anuncio6}},
+];
+
+/**
+ * Anuncios prontos
+ */
+const anunciosProntos = [
+  {
+    nome: "Geladeira de bar",
+    descricao: "Refrigerador Expositor Vertical All Black",
+    valor: "R$110,00",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "0506987220240215",
+  },
+  {
+    nome: "Bicama e colchão",
+    descricao: "Refrigerador Expositor Vertical All Black",
+    valor: "R$110,00",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "0506987220240215",
+  },
+  {
+    nome: "Geladeira frost free",
+    descricao: "Refrigerador Expositor Vertical All Black",
+    valor: "R$110,00",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "0506987220240215",
+  },
+  {
+    nome: "Sofá Retrátil e Reclinável",
+    descricao: "Refrigerador Expositor Vertical All Black",
+    valor: "R$110,00",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "0506987220240215",
+  },
+  {
+    nome: "Mesa de cozinha",
+    descricao: "Refrigerador Expositor Vertical All Black",
+    valor: "R$110,00",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "0506987220240215",
+  },
+  {
+    nome: "Cadeiras de sala de aula",
+    descricao: "Refrigerador Expositor Vertical All Black",
+    valor: "R$110,00",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "0506987220240215",
+  },
+];
+
 const pages = ["ANUNCIE SUA CARGA", "COMPLETE SUA VIAGEM"];
 
 const settings = ["Alertas", "Mensagens Importantes"];
@@ -163,8 +234,9 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 // AccordionTransportadores - theend
 
 // MediaCardAnunc - start
-function MediaCardAnunc() {
-  const theme = useTheme();
+function MediaCardAnunc() { 
+
+  const theme = useTheme(); 
 
   return (
     <Card sx={{ display: "flex" }}>
@@ -184,7 +256,7 @@ function MediaCardAnunc() {
             color="text.secondary"
             component="div"
           >
-            R$110,00
+            Valor sugerido: R$110,00
           </Typography>
           <Typography>
             Retirar em: Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP
@@ -192,7 +264,7 @@ function MediaCardAnunc() {
           <Typography>
             Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP
           </Typography>
-          <Typography>IDA:0506987220240215</Typography>
+          <Typography>IDA: 0506987220240215</Typography>
         </CardContent>
       </Box>
     </Card>
@@ -215,18 +287,19 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Geladeira de bar</Typography>
+          <Typography>{anunciosProntos[0].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <MediaCardAnunc />
         </AccordionDetails>
       </Accordion>
+
       <Accordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Bicama e colchão</Typography>
+          <Typography>{anunciosProntos[1].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <MediaCardAnunc />
@@ -237,7 +310,7 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Geladeira frost free </Typography>
+          <Typography>{anunciosProntos[2].nome} </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <MediaCardAnunc />
@@ -248,7 +321,7 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>Sofá Retrátil e Reclinável</Typography>
+          <Typography>{anunciosProntos[3].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <MediaCardAnunc />
@@ -259,7 +332,7 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel5")}
       >
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-          <Typography>Mesa de cozinha </Typography>
+          <Typography>{anunciosProntos[4].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <MediaCardAnunc />
@@ -270,7 +343,7 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel6")}
       >
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-          <Typography>Cadeiras de sala de aula </Typography>
+          <Typography>{anunciosProntos[5].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <MediaCardAnunc />
@@ -475,10 +548,10 @@ function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <AnunciantesForm funcionalidade="Anunciante"/>
+        <AnunciantesForm funcionalidade="Anunciante" />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <TransportadoresForm funcionalidade="Transportador"/>
+        <TransportadoresForm funcionalidade="Transportador" />
       </CustomTabPanel>
     </Box>
   );
