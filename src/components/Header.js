@@ -2,10 +2,8 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
+import IconButton from "@mui/material/IconButton"; 
+import Typography from "@mui/material/Typography"; 
 
 // ResponsiveAppBar - start
 import AppBar from "@mui/material/AppBar";
@@ -13,8 +11,6 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ApprovalIcon from "@mui/icons-material/Approval";
 // ResponsiveAppBar - theend
@@ -28,9 +24,6 @@ function Header(props) {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -41,10 +34,10 @@ function Header(props) {
   };
 
   return (
-    <AppBar position="fixed" >
+    <AppBar position="fixed">
       <Container maxWidth="xl">
-        <Toolbar disableGutters >
-          <ApprovalIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+        <Toolbar disableGutters>
+          <ApprovalIcon sx={{ display: { xs: "none", md: "flex" }, mr: 2 }} />
           <Typography
             variant="h6"
             noWrap
@@ -54,7 +47,7 @@ function Header(props) {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -122,19 +115,13 @@ function Header(props) {
                 size="medium"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}              
+                sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
@@ -163,7 +150,6 @@ function Header(props) {
     </AppBar>
   );
 }
- 
 
 Header.propTypes = {
   pages: PropTypes.string.isRequired,

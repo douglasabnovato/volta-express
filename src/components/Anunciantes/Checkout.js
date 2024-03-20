@@ -12,7 +12,7 @@ import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review'; 
 
-const steps = ['Cadastrar', 'Transportar', 'Seu pedido'];
+const steps = ['Cadastrar', 'Mercadoria', 'Transportar'];
 
 function getStepContent(step) {
   switch (step) {
@@ -68,7 +68,7 @@ export default function Checkout(props) {
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 {activeStep !== 0 && (
                   <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
-                    Back
+                    Anterior
                   </Button>
                 )}
 
@@ -77,7 +77,7 @@ export default function Checkout(props) {
                   onClick={handleNext}
                   sx={{ mt: 3, ml: 1 }}
                 >
-                  {activeStep === steps.length - 1 ? 'Faça um anúncio' : 'Próximo'}
+                  {activeStep === steps.length - 1 ? 'Anunciar' : 'Próximo'}
                 </Button>
               </Box>
             </React.Fragment>

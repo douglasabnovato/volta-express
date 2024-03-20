@@ -17,7 +17,7 @@ export default function AddressForm() {
             required
             id="firstName"
             name="firstName"
-            label="Primeiro nome"
+            label="Primeiro nome do responsável"
             fullWidth
             autoComplete="given-name"
             variant="standard"
@@ -64,16 +64,6 @@ export default function AddressForm() {
             label="Endereço principal"
             fullWidth
             autoComplete="shipping address-line1"
-            variant="standard"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            id="address2"
-            name="address2"
-            label="Endereço referência"
-            fullWidth
-            autoComplete="shipping address-line2"
             variant="standard"
           />
         </Grid>

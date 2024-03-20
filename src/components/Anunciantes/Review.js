@@ -5,6 +5,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 
+import TextField from "@mui/material/TextField";
+ 
+
 const products = [
   {
     name: 'Product 1',
@@ -30,6 +33,7 @@ const products = [
 ];
 
 const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
+
 const payments = [
   { name: 'Card type', detail: 'Visa' },
   { name: 'Card holder', detail: 'Mr John Smith' },
@@ -37,12 +41,28 @@ const payments = [
   { name: 'Expiry date', detail: '04/2024' },
 ];
 
+
 export default function Review() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Order summary
-      </Typography>
+        Sobre o trajeto
+      </Typography><Grid container spacing={3}>
+        <Grid item xs={12} md={6}>
+        </Grid>
+        
+        <Grid item xs={12} md={6}>
+          <TextField
+            required
+            id="importantInformation"
+            name="importantInformation"
+            label="Mais informações importantes"
+            fullWidth
+            autoComplete="given-name"
+            variant="standard"
+          />
+        </Grid>
+      </Grid>
       <List disablePadding>
         {products.map((product) => (
           <ListItem key={product.name} sx={{ py: 1, px: 0 }}>
