@@ -118,7 +118,7 @@ const sections = [
   { title: "Travel", url: "#" },
 ];
 
-const pages = ["Anunciantes", "Transportadores"];
+const pages = ["ANUNCIE SUA CARGA", "Transportadores"];
 
 const settings = ["Alertas", "Mensagens Importantes"];
 
