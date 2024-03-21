@@ -15,13 +15,13 @@ import MenuItem from "@mui/material/MenuItem";
 import ApprovalIcon from "@mui/icons-material/Approval";
 // ResponsiveAppBar - theend
 
-import { styled } from '@mui/material/styles';
-import { purple } from '@mui/material/colors';
+import { styled } from "@mui/material/styles";
+import { purple } from "@mui/material/colors";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(purple[500]),
   backgroundColor: purple[500],
-  '&:hover': {
+  "&:hover": {
     backgroundColor: purple[700],
   },
 }));
@@ -122,7 +122,7 @@ function Header(props) {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <ColorButton 
+              <ColorButton
                 href="#voltaexpressACTION"
                 variant="contained"
                 size="medium"
@@ -131,7 +131,7 @@ function Header(props) {
                 sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
               >
                 {page}
-              </ColorButton >
+              </ColorButton>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
