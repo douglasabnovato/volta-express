@@ -15,8 +15,12 @@ import MenuItem from "@mui/material/MenuItem";
 import ApprovalIcon from "@mui/icons-material/Approval";
 // ResponsiveAppBar - theend
 
+import CardMedia from "@mui/material/CardMedia";
+
 import { styled } from "@mui/material/styles";
 import { purple } from "@mui/material/colors";
+
+import logoVoltaExpress from "./../assets/icon-logo/logo-completa.png";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(purple[500]),
@@ -25,6 +29,17 @@ const ColorButton = styled(Button)(({ theme }) => ({
     backgroundColor: purple[700],
   },
 }));
+
+function LogoVoltaExpress() {
+  return (
+    <CardMedia
+      component="img"
+      sx={{ width: 112 }}
+      image={logoVoltaExpress}
+      alt="Volta Express"
+    />
+  );
+}
 
 function Header(props) {
   const { pages, settings, sections, title } = props;
@@ -48,24 +63,11 @@ function Header(props) {
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <ApprovalIcon sx={{ display: { xs: "none", md: "flex" }, mr: 2 }} />
-          <Typography
-            href="#voltaexpressTOP"
-            variant="h6"
+          <LogoVoltaExpress
             noWrap
             component="a"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".1rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            {title}
-          </Typography>
+            sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}
+          />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -101,25 +103,7 @@ function Header(props) {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
-          <ApprovalIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            {title}
-          </Typography>
+          </Box> 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <ColorButton

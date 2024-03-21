@@ -9,10 +9,19 @@ import CardMedia from "@mui/material/CardMedia";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import { blue, pink, grey } from "@mui/material/colors";
 
+import Button from "@mui/material/Button";
+
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
 import logoVoltaExpress from "./../assets/icon-logo/logo-completa.png";
 
 const themeFooter = createTheme({
   palette: {
+    whatsapp: {
+      tealgreen: "#128C7E",
+      tealgreendark: "#075E54",
+      lightgreen: "#25D366",
+    },
     tomato: "#FF6347",
     pink: {
       deep: "#FF1493",
@@ -36,7 +45,11 @@ const themeFooter = createTheme({
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="primary.main" align="left">
+    <Typography
+      variant="body2"
+      sx={{ width: 181, color: "primary.main", mt: 2 }}
+      align="left"
+    >
       {"Copyright © "}
       <Link color="inherit" href="#voltaexpressTOP">
         Volta Express
@@ -58,6 +71,26 @@ function LogoVoltaExpress() {
   );
 }
 
+function ContatoWhatsapp() {
+  return (
+    <Button
+      variant="contained"
+      startIcon={<WhatsAppIcon />}
+      href="https://api.whatsapp.com/send?phone=5532999264243&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+      target="_blank"
+      sx={{
+        mt: 2,
+        bgcolor: "whatsapp.lightgreen",
+        "&:hover": {
+          backgroundColor: "whatsapp.tealgreen",
+        },
+      }}
+    >
+      Entre em contato
+    </Button>
+  );
+}
+
 function Footer(props) {
   const { description, title } = props;
 
@@ -72,11 +105,9 @@ function Footer(props) {
         }}
       >
         <Container sx={{ display: "flex", alignItems: "center" }}>
-
           <LogoVoltaExpress />
 
           <Container sx={{ width: "400" }}>
-
             <Typography
               variant="subtitle1"
               align="left"
@@ -88,10 +119,9 @@ function Footer(props) {
 
             <Copyright />
 
+            <ContatoWhatsapp />
           </Container>
-          
         </Container>
-
       </Box>
     </ThemeProvider>
   );

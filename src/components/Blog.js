@@ -213,7 +213,8 @@ const transportesProntos = [
     nome: "Ligeirinho frete / Caminhão médio",
     descricao: "M. BENZ/1418 Truck",
     volume: "20 metros (m³)",
-    origem: "R. Voluntários da Pátria, 45 - Botafogo, Rio de Janeiro - RJ, 22270-000",
+    origem:
+      "R. Voluntários da Pátria, 45 - Botafogo, Rio de Janeiro - RJ, 22270-000",
     atuacao: "30km",
     idCodigo: "009T21032024",
   },
@@ -245,7 +246,8 @@ const transportesProntos = [
     nome: "Veloster / fretes pequenos",
     descricao: "Saveiro com carretinha",
     volume: "8 metros (m³)",
-    origem: "R. Ver. Gercino Silva, 209-83 - Canto, Florianópolis - SC, 88075-560",
+    origem:
+      "R. Ver. Gercino Silva, 209-83 - Canto, Florianópolis - SC, 88075-560",
     atuacao: "80km",
     idCodigo: "016T21032024",
   },
