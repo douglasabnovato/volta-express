@@ -1,4 +1,4 @@
-import * as React from "react"; 
+import * as React from "react";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
@@ -124,68 +124,56 @@ const sections = [
 ];
 
 /**
- * Imagens Anuncios
- */
-const anunciosImage = [
-  { imageA: {anuncio1}},
-  { imageA: {anuncio2}},
-  { imageA: {anuncio3}},
-  { imageA: {anuncio4}},
-  { imageA: {anuncio5}},
-  { imageA: {anuncio6}},
-];
-
-/**
  * Anuncios prontos
  */
 const anunciosProntos = [
   {
-    nome: "Geladeira de bar",
+    nome: "Geladeira de bar", 
     descricao: "Refrigerador Expositor Vertical All Black",
-    valor: "R$110,00",
+    volume: "3 metros (m³)",
     retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
     entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
-    idCodigo: "0506987220240215",
+    idCodigo: "001A21032024",
   },
   {
-    nome: "Bicama e colchão",
-    descricao: "Refrigerador Expositor Vertical All Black",
-    valor: "R$110,00",
-    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
-    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
-    idCodigo: "0506987220240215",
+    nome: "Bicama e colchão", 
+    descricao: "Bicama Completa C/ Auxiliar + 2 Colchões Probel D20",
+    volume: "3 metros (m³) e os 2 colchões",
+    retirada: "R. dos Tamóios - Centro, Belo Horizonte - MG, 30120-050",
+    entrega: "Av. Prof. Alfredo Balena, 61-37 - Centro, Belo Horizonte - MG, 30130-100",
+    idCodigo: "002A21032024",
   },
   {
-    nome: "Geladeira frost free",
-    descricao: "Refrigerador Expositor Vertical All Black",
-    valor: "R$110,00",
+    nome: "Geladeira frost free", 
+    descricao: "Geladeira Brastemp Frost Free Duplex 375 litros cor Inox com Espaço Adapt",
+    volume: "3 metros (m³)",
     retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
     entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
-    idCodigo: "0506987220240215",
+    idCodigo: "003A21032024",
   },
   {
-    nome: "Sofá Retrátil e Reclinável",
-    descricao: "Refrigerador Expositor Vertical All Black",
-    valor: "R$110,00",
+    nome: "Sofá Retrátil e Reclinável", 
+    descricao: "Sofá Retrátil e Reclinável com Molas Ensacadas Cama inBox Gold",
+    volume: "4 metros (m³)",
     retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
     entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
-    idCodigo: "0506987220240215",
+    idCodigo: "004A21032024",
   },
   {
-    nome: "Mesa de cozinha",
-    descricao: "Refrigerador Expositor Vertical All Black",
-    valor: "R$110,00",
+    nome: "Mesa de cozinha", 
+    descricao: "Conjunto Sala de Jantar Mesa Tampo de Vidro 6 Cadeiras Rustic/Crema/Imperial Alexis Madesa",
+    volume: "5 caixas",
     retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
     entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
-    idCodigo: "0506987220240215",
+    idCodigo: "005A21032024",
   },
   {
-    nome: "Cadeiras de sala de aula",
-    descricao: "Refrigerador Expositor Vertical All Black",
-    valor: "R$110,00",
+    nome: "Cadeiras de sala de aula", 
+    descricao: "Moob Cadeira de Escritório Presidente Chicago Giratória Com Sistema Relax",
+    volume: "12 itens de 1 metro (m³)",
     retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
     entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
-    idCodigo: "0506987220240215",
+    idCodigo: "006A21032024",
   },
 ];
 
@@ -234,7 +222,10 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 // AccordionTransportadores - theend
 
 // MediaCardAnunc - start
-function MediaCardAnunc() { 
+function MediaCardAnunc(props) {  
+
+  const [order, setOrder] = React.useState(props.orderCard);
+  const [imagem, setImagem] = React.useState(props.anuncioImagem);
 
   const theme = useTheme(); 
 
@@ -243,28 +234,24 @@ function MediaCardAnunc() {
       <CardMedia
         component="img"
         sx={{ width: 121 }}
-        image={anuncio1}
+        image={imagem}
         alt="Live from space album cover"
       />
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography component="div" variant="h5">
-            Refrigerador Expositor Vertical All Black
+            {anunciosProntos[order].descricao}
           </Typography>
           <Typography
             variant="subtitle1"
             color="text.secondary"
             component="div"
           >
-            Valor sugerido: R$110,00
+            Volume dos itens: {anunciosProntos[order].volume}
           </Typography>
-          <Typography>
-            Retirar em: Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP
-          </Typography>
-          <Typography>
-            Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP
-          </Typography>
-          <Typography>IDA: 0506987220240215</Typography>
+          <Typography>Retirar em: {anunciosProntos[order].retirada}</Typography>
+          <Typography>Entregar em: {anunciosProntos[order].entrega}</Typography>
+          <Typography>IDA: {anunciosProntos[order].idCodigo}</Typography>
         </CardContent>
       </Box>
     </Card>
@@ -290,7 +277,7 @@ function CustomizedAccordionsAnunc() {
           <Typography>{anunciosProntos[0].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={0} anuncioImagem={anuncio1} />
         </AccordionDetails>
       </Accordion>
 
@@ -302,7 +289,7 @@ function CustomizedAccordionsAnunc() {
           <Typography>{anunciosProntos[1].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={1} anuncioImagem={anuncio2} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -313,7 +300,7 @@ function CustomizedAccordionsAnunc() {
           <Typography>{anunciosProntos[2].nome} </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={2} anuncioImagem={anuncio3} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -324,7 +311,7 @@ function CustomizedAccordionsAnunc() {
           <Typography>{anunciosProntos[3].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={3} anuncioImagem={anuncio4} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -335,7 +322,7 @@ function CustomizedAccordionsAnunc() {
           <Typography>{anunciosProntos[4].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={4} anuncioImagem={anuncio5} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -346,7 +333,7 @@ function CustomizedAccordionsAnunc() {
           <Typography>{anunciosProntos[5].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={5} anuncioImagem={anuncio6} />
         </AccordionDetails>
       </Accordion>
     </div>
