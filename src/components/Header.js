@@ -12,7 +12,6 @@ import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import ApprovalIcon from "@mui/icons-material/Approval";
 // ResponsiveAppBar - theend
 
 import CardMedia from "@mui/material/CardMedia";
@@ -84,12 +83,12 @@ function Header(props) {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "right",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
