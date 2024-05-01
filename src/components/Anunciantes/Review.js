@@ -91,59 +91,103 @@ export default function Review() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Sobre o trajeto
+        Informações do trajeto
       </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
-          <Autocomplete
-            {...defaultPropsUploadAddress}
+
+        <Grid item xs={12}>
+          <TextField
             required
-            id="uploadAddress"
-            name="uploadAddress"
-            value={upAddress}
-            onChange={(event, newValue) => {
-              setUpAddress(newValue);
-            }}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Endereço para carregar"
-                variant="standard"
-              />
-            )}
-            autoComplete="given-name"
+            id="address1"
+            name="address1"
+            label="Endereço para carregar"
             fullWidth
+            autoComplete="shipping address-line1"
+            variant="standard"
           />
         </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            id="city"
+            name="city"
+            label="Cidade"
+            fullWidth
+            autoComplete="shipping address-level2"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            id="state"
+            name="state"
+            label="Estado"
+            fullWidth
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            id="zip"
+            name="zip"
+            label="CEP"
+            fullWidth
+            autoComplete="shipping postal-code"
+            variant="standard"
+          />
+        </Grid> 
         <Grid item xs={12} md={6}>
           <CarregarDate />
         </Grid>
-
-        <Grid item xs={12} md={6}>
-          <Autocomplete
-            {...defaultPropsDownloadAddress}
+        
+        <Grid item xs={12}>
+          <TextField
             required
-            id="downloadAddress"
-            name="downloadAddress"
-            value={downAddress}
-            onChange={(event, newValue) => {
-              setDownAddress(newValue);
-            }}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Endereço para descarregar"
-                variant="standard"
-              />
-            )}
-            autoComplete="given-name"
+            id="address1"
+            name="address1"
+            label="Endereço para descarregar"
             fullWidth
+            autoComplete="shipping address-line1"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            id="city"
+            name="city"
+            label="Cidade"
+            fullWidth
+            autoComplete="shipping address-level2"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            id="state"
+            name="state"
+            label="Estado"
+            fullWidth
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            id="zip"
+            name="zip"
+            label="CEP"
+            fullWidth
+            autoComplete="shipping postal-code"
+            variant="standard"
           />
         </Grid>
 
         <Grid item xs={12} md={6}>
           <DescarregarDate />
         </Grid>
+
       </Grid>
     </React.Fragment>
   );
