@@ -70,8 +70,8 @@ export default function AddressForm() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="city"
-            name="city"
+            id="city1"
+            name="city1"
             label="Cidade"
             fullWidth
             autoComplete="shipping address-level2"
@@ -80,8 +80,8 @@ export default function AddressForm() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
-            id="state"
-            name="state"
+            id="state1"
+            name="state1"
             label="Estado"
             fullWidth
             variant="standard"
@@ -90,8 +90,8 @@ export default function AddressForm() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="zip"
-            name="zip"
+            id="zip1"
+            name="zip1"
             label="CEP"
             fullWidth
             autoComplete="shipping postal-code"
@@ -101,8 +101,8 @@ export default function AddressForm() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="country"
-            name="country"
+            id="country1"
+            name="country1"
             label="País"
             fullWidth
             autoComplete="shipping country"
@@ -112,7 +112,7 @@ export default function AddressForm() {
         <Grid item xs={12}>
           <FormControlLabel
             control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
-            label="Uma mensagem importante sobre esse formulário"
+            label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
           />
         </Grid>
       </Grid>

@@ -42,16 +42,16 @@ Componente de Depoimentos
 Componentes dos Formulários
 
     Anunciantes:
-    Checkout
         AddressForm
         PaymentForm
         Review 
+        Checkout
 
     Transportadores:
-    Checkout
         AddressForm
         PaymentForm
         Review 
+        Checkout
 
 Componente do Rodapé
 
@@ -78,3 +78,10 @@ Valor sentimental
 
 Transportar
 
+Endereços de trajeto
+
+de:
+Alameda Itu, 203-131 - Jardim Paulista, São Paulo - SP, 01421-000
+
+para:
+R. Conselheiro Carrão, 605 - Bela Vista, São Paulo - SP, 01328-000

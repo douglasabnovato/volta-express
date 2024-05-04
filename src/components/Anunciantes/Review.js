@@ -13,6 +13,9 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 import Autocomplete from "@mui/material/Autocomplete";
 
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+
 const uploadAddress = [
   { name: "Porto Iguaí Estrada Prefeito Wilson Pedro Francisco, Itaguaí, Rio de Janeiro, Brasil, 23825-410" },
   { name: "Porto de Santos Avenida Cnso. Rodrigues Alves, 0, Sn, Zona Portuária, Santos - SP, CEP: 11015-900" },
@@ -98,8 +101,8 @@ export default function Review() {
         <Grid item xs={12}>
           <TextField
             required
-            id="address1"
-            name="address1"
+            id="address2"
+            name="address2"
             label="Endereço para carregar"
             fullWidth
             autoComplete="shipping address-line1"
@@ -109,9 +112,20 @@ export default function Review() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="city"
-            name="city"
+            id="city2"
+            name="city2"
             label="Cidade"
+            fullWidth
+            autoComplete="shipping address-level1"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            id="state2"
+            name="state2"
+            label="Estado"
             fullWidth
             autoComplete="shipping address-level2"
             variant="standard"
@@ -119,21 +133,12 @@ export default function Review() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
-            id="state"
-            name="state"
-            label="Estado"
-            fullWidth
-            variant="standard"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
             required
-            id="zip"
-            name="zip"
+            id="zip2"
+            name="zip2"
             label="CEP"
             fullWidth
-            autoComplete="shipping postal-code"
+            autoComplete="shipping postal-code1"
             variant="standard"
           />
         </Grid> 
@@ -144,48 +149,57 @@ export default function Review() {
         <Grid item xs={12}>
           <TextField
             required
-            id="address1"
-            name="address1"
+            id="address3"
+            name="address3"
             label="Endereço para descarregar"
             fullWidth
-            autoComplete="shipping address-line1"
+            autoComplete="shipping address-line2"
             variant="standard"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="city"
-            name="city"
+            id="city3"
+            name="city3"
             label="Cidade"
             fullWidth
-            autoComplete="shipping address-level2"
+            autoComplete="shipping address-level3"
             variant="standard"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <TextField
-            id="state"
-            name="state"
+        <TextField
+            required
+            id="state3"
+            name="state3"
             label="Estado"
             fullWidth
+            autoComplete="shipping address-level4"
             variant="standard"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="zip"
-            name="zip"
+            id="zip3"
+            name="zip3"
             label="CEP"
             fullWidth
-            autoComplete="shipping postal-code"
+            autoComplete="shipping postal-code2"
             variant="standard"
           />
         </Grid>
 
         <Grid item xs={12} md={6}>
           <DescarregarDate />
+        </Grid>
+        
+        <Grid item xs={12}>
+          <FormControlLabel
+            control={<Checkbox color="secondary" name="saveCard" value="yes" />}
+            label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
+          />
         </Grid>
 
       </Grid>
