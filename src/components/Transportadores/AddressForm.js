@@ -9,7 +9,7 @@ export default function AddressForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Identificação e endereço
+        Sua identificação e seu endereço
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
@@ -17,7 +17,7 @@ export default function AddressForm() {
             required
             id="firstName"
             name="firstName"
-            label="Primeiro nome"
+            label="Primeiro nome do responsável"
             fullWidth
             autoComplete="given-name"
             variant="standard"
@@ -34,6 +34,28 @@ export default function AddressForm() {
             variant="standard"
           />
         </Grid>
+        <Grid item xs={12} sm={8}>
+          <TextField
+            required
+            id="email"
+            name="email"
+            label="Seu melhor e-mail"
+            fullWidth
+            autoComplete="email"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <TextField
+            required
+            id="phone"
+            name="phone"
+            label="Telefone whatsapp"
+            fullWidth
+            autoComplete="tel"
+            variant="standard"
+          />
+        </Grid>
         <Grid item xs={12}>
           <TextField
             required
@@ -45,21 +67,11 @@ export default function AddressForm() {
             variant="standard"
           />
         </Grid>
-        <Grid item xs={12}>
-          <TextField
-            id="address2"
-            name="address2"
-            label="Endereço referência"
-            fullWidth
-            autoComplete="shipping address-line2"
-            variant="standard"
-          />
-        </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="city"
-            name="city"
+            id="city1"
+            name="city1"
             label="Cidade"
             fullWidth
             autoComplete="shipping address-level2"
@@ -68,8 +80,8 @@ export default function AddressForm() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
-            id="state"
-            name="state"
+            id="state1"
+            name="state1"
             label="Estado"
             fullWidth
             variant="standard"
@@ -78,8 +90,8 @@ export default function AddressForm() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="zip"
-            name="zip"
+            id="zip1"
+            name="zip1"
             label="CEP"
             fullWidth
             autoComplete="shipping postal-code"
@@ -89,8 +101,8 @@ export default function AddressForm() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="country"
-            name="country"
+            id="country1"
+            name="country1"
             label="País"
             fullWidth
             autoComplete="shipping country"
@@ -100,7 +112,7 @@ export default function AddressForm() {
         <Grid item xs={12}>
           <FormControlLabel
             control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
-            label="Uma mensagem importante sobre esse formulário"
+            label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
           />
         </Grid>
       </Grid>

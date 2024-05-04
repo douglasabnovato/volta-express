@@ -59,7 +59,7 @@ export default function Checkout(props) {
                 Obrigado por anunciar com a gente.
               </Typography>
               <Typography variant="subtitle1">
-                O número do seu anúncio é 18429519032024. Entraremos em contato com você para acompanhar o transporte.
+                O número do seu anúncio é 001A04052024. Entraremos em contato com você para acompanhar o transporte.
               </Typography>
             </React.Fragment>
           ) : (
