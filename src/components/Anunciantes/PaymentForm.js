@@ -107,7 +107,7 @@ export default function PaymentForm() {
         </Grid>
         <Grid item xs={12}>
           <FormControlLabel
-            control={<Checkbox color="secondary" name="saveCard" value="yes" />}
+            control={<Checkbox color="secondary" name="lgpd2" value="yes" />}
             label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
           />
         </Grid>

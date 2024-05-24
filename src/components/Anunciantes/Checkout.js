@@ -71,7 +71,6 @@ export default function Checkout(props) {
                     Anterior
                   </Button>
                 )}
-
                 <Button
                   variant="contained"
                   onClick={handleNext}

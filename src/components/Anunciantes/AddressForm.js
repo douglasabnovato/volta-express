@@ -111,7 +111,7 @@ export default function AddressForm() {
         </Grid>
         <Grid item xs={12}>
           <FormControlLabel
-            control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
+            control={<Checkbox color="secondary" name="lgpd1" value="yes" />}
             label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
           />
         </Grid>

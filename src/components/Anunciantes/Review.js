@@ -197,7 +197,7 @@ export default function Review() {
         
         <Grid item xs={12}>
           <FormControlLabel
-            control={<Checkbox color="secondary" name="saveCard" value="yes" />}
+            control={<Checkbox color="secondary" name="lgpd3" value="yes" />}
             label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
           />
         </Grid>
