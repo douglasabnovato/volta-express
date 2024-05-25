@@ -40,78 +40,80 @@ export default function PaymentForm() {
       <Typography variant="h6" gutterBottom>
         Conte-me o que deseja transportar
       </Typography>
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="merchandise"
-            name="merchandise"
-            label="Nome da mercadoria"
-            fullWidth
-            autoComplete="given-name"
-            variant="standard"
-          />
+      <form action="/anunciar">
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={6}>
+            <TextField
+              required
+              id="merchandise"
+              name="merchandise"
+              label="Nome da mercadoria"
+              fullWidth
+              autoComplete="given-name"
+              variant="standard"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Autocomplete
+              {...defaultPropsType}
+              required
+              id="merchandiseType"
+              name="merchandiseType"
+              value={merchanType}
+              onChange={(event, newValue) => {
+                setMerchanType(newValue);
+              }}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  label="Tipo de mercadoria"
+                  variant="standard"
+                />
+              )}
+              autoComplete="given-name"
+              fullWidth
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Autocomplete
+              {...defaultPropsVolume}
+              required
+              id="merchandiseVolume"
+              name="merchandiseVolume"
+              value={merchanVolume}
+              onChange={(event, newValue) => {
+                setMerchanVolume(newValue);
+              }}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  label="Volume de mercadoria"
+                  variant="standard"
+                />
+              )}
+              autoComplete="given-name"
+              fullWidth
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              required
+              id="importantInformation"
+              name="importantInformation"
+              label="Mais informações importantes"
+              fullWidth
+              autoComplete="given-name"
+              variant="standard"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <FormControlLabel
+              control={<Checkbox color="secondary" name="lgpd2" value="yes" />}
+              label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
+            />
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Autocomplete
-            {...defaultPropsType}
-            required
-            id="merchandiseType"
-            name="merchandiseType"
-            value={merchanType}
-            onChange={(event, newValue) => {
-              setMerchanType(newValue);
-            }}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Tipo de mercadoria"
-                variant="standard"
-              />
-            )}
-            autoComplete="given-name"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Autocomplete
-            {...defaultPropsVolume}
-            required
-            id="merchandiseVolume"
-            name="merchandiseVolume"
-            value={merchanVolume}
-            onChange={(event, newValue) => {
-              setMerchanVolume(newValue);
-            }}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Volume de mercadoria"
-                variant="standard"
-              />
-            )}
-            autoComplete="given-name"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="importantInformation"
-            name="importantInformation"
-            label="Mais informações importantes"
-            fullWidth
-            autoComplete="given-name"
-            variant="standard"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <FormControlLabel
-            control={<Checkbox color="secondary" name="lgpd2" value="yes" />}
-            label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
-          />
-        </Grid>
-      </Grid>
+      </form>
     </React.Fragment>
   );
 }

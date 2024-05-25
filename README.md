@@ -97,7 +97,7 @@ email_do_cliente: gabriel.mergh@voltaexpress2023.onmicrosoft.com
 
 service
 nome: volta-express-anunciante
-ID servico: service_gklzazh
+ID servico: service_gklzazh 
 
 template
 TemplateID: template_x9619s8
@@ -110,7 +110,7 @@ Parabéns por estar usando nossa plataforma Volta Express.
 
 Abaixo segue os detalhes do seu pedido:
 
-CADASTRAR
+CADASTRAR 10 params
 Primeiro nome do responsável: {{firstName}}
 Último nome: {{lastName}}
 Seu melhor email: {{email}}
@@ -122,14 +122,14 @@ CEP: {{zip1}}
 País: {{country1}}
 Ciente LGPD: {{lgpd1}}
  
-MERCADORIA
+MERCADORIA 5 params
 Nome da mercadoria: {{merchandise}}
 Tipo da mercadoria: {{merchandiseType}}
 Volume da mercadoria: {{merchandiseVolume}}
 Mais informações importantes: {{importantInformation}}
 Ciente LGPD: {{lgpd2}}
 
-TRANSPORTAR
+TRANSPORTAR 11 params
 Endereço para carregar: {{address2}}
 Cidade: {{city2}}
 Estado: {{state2}}
@@ -329,11 +329,10 @@ document.getElementById('form')
     });
 });
 ````
-
-.env
+/* .env */
 REACT_APP_SERVICE_ID=service_gklzazh
 REACT_APP_TEMPLATE_ID=template_x9619s8
-REACT_APP_USER_ID=user_a7A6kuxlGnZAsZaA-
+REACT_APP_PUBLIC_KEY=PuGzNRfau2NSL-qu2
 
 ---
 
