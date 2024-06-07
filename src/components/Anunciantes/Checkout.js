@@ -6,14 +6,8 @@ import {
   Container,
   Button,
   Paper,
-  Stepper,
-  Step,
-  StepLabel,
   Typography,
 } from "@mui/material";
-//import AddressForm from "./AddressForm";
-//import PaymentForm from "./PaymentForm";
-//import Review from "./Review";
 
 /**
  * start addressForm
@@ -37,7 +31,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import Divider from '@mui/material/Divider';
+import Divider from "@mui/material/Divider";
 
 export default function Checkout(props) {
   /**
@@ -52,7 +46,7 @@ export default function Checkout(props) {
   const [state1, setState1] = React.useState("");
   const [zip1, setZip1] = React.useState("");
   const [country1, setCountry1] = React.useState("");
-  const [lgpd1, setLgpd1] = React.useState("");
+  const [lgpd1Checked, setLgpd1Checked] = React.useState(true);
 
   /**
    * Anunciante - PaymentForm
@@ -61,7 +55,7 @@ export default function Checkout(props) {
   const [merchanType, setMerchanType] = React.useState("");
   const [merchanVolume, setMerchanVolume] = React.useState("");
   const [importantInformation, setImportantInformation] = React.useState("");
-  const [lgpd2, setLgpd2] = React.useState("");
+  const [lgpd2Checked, setLgpd2Checked] = React.useState(true);
 
   /**
    * Anunciante - Review
@@ -70,20 +64,19 @@ export default function Checkout(props) {
   const [city2, setCity2] = React.useState("");
   const [state2, setState2] = React.useState("");
   const [zip2, setZip2] = React.useState("");
-  const [dateCar2, setDateCar2] = React.useState("");
+  const [dateCar2, setDateCar2] = React.useState();
   const [address3, setAddress3] = React.useState("");
   const [city3, setCity3] = React.useState("");
   const [state3, setState3] = React.useState("");
   const [zip3, setZip3] = React.useState("");
-  const [dateDescar3, setDateDescar3] = React.useState("");
-  const [lgpd3, setLgpd3] = React.useState("");
+  const [dateDescar3, setDateDescar3] = React.useState();
+  const [lgpd3Checked, setLgpd3Checked] = React.useState(true);
 
   const [activeStep, setActiveStep] = React.useState(0);
-  const form = useRef();
 
   const handleAnnounce = () => {
-    setActiveStep(activeStep + 1);
     console.log("proximo", activeStep);
+    setActiveStep(activeStep + 1);
   };
 
   function sendEmail(e) {
@@ -101,12 +94,12 @@ export default function Checkout(props) {
       state1: state1,
       zip1: zip1,
       country1: country1,
-      lgpd1: lgpd1,
+      lgpd1: lgpd1Checked,
       merchandise: merchandise,
       merchandiseType: merchanType,
       merchandiseVolume: merchanVolume,
       importantInformation: importantInformation,
-      lgpd2: lgpd2,
+      lgpd2: lgpd2Checked,
       address2: address2,
       city2: city2,
       state2: state2,
@@ -117,15 +110,17 @@ export default function Checkout(props) {
       state3: state3,
       zip3: zip3,
       dateDescar3: dateDescar3,
-      lgpd3: lgpd3,
+      lgpd3: lgpd3Checked,
     };
+
+    console.log("templateParams", templateParams);
 
     emailjs
       .sendForm(
-        "service_gklzazh",
-        "template_x9619s8",
-        templateParams,
-        "PuGzNRfau2NSL-qu2"
+        "REACT_APP_SERVICE_ID",
+        "REACT_APP_TEMPLATE_ID",
+        e.target,
+        "REACT_APP_USER_ID"
       )
       .then(
         (response) => {
@@ -137,7 +132,7 @@ export default function Checkout(props) {
           setFirstName("");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log("FAILED...", error);
         }
       );
   }
@@ -207,8 +202,14 @@ export default function Checkout(props) {
             </React.Fragment>
           ) : (
             <React.Fragment>
-              <form ref={form} onSubmit={sendEmail}>
-                <Typography variant="h6" gutterBottom mt={6} mb={2} sx={{ fontWeight: 'bold' }} >
+              <form onSubmit={sendEmail}>
+                <Typography
+                  variant="h6"
+                  gutterBottom
+                  mt={6}
+                  mb={2}
+                  sx={{ fontWeight: "bold" }}
+                >
                   Sua identificação e seu endereço
                 </Typography>
                 <Grid container spacing={3} mb={4}>
@@ -219,7 +220,6 @@ export default function Checkout(props) {
                       name="firstName"
                       label="Primeiro nome do responsável"
                       fullWidth
-                      autoComplete="given-name"
                       variant="standard"
                       onChange={(e) => setFirstName(e.target.value)}
                       value={firstName}
@@ -232,7 +232,6 @@ export default function Checkout(props) {
                       name="lastName"
                       label="Último nome"
                       fullWidth
-                      autoComplete="family-name"
                       variant="standard"
                       onChange={(e) => setLastName(e.target.value)}
                       value={lastName}
@@ -245,7 +244,6 @@ export default function Checkout(props) {
                       name="email"
                       label="Seu melhor e-mail"
                       fullWidth
-                      autoComplete="email"
                       variant="standard"
                       onChange={(e) => setEmail(e.target.value)}
                       value={email}
@@ -258,7 +256,6 @@ export default function Checkout(props) {
                       name="phone"
                       label="Telefone whatsapp"
                       fullWidth
-                      autoComplete="tel"
                       variant="standard"
                       onChange={(e) => setPhone(e.target.value)}
                       value={phone}
@@ -271,7 +268,6 @@ export default function Checkout(props) {
                       name="address1"
                       label="Endereço principal"
                       fullWidth
-                      autoComplete="shipping address-line1"
                       variant="standard"
                       onChange={(e) => setAddress1(e.target.value)}
                       value={address1}
@@ -284,7 +280,6 @@ export default function Checkout(props) {
                       name="city1"
                       label="Cidade"
                       fullWidth
-                      autoComplete="shipping address-level2"
                       variant="standard"
                       onChange={(e) => setCity1(e.target.value)}
                       value={city1}
@@ -308,7 +303,6 @@ export default function Checkout(props) {
                       name="zip1"
                       label="CEP"
                       fullWidth
-                      autoComplete="shipping postal-code"
                       variant="standard"
                       onChange={(e) => setZip1(e.target.value)}
                       value={zip1}
@@ -321,7 +315,6 @@ export default function Checkout(props) {
                       name="country1"
                       label="País"
                       fullWidth
-                      autoComplete="shipping country"
                       variant="standard"
                       onChange={(e) => setCountry1(e.target.value)}
                       value={country1}
@@ -332,9 +325,9 @@ export default function Checkout(props) {
                       control={
                         <Checkbox
                           color="secondary"
-                          name="lgpd1"
-                          onChange={(e) => setLgpd1(e.target.value)}
-                          value={lgpd1}
+                          name="lgpd1Checked"
+                          onChange={(e) => setLgpd1Checked(e.target.value)}
+                          value={lgpd1Checked}
                         />
                       }
                       label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
@@ -342,7 +335,13 @@ export default function Checkout(props) {
                   </Grid>
                 </Grid>
                 <Divider />
-                <Typography variant="h6" gutterBottom mt={6} mb={2} sx={{ fontWeight: 'bold' }} >
+                <Typography
+                  variant="h6"
+                  gutterBottom
+                  mt={6}
+                  mb={2}
+                  sx={{ fontWeight: "bold" }}
+                >
                   Conte-me o que deseja transportar
                 </Typography>
                 <Grid container spacing={3} mb={4}>
@@ -353,7 +352,6 @@ export default function Checkout(props) {
                       name="merchandise"
                       label="Nome da mercadoria"
                       fullWidth
-                      autoComplete="given-name"
                       variant="standard"
                       onChange={(e) => setMerchandise(e.target.value)}
                       value={merchandise}
@@ -362,39 +360,35 @@ export default function Checkout(props) {
                   <Grid item xs={12} md={6}>
                     <Autocomplete
                       {...defaultPropsType}
-                      required
-                      id="merchandiseType"
-                      name="merchandiseType"
+                      id="merchanType"
                       renderInput={(params) => (
                         <TextField
                           {...params}
                           label="Tipo de mercadoria"
                           variant="standard"
+                          value={merchanType}
+                          onChange={(e) => setMerchanType(e.target.value)}
                         />
                       )}
-                      autoComplete="given-name"
+                      name="merchanType"
                       fullWidth
-                      value={merchanType}
-                      onChange={(e) => setMerchanType(e.target.value)}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <Autocomplete
                       {...defaultPropsVolume}
-                      required
-                      id="merchandiseVolume"
-                      name="merchandiseVolume"
+                      id="merchanVolume"
+                      name="merchanVolume"
                       renderInput={(params) => (
                         <TextField
                           {...params}
                           label="Volume de mercadoria"
                           variant="standard"
+                          value={merchanVolume}
+                          onChange={(e) => setMerchanVolume(e.target.value)}
                         />
                       )}
-                      autoComplete="given-name"
                       fullWidth
-                      value={merchanVolume}
-                      onChange={(e) => setMerchanVolume(e.target.value)}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
@@ -404,7 +398,6 @@ export default function Checkout(props) {
                       name="importantInformation"
                       label="Mais informações importantes"
                       fullWidth
-                      autoComplete="given-name"
                       variant="standard"
                       value={importantInformation}
                       onChange={(e) => setImportantInformation(e.target.value)}
@@ -415,9 +408,9 @@ export default function Checkout(props) {
                       control={
                         <Checkbox
                           color="secondary"
-                          name="lgpd2"
-                          value={lgpd2}
-                          onChange={(e) => setLgpd2(e.target.value)}
+                          name="lgpd2Checked"
+                          value={lgpd2Checked}
+                          onChange={(e) => setLgpd2Checked(e.target.value)}
                         />
                       }
                       label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
@@ -425,7 +418,13 @@ export default function Checkout(props) {
                   </Grid>
                 </Grid>
                 <Divider />
-                <Typography variant="h6" gutterBottom mt={6} mb={2} sx={{ fontWeight: 'bold' }} >
+                <Typography
+                  variant="h6"
+                  gutterBottom
+                  mt={6}
+                  mb={2}
+                  sx={{ fontWeight: "bold" }}
+                >
                   Informações do trajeto
                 </Typography>
                 <Grid container spacing={3}>
@@ -436,7 +435,6 @@ export default function Checkout(props) {
                       name="address2"
                       label="Endereço para carregar"
                       fullWidth
-                      autoComplete="shipping address-line1"
                       variant="standard"
                       value={address2}
                       onChange={(e) => setAddress2(e.target.value)}
@@ -449,7 +447,6 @@ export default function Checkout(props) {
                       name="city2"
                       label="Cidade"
                       fullWidth
-                      autoComplete="shipping address-level1"
                       variant="standard"
                       value={city2}
                       onChange={(e) => setCity2(e.target.value)}
@@ -462,7 +459,6 @@ export default function Checkout(props) {
                       name="state2"
                       label="Estado"
                       fullWidth
-                      autoComplete="shipping address-level2"
                       variant="standard"
                       value={state2}
                       onChange={(e) => setState2(e.target.value)}
@@ -475,14 +471,17 @@ export default function Checkout(props) {
                       name="zip2"
                       label="CEP"
                       fullWidth
-                      autoComplete="shipping postal-code1"
                       variant="standard"
                       value={zip2}
                       onChange={(e) => setZip2(e.target.value)}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
-                    <CarregarDate />
+                    <CarregarDate
+                      name="dateCar2"
+                      value={dateCar2}
+                      onChange={(e) => setDateCar2(e.target.value)}
+                    />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField
@@ -491,7 +490,6 @@ export default function Checkout(props) {
                       name="address3"
                       label="Endereço para descarregar"
                       fullWidth
-                      autoComplete="shipping address-line2"
                       variant="standard"
                       value={address3}
                       onChange={(e) => setAddress3(e.target.value)}
@@ -504,7 +502,6 @@ export default function Checkout(props) {
                       name="city3"
                       label="Cidade"
                       fullWidth
-                      autoComplete="shipping address-level3"
                       variant="standard"
                       value={city3}
                       onChange={(e) => setCity3(e.target.value)}
@@ -517,7 +514,6 @@ export default function Checkout(props) {
                       name="state3"
                       label="Estado"
                       fullWidth
-                      autoComplete="shipping address-level4"
                       variant="standard"
                       value={state3}
                       onChange={(e) => setState3(e.target.value)}
@@ -530,23 +526,26 @@ export default function Checkout(props) {
                       name="zip3"
                       label="CEP"
                       fullWidth
-                      autoComplete="shipping postal-code2"
                       variant="standard"
                       value={zip3}
                       onChange={(e) => setZip3(e.target.value)}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
-                    <DescarregarDate />
+                    <DescarregarDate
+                      name="dateDescar3"
+                      value={dateDescar3}
+                      onChange={(e) => setDateDescar3(e.target.value)}
+                    />
                   </Grid>
                   <Grid item xs={12}>
                     <FormControlLabel
                       control={
                         <Checkbox
                           color="secondary"
-                          name="lgpd3"
-                          value={lgpd3}
-                          onChange={(e) => setLgpd3(e.target.value)}
+                          name="lgpd3Checked"
+                          value={lgpd3Checked}
+                          onChange={(e) => setLgpd3Checked(e.target.value)}
                         />
                       }
                       label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
@@ -556,9 +555,9 @@ export default function Checkout(props) {
                 <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
                   <Button
                     variant="contained"
-                    onClick={handleAnnounce}
                     sx={{ mt: 3, ml: 1 }}
                     type="submit"
+                    //onClick={handleAnnounce}
                   >
                     Anunciar
                   </Button>

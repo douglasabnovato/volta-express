@@ -329,10 +329,11 @@ document.getElementById('form')
     });
 });
 ````
-/* .env */
+/* .env */ 
+
 REACT_APP_SERVICE_ID=service_gklzazh
 REACT_APP_TEMPLATE_ID=template_x9619s8
-REACT_APP_PUBLIC_KEY=PuGzNRfau2NSL-qu2
+REACT_APP_USER_ID=user_PuGzNRfau2NSL-qu2  
 
 ---
 
