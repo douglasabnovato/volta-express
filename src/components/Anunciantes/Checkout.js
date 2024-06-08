@@ -33,6 +33,17 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import Divider from "@mui/material/Divider";
 
+import { styled } from "@mui/material/styles";
+import { purple } from "@mui/material/colors";
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
+  backgroundColor: purple[500],
+  "&:hover": {
+    backgroundColor: purple[700],
+  },
+}));
+
 export default function Checkout(props) {
   /**
    * Anunciante - AddressForm
@@ -190,381 +201,26 @@ export default function Checkout(props) {
           <Typography component="h1" variant="h4" align="center">
             {props.funcionalidade}
           </Typography>
-          {activeStep > 1 ? (
-            <React.Fragment>
-              <Typography variant="h5" gutterBottom>
-                Obrigado por anunciar com a gente.
-              </Typography>
-              <Typography variant="subtitle1">
-                O número do seu anúncio é 001A04052024. Entraremos em contato
-                com você para acompanhar o transporte.
-              </Typography>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <form onSubmit={sendEmail}>
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  mt={6}
-                  mb={2}
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Sua identificação e seu endereço
-                </Typography>
-                <Grid container spacing={3} mb={4}>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="firstName"
-                      name="firstName"
-                      label="Primeiro nome do responsável"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setFirstName(e.target.value)}
-                      value={firstName}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="lastName"
-                      name="lastName"
-                      label="Último nome"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setLastName(e.target.value)}
-                      value={lastName}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={8}>
-                    <TextField
-                      required
-                      id="email"
-                      name="email"
-                      label="Seu melhor e-mail"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setEmail(e.target.value)}
-                      value={email}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={4}>
-                    <TextField
-                      required
-                      id="phone"
-                      name="phone"
-                      label="Telefone whatsapp"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setPhone(e.target.value)}
-                      value={phone}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      required
-                      id="address1"
-                      name="address1"
-                      label="Endereço principal"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setAddress1(e.target.value)}
-                      value={address1}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="city1"
-                      name="city1"
-                      label="Cidade"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setCity1(e.target.value)}
-                      value={city1}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      id="state1"
-                      name="state1"
-                      label="Estado"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setState1(e.target.value)}
-                      value={state1}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="zip1"
-                      name="zip1"
-                      label="CEP"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setZip1(e.target.value)}
-                      value={zip1}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="country1"
-                      name="country1"
-                      label="País"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setCountry1(e.target.value)}
-                      value={country1}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <FormControlLabel
-                      control={
-                        <Checkbox
-                          color="secondary"
-                          name="lgpd1Checked"
-                          onChange={(e) => setLgpd1Checked(e.target.value)}
-                          value={lgpd1Checked}
-                        />
-                      }
-                      label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
-                    />
-                  </Grid>
-                </Grid>
-                <Divider />
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  mt={6}
-                  mb={2}
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Conte-me o que deseja transportar
-                </Typography>
-                <Grid container spacing={3} mb={4}>
-                  <Grid item xs={12} md={6}>
-                    <TextField
-                      required
-                      id="merchandise"
-                      name="merchandise"
-                      label="Nome da mercadoria"
-                      fullWidth
-                      variant="standard"
-                      onChange={(e) => setMerchandise(e.target.value)}
-                      value={merchandise}
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <Autocomplete
-                      {...defaultPropsType}
-                      id="merchanType"
-                      renderInput={(params) => (
-                        <TextField
-                          {...params}
-                          label="Tipo de mercadoria"
-                          variant="standard"
-                          value={merchanType}
-                          onChange={(e) => setMerchanType(e.target.value)}
-                        />
-                      )}
-                      name="merchanType"
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <Autocomplete
-                      {...defaultPropsVolume}
-                      id="merchanVolume"
-                      name="merchanVolume"
-                      renderInput={(params) => (
-                        <TextField
-                          {...params}
-                          label="Volume de mercadoria"
-                          variant="standard"
-                          value={merchanVolume}
-                          onChange={(e) => setMerchanVolume(e.target.value)}
-                        />
-                      )}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <TextField
-                      required
-                      id="importantInformation"
-                      name="importantInformation"
-                      label="Mais informações importantes"
-                      fullWidth
-                      variant="standard"
-                      value={importantInformation}
-                      onChange={(e) => setImportantInformation(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <FormControlLabel
-                      control={
-                        <Checkbox
-                          color="secondary"
-                          name="lgpd2Checked"
-                          value={lgpd2Checked}
-                          onChange={(e) => setLgpd2Checked(e.target.value)}
-                        />
-                      }
-                      label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
-                    />
-                  </Grid>
-                </Grid>
-                <Divider />
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  mt={6}
-                  mb={2}
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Informações do trajeto
-                </Typography>
-                <Grid container spacing={3}>
-                  <Grid item xs={12}>
-                    <TextField
-                      required
-                      id="address2"
-                      name="address2"
-                      label="Endereço para carregar"
-                      fullWidth
-                      variant="standard"
-                      value={address2}
-                      onChange={(e) => setAddress2(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="city2"
-                      name="city2"
-                      label="Cidade"
-                      fullWidth
-                      variant="standard"
-                      value={city2}
-                      onChange={(e) => setCity2(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="state2"
-                      name="state2"
-                      label="Estado"
-                      fullWidth
-                      variant="standard"
-                      value={state2}
-                      onChange={(e) => setState2(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="zip2"
-                      name="zip2"
-                      label="CEP"
-                      fullWidth
-                      variant="standard"
-                      value={zip2}
-                      onChange={(e) => setZip2(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <CarregarDate
-                      name="dateCar2"
-                      value={dateCar2}
-                      onChange={(e) => setDateCar2(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      required
-                      id="address3"
-                      name="address3"
-                      label="Endereço para descarregar"
-                      fullWidth
-                      variant="standard"
-                      value={address3}
-                      onChange={(e) => setAddress3(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="city3"
-                      name="city3"
-                      label="Cidade"
-                      fullWidth
-                      variant="standard"
-                      value={city3}
-                      onChange={(e) => setCity3(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="state3"
-                      name="state3"
-                      label="Estado"
-                      fullWidth
-                      variant="standard"
-                      value={state3}
-                      onChange={(e) => setState3(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      id="zip3"
-                      name="zip3"
-                      label="CEP"
-                      fullWidth
-                      variant="standard"
-                      value={zip3}
-                      onChange={(e) => setZip3(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <DescarregarDate
-                      name="dateDescar3"
-                      value={dateDescar3}
-                      onChange={(e) => setDateDescar3(e.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <FormControlLabel
-                      control={
-                        <Checkbox
-                          color="secondary"
-                          name="lgpd3Checked"
-                          value={lgpd3Checked}
-                          onChange={(e) => setLgpd3Checked(e.target.value)}
-                        />
-                      }
-                      label="Estou ciente que seguem a Lei Geral de Proteção de Dados."
-                    />
-                  </Grid>
-                </Grid>
-                <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-                  <Button
-                    variant="contained"
-                    sx={{ mt: 3, ml: 1 }}
-                    type="submit"
-                    //onClick={handleAnnounce}
-                  >
-                    Anunciar
-                  </Button>
-                </Box>
-              </form>
-            </React.Fragment>
-          )}
+          <Box sx={{ flexGrow: 1, display: "flex" }}>
+            <ColorButton
+              href="https://forms.office.com/r/xpUEPan4Gs"
+              target="_blank"
+              variant="contained"
+              size="medium"
+              sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
+            >
+              ANUNCIAR SUA CARGA
+            </ColorButton>
+            <ColorButton
+              href="https://forms.office.com/r/igD4hV7pDa"
+              target="_blank"
+              variant="contained"
+              size="medium"
+              sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
+            >
+              COMPLETAR SUA CARGA
+            </ColorButton>
+          </Box>
         </Paper>
       </Container>
     </React.Fragment>

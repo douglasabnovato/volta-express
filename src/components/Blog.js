@@ -22,7 +22,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 import AnunciantesForm from "./Anunciantes/Checkout";
-import TransportadoresForm from "./Transportadores/Checkout";
 // CustomTabPanel - theend
 
 // AccordionTransportadores - start
@@ -318,8 +317,6 @@ function MediaCardAnunc(props) {
   const [order, setOrder] = React.useState(props.orderCard);
   const [imagem, setImagem] = React.useState(props.anuncioImagem);
 
-  const theme = useTheme();
-
   return (
     <Card sx={{ display: "flex" }}>
       <CardMedia
@@ -371,7 +368,6 @@ function CustomizedAccordionsAnunc() {
           <MediaCardAnunc orderCard={0} anuncioImagem={anuncio1} />
         </AccordionDetails>
       </Accordion>
-
       <Accordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
@@ -635,15 +631,11 @@ function BasicTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="ANUNCIE SUA CARGA" {...a11yProps(0)} />
-          <Tab label="COMPLETE SUA VIAGEM" {...a11yProps(1)} />
+          <Tab label="TRANSPORTE COM A GENTE" {...a11yProps(0)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <AnunciantesForm funcionalidade="Anunciante" />
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-        <TransportadoresForm funcionalidade="Transportador" />
+        <AnunciantesForm funcionalidade="Transporte com a gente" />
       </CustomTabPanel>
     </Box>
   );
