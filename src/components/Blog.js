@@ -21,7 +21,8 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-import Checkout from "./Checkout";
+import AnunciantesForm from "./Anunciantes/Checkout";
+import TransportadoresForm from "./Transportadores/Checkout";
 // CustomTabPanel - theend
 
 // AccordionTransportadores - start
@@ -44,8 +45,21 @@ import CardMedia from "@mui/material/CardMedia";
  */
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
+import anuncio2 from "./../assets/anunciantes/objetos-2.webp";
+import anuncio3 from "./../assets/anunciantes/objetos-3.webp";
+import anuncio4 from "./../assets/anunciantes/objetos-4.webp";
+import anuncio5 from "./../assets/anunciantes/objetos-5.webp";
+import anuncio6 from "./../assets/anunciantes/objetos-6.webp";
 
-import parceiro1 from "./../assets/transportadores/caminhao-de-mudanca-1.jpg";
+import transporte1 from "./../assets/transportadores/caminhao-1.jpg";
+import transporte2 from "./../assets/transportadores/caminhao-2.jpg";
+import transporte3 from "./../assets/transportadores/caminhao-3.jpg";
+import transporte4 from "./../assets/transportadores/caminhao-medio-1.jpg";
+import transporte5 from "./../assets/transportadores/frete-pequeno-1.webp";
+import transporte6 from "./../assets/transportadores/frete-pequeno-2.webp";
+import transporte7 from "./../assets/transportadores/frete-pequeno-3.webp";
+import transporte8 from "./../assets/transportadores/frete-pequeno-4.jpeg";
+import transporte9 from "./../assets/transportadores/frete-pequeno-5.webp";
 
 /**
  * Banner principal
@@ -117,7 +131,145 @@ const sections = [
   { title: "Travel", url: "#" },
 ];
 
-const pages = ["Anunciantes", "Transportadores"];
+/**
+ * Anuncios prontos
+ */
+const anunciosProntos = [
+  {
+    nome: "Geladeira de bar",
+    descricao: "Refrigerador Expositor Vertical All Black",
+    volume: "3 metros (m³)",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "001A21032024",
+  },
+  {
+    nome: "Bicama e colchão",
+    descricao: "Bicama Completa C/ Auxiliar + 2 Colchões Probel D20",
+    volume: "3 metros (m³) e os 2 colchões",
+    retirada: "R. dos Tamóios - Centro, Belo Horizonte - MG, 30120-050",
+    entrega:
+      "Av. Prof. Alfredo Balena, 61-37 - Centro, Belo Horizonte - MG, 30130-100",
+    idCodigo: "002A21032024",
+  },
+  {
+    nome: "Geladeira frost free",
+    descricao:
+      "Geladeira Brastemp Frost Free Duplex 375 litros cor Inox com Espaço Adapt",
+    volume: "3 metros (m³)",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "003A21032024",
+  },
+  {
+    nome: "Sofá Retrátil e Reclinável",
+    descricao: "Sofá Retrátil e Reclinável com Molas Ensacadas Cama inBox Gold",
+    volume: "4 metros (m³)",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "004A21032024",
+  },
+  {
+    nome: "Mesa de cozinha",
+    descricao:
+      "Conjunto Sala de Jantar Mesa Tampo de Vidro 6 Cadeiras Rustic/Crema/Imperial Alexis Madesa",
+    volume: "5 caixas",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "005A21032024",
+  },
+  {
+    nome: "Cadeiras de sala de aula",
+    descricao:
+      "Moob Cadeira de Escritório Presidente Chicago Giratória Com Sistema Relax",
+    volume: "12 itens de 1 metro (m³)",
+    retirada: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    entrega: "Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP",
+    idCodigo: "006A21032024",
+  },
+];
+
+/**
+ * Transportes prontos
+ */
+const transportesProntos = [
+  {
+    nome: "Cavok Transportes / Caminhão semi-pesado",
+    descricao: "VOLVO/VM 270 com 14 metros - 6 toneladas",
+    volume: "30 metros (m³)",
+    origem: "Av. Pres. Vargas, 1917 - Centro, Rio de Janeiro - RJ, 20210-030",
+    atuacao: "120km",
+    idCodigo: "007T21032024",
+  },
+  {
+    nome: "CP Transportes / Caminhão truck",
+    descricao: "VW/MAN/17.190 com 14 metros - 23 toneladas",
+    volume: "50 metros (m³)",
+    origem: "Av. Heitor Beltrão, 25 - Tijuca, Rio de Janeiro - RJ, 20520-051",
+    atuacao: "80km",
+    idCodigo: "008T21032024",
+  },
+  {
+    nome: "Ligeirinho frete / Caminhão médio",
+    descricao: "M. BENZ/1418 Truck",
+    volume: "20 metros (m³)",
+    origem:
+      "R. Voluntários da Pátria, 45 - Botafogo, Rio de Janeiro - RJ, 22270-000",
+    atuacao: "30km",
+    idCodigo: "009T21032024",
+  },
+  {
+    nome: "Rapidão / Caminhão pequeno",
+    descricao: "M. BENZ/ACCELO 1316",
+    volume: "12 metros (m³)",
+    origem: "R. Silva Castro, 16 - Copacabana, Rio de Janeiro - RJ, 22031-030",
+    atuacao: "25km",
+    idCodigo: "012T21032024",
+  },
+  {
+    nome: "DC Fretes / fretes pequenos",
+    descricao: "D20",
+    volume: "7 metros (m³)",
+    origem: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    atuacao: "40km",
+    idCodigo: "014T21032024",
+  },
+  {
+    nome: "Gabardo / fretes pequenos",
+    descricao: "MASTER FURGÃO renault",
+    volume: "10 metros (m³)",
+    origem: "R. Dr. Laureano, 104 - Passos, Juiz de Fora - MG, 36026-400",
+    atuacao: "80km",
+    idCodigo: "015T21032024",
+  },
+  {
+    nome: "Veloster / fretes pequenos",
+    descricao: "Saveiro com carretinha",
+    volume: "8 metros (m³)",
+    origem:
+      "R. Ver. Gercino Silva, 209-83 - Canto, Florianópolis - SC, 88075-560",
+    atuacao: "80km",
+    idCodigo: "016T21032024",
+  },
+  {
+    nome: "Caminhonetão / fretes pequenos",
+    descricao: "Montana",
+    volume: "7 metros (m³)",
+    origem: "Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP",
+    atuacao: "70km",
+    idCodigo: "013T21032024",
+  },
+  {
+    nome: "Personnalite transportes / fretes pequenos",
+    descricao: "Saveiro",
+    volume: "4 metros (m³)",
+    origem: "R. Afonso Pena, 479-301 - Canto, Florianópolis - SC, 88070-650",
+    atuacao: "50km",
+    idCodigo: "010T21032024",
+  },
+];
+
+const pages = ["ANUNCIE SUA CARGA", "COMPLETE SUA VIAGEM"];
 
 const settings = ["Alertas", "Mensagens Importantes"];
 
@@ -162,7 +314,10 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 // AccordionTransportadores - theend
 
 // MediaCardAnunc - start
-function MediaCardAnunc() {
+function MediaCardAnunc(props) {
+  const [order, setOrder] = React.useState(props.orderCard);
+  const [imagem, setImagem] = React.useState(props.anuncioImagem);
+
   const theme = useTheme();
 
   return (
@@ -170,28 +325,24 @@ function MediaCardAnunc() {
       <CardMedia
         component="img"
         sx={{ width: 121 }}
-        image={anuncio1}
+        image={imagem}
         alt="Live from space album cover"
       />
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography component="div" variant="h5">
-            Refrigerador Expositor Vertical All Black
+            {anunciosProntos[order].descricao}
           </Typography>
           <Typography
             variant="subtitle1"
             color="text.secondary"
             component="div"
           >
-            R$110,00
+            Volume dos itens: {anunciosProntos[order].volume}
           </Typography>
-          <Typography>
-            Retirar em: Av. Paulista, 1520-1542 - Bela Vista - São Paulo - SP
-          </Typography>
-          <Typography>
-            Entregar em: R. Rocha, 356-440 - Bela Vista - São Paulo - SP
-          </Typography>
-          <Typography>IDA:0506987220240215</Typography>
+          <Typography>Retirar em: {anunciosProntos[order].retirada}</Typography>
+          <Typography>Entregar em: {anunciosProntos[order].entrega}</Typography>
+          <Typography>IDA: {anunciosProntos[order].idCodigo}</Typography>
         </CardContent>
       </Box>
     </Card>
@@ -214,21 +365,22 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Geladeira de bar</Typography>
+          <Typography>{anunciosProntos[0].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={0} anuncioImagem={anuncio1} />
         </AccordionDetails>
       </Accordion>
+
       <Accordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Bicama e colchão</Typography>
+          <Typography>{anunciosProntos[1].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={1} anuncioImagem={anuncio2} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -236,10 +388,10 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Geladeira frost free </Typography>
+          <Typography>{anunciosProntos[2].nome} </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={2} anuncioImagem={anuncio3} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -247,10 +399,10 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>Sofá Retrátil e Reclinável</Typography>
+          <Typography>{anunciosProntos[3].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={3} anuncioImagem={anuncio4} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -258,10 +410,10 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel5")}
       >
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-          <Typography>Mesa de cozinha </Typography>
+          <Typography>{anunciosProntos[4].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={4} anuncioImagem={anuncio5} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -269,10 +421,10 @@ function CustomizedAccordionsAnunc() {
         onChange={handleChange("panel6")}
       >
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-          <Typography>Cadeiras de sala de aula </Typography>
+          <Typography>{anunciosProntos[5].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardAnunc />
+          <MediaCardAnunc orderCard={5} anuncioImagem={anuncio6} />
         </AccordionDetails>
       </Accordion>
     </div>
@@ -280,9 +432,11 @@ function CustomizedAccordionsAnunc() {
 }
 // CustomizedAccordionsAnunc - theend
 
-
 // MediaCardTransp - start
-function MediaCardTransp() {
+function MediaCardTransp(props) {
+  const [order, setOrder] = React.useState(props.orderCard);
+  const [imagem, setImagem] = React.useState(props.transporteImagem);
+
   const theme = useTheme();
 
   return (
@@ -290,28 +444,26 @@ function MediaCardTransp() {
       <CardMedia
         component="img"
         sx={{ width: 121 }}
-        image={parceiro1}
+        image={imagem}
         alt="Live from space album cover"
       />
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography component="div" variant="h5">
-            Caminhão Truck
+            {transportesProntos[order].descricao}
           </Typography>
           <Typography
             variant="subtitle1"
             color="text.secondary"
             component="div"
           >
-            R$125,00
+            Volume livre: {transportesProntos[order].volume}
           </Typography>
+          <Typography>Origem: {transportesProntos[order].origem}</Typography>
           <Typography>
-            Origem: Av. Prof. Alfredo Balena, 400 - Centro - Belo Horizonte - MG
+            Atuação em: {transportesProntos[order].atuacao}
           </Typography>
-          <Typography>
-            Atuação em: 120km
-          </Typography>
-          <Typography>IDA:0506987220240215</Typography>
+          <Typography>IDA:{transportesProntos[order].idCodigo}</Typography>
         </CardContent>
       </Box>
     </Card>
@@ -334,10 +486,10 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Cavok Transportes / Caminhões</Typography>
+          <Typography>{transportesProntos[0].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={0} transporteImagem={transporte1} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -345,10 +497,10 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>CP Transportes / Caminhões</Typography>
+          <Typography>{transportesProntos[1].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={1} transporteImagem={transporte2} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -356,10 +508,10 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Ligeirinho frete / Caminhões</Typography>
+          <Typography>{transportesProntos[2].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={2} transporteImagem={transporte3} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -367,10 +519,10 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>Personnalite transportes / fretes médios</Typography>
+          <Typography>{transportesProntos[3].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={3} transporteImagem={transporte4} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -378,10 +530,10 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel5")}
       >
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-          <Typography>Gabardo / fretes médios</Typography>
+          <Typography>{transportesProntos[4].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={4} transporteImagem={transporte5} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -389,10 +541,10 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel6")}
       >
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-          <Typography>Rapidão / fretes pequenos</Typography>
+          <Typography>{transportesProntos[5].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={5} transporteImagem={transporte6} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -400,10 +552,10 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel7")}
       >
         <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-          <Typography>Caminhonetão / fretes pequenos</Typography>
+          <Typography>{transportesProntos[6].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={6} transporteImagem={transporte7} />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -411,10 +563,21 @@ function CustomizedAccordionsTransp() {
         onChange={handleChange("panel8")}
       >
         <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
-          <Typography>DC Fretes / fretes pequenos</Typography>
+          <Typography>{transportesProntos[7].nome}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <MediaCardTransp />
+          <MediaCardTransp orderCard={7} transporteImagem={transporte8} />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel9"}
+        onChange={handleChange("panel9")}
+      >
+        <AccordionSummary aria-controls="panel9d-content" id="panel9d-header">
+          <Typography>{transportesProntos[8].nome}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <MediaCardTransp orderCard={8} transporteImagem={transporte9} />
         </AccordionDetails>
       </Accordion>
     </div>
@@ -467,19 +630,20 @@ function BasicTabs() {
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
+          id="voltaexpressACTION"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="ANUNCIANTES" {...a11yProps(0)} />
-          <Tab label="TRANSPORTADORES" {...a11yProps(1)} />
+          <Tab label="ANUNCIE SUA CARGA" {...a11yProps(0)} />
+          <Tab label="COMPLETE SUA VIAGEM" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Checkout funcionalidade="Anunciante" />
+        <AnunciantesForm funcionalidade="Anunciante" />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Checkout funcionalidade="Transportador" />
+        <TransportadoresForm funcionalidade="Transportador" />
       </CustomTabPanel>
     </Box>
   );

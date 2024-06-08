@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "volta-express",
+  "name": "Volta Express",
   "icons": [
     {
       "src": "favicon.ico",

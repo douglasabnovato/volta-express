@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 
 // ResponsiveAppBar - start
 import AppBar from "@mui/material/AppBar";
@@ -13,11 +11,34 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import ApprovalIcon from "@mui/icons-material/Approval";
 // ResponsiveAppBar - theend
+
+import CardMedia from "@mui/material/CardMedia";
+
+import { styled } from "@mui/material/styles";
+import { purple } from "@mui/material/colors";
+
+import logoVoltaExpress from "./../assets/icon-logo/logo-completa.png";
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
+  backgroundColor: purple[500],
+  "&:hover": {
+    backgroundColor: purple[700],
+  },
+}));
+
+function LogoVoltaExpress() {
+  return (
+    <CardMedia
+      component="img"
+      sx={{ width: 112 }}
+      image={logoVoltaExpress}
+      alt="Volta Express"
+    />
+  );
+}
 
 function Header(props) {
   const { pages, settings, sections, title } = props;
@@ -27,9 +48,6 @@ function Header(props) {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
@@ -41,27 +59,14 @@ function Header(props) {
   };
 
   return (
-    <AppBar position="fixed" >
+    <AppBar position="fixed">
       <Container maxWidth="xl">
-        <Toolbar disableGutters >
-          <ApprovalIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
+        <Toolbar disableGutters>
+          <LogoVoltaExpress
             noWrap
             component="a"
-            href="#voltaexpressONE"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            {title}
-          </Typography>
+            sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}
+          />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -78,12 +83,12 @@ function Header(props) {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "right",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
@@ -97,46 +102,23 @@ function Header(props) {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
-          <ApprovalIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#voltaexpressONE"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            {title}
-          </Typography>
+          </Box> 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                variant="outlined"
+              <ColorButton
+                href="https://forms.office.com/r/xpUEPan4Gs"
+                target="_blank"
+                variant="contained"
                 size="medium"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
               >
                 {page}
-              </Button>
+              </ColorButton>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
@@ -165,7 +147,6 @@ function Header(props) {
     </AppBar>
   );
 }
- 
 
 Header.propTypes = {
   pages: PropTypes.string.isRequired,
