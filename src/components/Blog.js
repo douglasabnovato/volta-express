@@ -1,47 +1,28 @@
 import * as React from "react";
-
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
 import Header from "./Header";
-
 import MainFeaturedPost from "./MainFeaturedPost";
-
 import FeaturedPost from "./FeaturedPost";
-
 import Footer from "./Footer";
-
-// CustomTabPanel - start
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
-import AnunciantesForm from "./Anunciantes/Checkout";
-// CustomTabPanel - theend
-
-// AccordionTransportadores - start
 import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
-// AccordionTransportadores - theend
-
-/**
- * cards fotos - start
- */
 import { useTheme } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-/**
- * cards fotos - the end
- */
+
+import AnunciantesForm from "./Checkout";
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
 import anuncio2 from "./../assets/anunciantes/objetos-2.webp";
@@ -49,7 +30,6 @@ import anuncio3 from "./../assets/anunciantes/objetos-3.webp";
 import anuncio4 from "./../assets/anunciantes/objetos-4.webp";
 import anuncio5 from "./../assets/anunciantes/objetos-5.webp";
 import anuncio6 from "./../assets/anunciantes/objetos-6.webp";
-
 import transporte1 from "./../assets/transportadores/caminhao-1.jpg";
 import transporte2 from "./../assets/transportadores/caminhao-2.jpg";
 import transporte3 from "./../assets/transportadores/caminhao-3.jpg";
@@ -59,80 +39,60 @@ import transporte6 from "./../assets/transportadores/frete-pequeno-2.webp";
 import transporte7 from "./../assets/transportadores/frete-pequeno-3.webp";
 import transporte8 from "./../assets/transportadores/frete-pequeno-4.jpeg";
 import transporte9 from "./../assets/transportadores/frete-pequeno-5.webp";
+import paine1 from "./../assets/painel/carreta-3.jpg";
+import depositions1 from "./../assets/depositions/depositions-1.jpg";
+import depositions2 from "./../assets/depositions/depositions-2.jpg";
+import depositions3 from "./../assets/depositions/depositions-3.jpg";
+import depositions4 from "./../assets/depositions/depositions-4.jpg";
 
-/**
- * Banner principal
- */
 const mainFeaturedPost = {
   title: "Transportar a um clique",
   description:
     "Conectando destinos, impulsionando negócios: SUA CARGA, NOSSA ROTA.",
-  image: "https://source.unsplash.com/random?truck",
+  image: paine1,
   imageText: "transportar",
-  linkText: ".",
+  linkText: "_",
 };
 
-/**
- * Banner 1 e Banner 2
- */
 const featuredPosts = [
   {
     title: "Roberto de Castro",
     date: "08, Janeiro 2024",
     description:
       "Minha mudança tinha o peso de aproximadamente 20 quilos, eram pedras para decoração do meu jardim, encaixotadas em 12 volumes.",
-    image: "https://source.unsplash.com/random?box",
-    imageLabel: "pacotes",
-    linkTo: "https://www.google.com/search?q=caixa+de+papel%C3%A3o",
+    image: depositions1,
+    imageLabel: "Embalagens",
+    linkTo: " ",
   },
   {
     title: "Levere Transporte",
     date: "23, Janeiro 2024",
     description:
       "Peguei uma carga de para duas mercearias que completou certinho os dois trechos que eu estaria viajando vazio.",
-    image: "https://source.unsplash.com/random?trucker",
-    imageLabel: "Image Text",
-    linkTo: "https://www.google.com/search?q=caminh%C3%A3o+de+mudan%C3%A7a",
+    image: depositions2,
+    imageLabel: "Caminhões",
+    linkTo: " ",
   },
   {
     title: "Maria Alice",
     date: "12, Fevereiro 2024",
     description:
       "Gostaria de enviar minha decoração por uma transportadora porque eram objetos de valor sentimental e coleções.",
-    image: "https://source.unsplash.com/random?carregando-sofa",
-    imageLabel: "Image Text",
-    linkTo: "https://www.google.com/search?q=caminh%C3%A3o+de+mudan%C3%A7a",
+    image: depositions3,
+    imageLabel: "Carregar sofá",
+    linkTo: " ",
   },
   {
     title: "Potencial Transporte",
     date: "28, Fevereiro 2024",
     description:
       "Completei o meu trajeto carregado por causa das três cargas que encaixarão no volume vazio que eu teria.",
-    image: "https://source.unsplash.com/random?caixa-encomenda",
-    imageLabel: "Image Text",
-    linkTo: "https://www.google.com/search?q=transportadora+na+cidade",
+    image: depositions4,
+    imageLabel: "Caixa de encomenda",
+    linkTo: " ",
   },
 ];
 
-/**
- * Seções
- */
-const sections = [
-  { title: "Technology", url: "#" },
-  { title: "Design", url: "#" },
-  { title: "Culture", url: "#" },
-  { title: "Business", url: "#" },
-  { title: "Politics", url: "#" },
-  { title: "Opinion", url: "#" },
-  { title: "Science", url: "#" },
-  { title: "Health", url: "#" },
-  { title: "Style", url: "#" },
-  { title: "Travel", url: "#" },
-];
-
-/**
- * Anuncios prontos
- */
 const anunciosProntos = [
   {
     nome: "Geladeira de bar",
@@ -188,9 +148,6 @@ const anunciosProntos = [
   },
 ];
 
-/**
- * Transportes prontos
- */
 const transportesProntos = [
   {
     nome: "Cavok Transportes / Caminhão semi-pesado",
@@ -268,13 +225,10 @@ const transportesProntos = [
   },
 ];
 
-const pages = ["ANUNCIE SUA CARGA", "COMPLETE SUA VIAGEM"];
-
-const settings = ["Alertas", "Mensagens Importantes"];
+const pages = ["TRANSPORTE COM A GENTE"];
 
 const defaultTheme = createTheme();
 
-// AccordionTransportadores - start
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -310,9 +264,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
-// AccordionTransportadores - theend
 
-// MediaCardAnunc - start
 function MediaCardAnunc(props) {
   const [order, setOrder] = React.useState(props.orderCard);
   const [imagem, setImagem] = React.useState(props.anuncioImagem);
@@ -345,12 +297,9 @@ function MediaCardAnunc(props) {
     </Card>
   );
 }
-// MediaCardAnunc - the end
 
-// CustomizedAccordionsAnunc - start
 function CustomizedAccordionsAnunc() {
   const [expanded, setExpanded] = React.useState("panel1");
-
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
@@ -426,9 +375,7 @@ function CustomizedAccordionsAnunc() {
     </div>
   );
 }
-// CustomizedAccordionsAnunc - theend
 
-// MediaCardTransp - start
 function MediaCardTransp(props) {
   const [order, setOrder] = React.useState(props.orderCard);
   const [imagem, setImagem] = React.useState(props.transporteImagem);
@@ -465,12 +412,9 @@ function MediaCardTransp(props) {
     </Card>
   );
 }
-// MediaCardTransp - the end
 
-// CustomizedAccordionsTransp - start
 function CustomizedAccordionsTransp() {
   const [expanded, setExpanded] = React.useState("panel1");
-
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
@@ -579,9 +523,7 @@ function CustomizedAccordionsTransp() {
     </div>
   );
 }
-// CustomizedAccordionsTransp - theend
 
-// CustomTabPanel - start
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -623,10 +565,9 @@ function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box id="voltaexpressACTION" sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
-          id="voltaexpressACTION"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
@@ -641,18 +582,11 @@ function BasicTabs() {
   );
 }
 
-// CustomTabPanel - the end
-
 export default function Blog() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Header
-        pages={pages}
-        settings={settings}
-        sections={sections}
-        title="Volta Express"
-      />
+      <Header pages={pages} title="Volta Express" />
       <Container maxWidth="lg">
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
