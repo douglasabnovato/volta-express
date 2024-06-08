@@ -23,8 +23,7 @@ function MainFeaturedPost(props) {
         backgroundImage: `url(${post.image})`,
       }}
       id="voltaexpressTOP"
-    >
-      {/* Increase the priority of the hero background image */}
+    > 
       {
         <img
           style={{ display: "none" }}
