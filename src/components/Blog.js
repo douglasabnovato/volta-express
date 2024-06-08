@@ -68,7 +68,7 @@ const featuredPosts = [
     title: "Levere Transporte",
     date: "23, Janeiro 2024",
     description:
-      "Peguei uma carga de para duas mercearias que completou certinho os dois trechos que eu estaria viajando vazio.",
+      "Peguei uma carga de Vitório ES para MG de duas mercearias que completou certinho os dois trechos que eu estaria viajando vazio.",
     image: depositions2,
     imageLabel: "Caminhões",
     linkTo: " ",
@@ -86,7 +86,7 @@ const featuredPosts = [
     title: "Potencial Transporte",
     date: "28, Fevereiro 2024",
     description:
-      "Completei o meu trajeto carregado por causa das três cargas que encaixarão no volume vazio que eu teria.",
+      "Completei o meu trajeto carregado por causa das três cargas que encaixaram no volume vazio que eu teria.",
     image: depositions4,
     imageLabel: "Caixa de encomenda",
     linkTo: " ",
