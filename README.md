@@ -36,3 +36,7 @@ a responsividade dos componentes
 a posição dos botões
 o desenho do favicon
 
+### Hospedagem
+
+servidor: Netlify
+url: https://volta-express.netlify.app
