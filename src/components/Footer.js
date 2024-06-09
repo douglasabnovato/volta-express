@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import CardMedia from "@mui/material/CardMedia";
 
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { blue, pink, grey } from "@mui/material/colors";
 
 import Button from "@mui/material/Button";
@@ -92,7 +92,7 @@ function ContatoWhatsapp() {
 }
 
 function Footer(props) {
-  const { description, title } = props;
+  const { description } = props;
 
   return (
     <ThemeProvider theme={themeFooter}>

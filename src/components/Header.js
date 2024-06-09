@@ -3,17 +3,13 @@ import PropTypes from "prop-types";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-
-// ResponsiveAppBar - start
+import Typography from "@mui/material/Typography"; 
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-// ResponsiveAppBar - theend
-
+import MenuItem from "@mui/material/MenuItem";  
 import CardMedia from "@mui/material/CardMedia";
 
 import { styled } from "@mui/material/styles";
@@ -41,10 +37,9 @@ function LogoVoltaExpress() {
 }
 
 function Header(props) {
-  const { pages, settings, sections, title } = props;
+  const { pages } = props;
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState(null); 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -52,11 +47,7 @@ function Header(props) {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  }; 
 
   return (
     <AppBar position="fixed">

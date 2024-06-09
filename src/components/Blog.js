@@ -3,10 +3,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "./Header";
-import MainFeaturedPost from "./MainFeaturedPost";
-import FeaturedPost from "./FeaturedPost";
-import Footer from "./Footer";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
@@ -16,13 +12,16 @@ import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
-import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import { useTheme } from "@mui/material/styles";
+import MuiAccordionDetails from "@mui/material/AccordionDetails"; 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
 import AnunciantesForm from "./Checkout";
+import Header from "./Header";
+import MainFeaturedPost from "./MainFeaturedPost";
+import FeaturedPost from "./FeaturedPost";
+import Footer from "./Footer";
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
 import anuncio2 from "./../assets/anunciantes/objetos-2.webp";
@@ -266,8 +265,8 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 function MediaCardAnunc(props) {
-  const [order, setOrder] = React.useState(props.orderCard);
-  const [imagem, setImagem] = React.useState(props.anuncioImagem);
+  const [order] = React.useState(props.orderCard);
+  const [imagem] = React.useState(props.anuncioImagem);
 
   return (
     <Card sx={{ display: "flex" }}>
@@ -377,10 +376,10 @@ function CustomizedAccordionsAnunc() {
 }
 
 function MediaCardTransp(props) {
-  const [order, setOrder] = React.useState(props.orderCard);
-  const [imagem, setImagem] = React.useState(props.transporteImagem);
+  const [order] = React.useState(props.orderCard);
+  const [imagem] = React.useState(props.transporteImagem);
 
-  const theme = useTheme();
+  
 
   return (
     <Card sx={{ display: "flex" }}>
