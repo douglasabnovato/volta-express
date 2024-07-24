@@ -23,30 +23,53 @@ export default function Checkout(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
+      <Container
+        component="main"
+        maxWidth="sm"
+        sx={{
+          mb: 4,
+        }}
+      >
         <Paper
           variant="outlined"
-          sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}
+          sx={{
+            my: { xs: 6, md: 6 },
+            p: { xs: 2, md: 8 },
+          }}
         >
           <Typography component="h1" variant="h4" align="center">
             {props.funcionalidade}
           </Typography>
-          <Box sx={{ flexGrow: 1, display: "flex" }}>
+          <Box sx={{ flexGrow: 1, display: "block" }}>
             <ColorButton
-              href="https://forms.office.com/r/xpUEPan4Gs"
+              href="https://l1nk.dev/volta-express-anunciar"
               target="_blank"
               variant="contained"
               size="large"
-              sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                mr: 0.5,
+                ml: 0.5,
+                textAlign: "center"
+              }}
             >
               ANUNCIAR SUA CARGA
             </ColorButton>
             <ColorButton
-              href="https://forms.office.com/r/igD4hV7pDa"
+              href="https://l1nk.dev/volta-express-transportar"
               target="_blank"
               variant="contained"
               size="large"
-              sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                mr: 0.5,
+                ml: 0.5,
+                textAlign: "center"
+              }}
             >
               COMPLETAR SUA CARGA
             </ColorButton>

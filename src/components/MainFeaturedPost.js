@@ -16,13 +16,13 @@ function MainFeaturedPost(props) {
         backgroundColor: "grey.800",
         color: "#fff",
         mb: 4,
-        mt: 11,
+        mt: 15,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundImage: `url(${post.image})`,
       }}
-      id="voltaexpressTOP"
+      id="volta-express-transportar-a-um-clique"
     > 
       {
         <img
