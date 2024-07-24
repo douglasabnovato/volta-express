@@ -27,6 +27,7 @@ Componente do Rodapé: Footer
     
 ### Itens dos Formulários
 
+Formulário para Cadastrar
 Formulário do Anunciante
 Formulário do Parceiro Transportador
 
@@ -34,13 +35,7 @@ Formulário do Parceiro Transportador
 
 a responsividade dos componentes
 a posição dos botões
-o desenho do favicon
-
-### Forms
-
-- Cadastrar 
-- Anunciar
-- Transportar
+o desenho do favicon 
 
 ### Hospedagem
 
