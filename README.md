@@ -36,6 +36,10 @@ a responsividade dos componentes
 a posição dos botões
 o desenho do favicon
 
+### Forms
+
+- Cadastrar
+
 ### Hospedagem
 
 servidor: Netlify
