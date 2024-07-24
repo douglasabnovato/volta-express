@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography"; 
+import Typography from "@mui/material/Typography";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem";  
+import MenuItem from "@mui/material/MenuItem";
 import CardMedia from "@mui/material/CardMedia";
 
 import { styled } from "@mui/material/styles";
@@ -39,7 +39,7 @@ function LogoVoltaExpress() {
 function Header(props) {
   const { pages } = props;
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null); 
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -47,18 +47,30 @@ function Header(props) {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  }; 
+  };
 
   return (
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <LogoVoltaExpress
-            noWrap
-            component="a"
-            sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}
-          />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <a href="#volta-express-transportar-a-um-clique">
+            <LogoVoltaExpress
+              noWrap
+              component="a"
+              sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}
+            />
+          </a>
+          {/* START - MOBILE */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "flex",
+                md: "none",
+              },
+              justifyContent: "flex-end",
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -84,20 +96,76 @@ function Header(props) {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: "block",
+                my: 0,
+                mr: 0,
+                ml: 0,
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 0,
+                    display: "block",
+                    mr: 0,
+                    ml: 0,
+                  }}
+                >
+                  {/*<Typography textAlign="center">{page}</Typography> */}
+                  <ColorButton
+                    href="#volta-express-transporte-com-a-gente"
+                    variant="contained"
+                    size="medium"
+                    //key={page}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      mb: 0.4,
+                      color: "white",
+                      display: "block",
+                      mr: 0,
+                      ml: 0,
+                    }}
+                  >
+                    TRANSPORTE COM A GENTE
+                  </ColorButton>
+                  <ColorButton
+                    href="https://l1nk.dev/volta-express-cadastrar"
+                    variant="contained"
+                    size="medium"
+                    //key={page}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      my: 0,
+                      color: "white",
+                      display: "block",
+                      mr: 0,
+                      ml: 0,
+                    }}
+                  >
+                    CADASTRE-SE GRATUITAMENTE
+                  </ColorButton>
                 </MenuItem>
               ))}
             </Menu>
-          </Box> 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+          </Box>
+          {/* THE END - MOBILE */}
+
+          {/* START - DESKTOP */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "none",
+                md: "flex",
+              },
+              justifyContent: "space-between",
+            }}
+          >
+            {/*{pages.map((page) => (
               <ColorButton
-                href="#voltaexpressACTION"
+                href="#volta-express-transporte-com-a-gente"
                 variant="contained"
                 size="medium"
                 key={page}
@@ -106,9 +174,30 @@ function Header(props) {
               >
                 {page}
               </ColorButton>
-            ))}
+            ))}*/}
+            <ColorButton
+              href="#volta-express-transporte-com-a-gente"
+              variant="contained"
+              size="medium"
+              //key={page}
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
+            >
+              TRANSPORTE COM A GENTE
+            </ColorButton>
+            <ColorButton
+              href="https://l1nk.dev/volta-express-cadastrar"
+              target="_blank"
+              variant="contained"
+              size="medium"
+              //key={page}
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
+            >
+              CADASTRE-SE GRATUITAMENTE
+            </ColorButton>
           </Box>
-          
+          {/* THE END - DESKTOP */}
         </Toolbar>
       </Container>
     </AppBar>

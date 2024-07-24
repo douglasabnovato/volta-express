@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { blue, pink, grey } from "@mui/material/colors";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
@@ -12,7 +13,7 @@ import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
-import MuiAccordionDetails from "@mui/material/AccordionDetails"; 
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -44,6 +45,37 @@ import depositions2 from "./../assets/depositions/depositions-2.jpg";
 import depositions3 from "./../assets/depositions/depositions-3.jpg";
 import depositions4 from "./../assets/depositions/depositions-4.jpg";
 
+import Button from "@mui/material/Button";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
+const themeCard = createTheme({
+  palette: {
+    whatsapp: {
+      tealgreen: "#128C7E",
+      tealgreendark: "#075E54",
+      lightgreen: "#25D366",
+    },
+    tomato: "#FF6347",
+    pink: {
+      deep: "#FF1493",
+      hot: "#FF69B4",
+      medium: "#C71585",
+      pale: "#DB7093",
+      light: "#FFB6C1",
+    },
+    grey: {
+      deep: grey[200],
+      hot: grey[800],
+    },
+    primary: {
+      main: blue[200],
+    },
+    secondary: {
+      main: pink[200],
+    },
+  },
+});
+
 const mainFeaturedPost = {
   title: "Transportar a um clique",
   description:
@@ -56,7 +88,7 @@ const mainFeaturedPost = {
 const featuredPosts = [
   {
     title: "Roberto de Castro",
-    date: "08, Janeiro 2024",
+    date: "08, Julho 2024",
     description:
       "Minha mudança tinha o peso de aproximadamente 20 quilos, eram pedras para decoração do meu jardim, encaixotadas em 12 volumes.",
     image: depositions1,
@@ -65,7 +97,7 @@ const featuredPosts = [
   },
   {
     title: "Levere Transporte",
-    date: "23, Janeiro 2024",
+    date: "23, Julho 2024",
     description:
       "Peguei uma carga de Vitório ES para MG de duas mercearias que completou certinho os dois trechos que eu estaria viajando vazio.",
     image: depositions2,
@@ -74,7 +106,7 @@ const featuredPosts = [
   },
   {
     title: "Maria Alice",
-    date: "12, Fevereiro 2024",
+    date: "12, Junho 2024",
     description:
       "Gostaria de enviar minha decoração por uma transportadora porque eram objetos de valor sentimental e coleções.",
     image: depositions3,
@@ -83,7 +115,7 @@ const featuredPosts = [
   },
   {
     title: "Potencial Transporte",
-    date: "28, Fevereiro 2024",
+    date: "28, Junho 2024",
     description:
       "Completei o meu trajeto carregado por causa das três cargas que encaixaram no volume vazio que eu teria.",
     image: depositions4,
@@ -226,6 +258,22 @@ const transportesProntos = [
 
 const pages = ["TRANSPORTE COM A GENTE"];
 
+/*
+const pages =[
+  {
+    botao: "TRANSPORTE COM A GENTE",
+    url_ancora: "#volta-express-transporte-com-a-gente",
+  },
+  {
+    botao: "CADASTRE-SE GRATUITAMENTE",
+    url_ancora: "https://www.google.com.br/",
+  },
+];
+
+https://volta-express.netlify.app/
+
+*/
+
 const defaultTheme = createTheme();
 
 const Accordion = styled((props) => (
@@ -264,6 +312,27 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
+function ContatoWhatsapp() {
+  return (
+    <ThemeProvider theme={themeCard}>
+      <Button
+        variant="contained"
+        startIcon={<WhatsAppIcon />}
+        href="https://api.whatsapp.com/send?phone=5532999264243&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+        target="_blank"
+        sx={{
+          mx: 1,
+          px: 0.5,
+          bgcolor: "whatsapp.lightgreen",
+          "&:hover": {
+            backgroundColor: "whatsapp.tealgreen",
+          },
+        }}
+      ></Button>
+    </ThemeProvider>
+  );
+}
+
 function MediaCardAnunc(props) {
   const [order] = React.useState(props.orderCard);
   const [imagem] = React.useState(props.anuncioImagem);
@@ -290,7 +359,10 @@ function MediaCardAnunc(props) {
           </Typography>
           <Typography>Retirar em: {anunciosProntos[order].retirada}</Typography>
           <Typography>Entregar em: {anunciosProntos[order].entrega}</Typography>
-          <Typography>IDA: {anunciosProntos[order].idCodigo}</Typography>
+          <Typography>
+            IDA: {anunciosProntos[order].idCodigo}
+            <ContatoWhatsapp />
+          </Typography>
         </CardContent>
       </Box>
     </Card>
@@ -379,8 +451,6 @@ function MediaCardTransp(props) {
   const [order] = React.useState(props.orderCard);
   const [imagem] = React.useState(props.transporteImagem);
 
-  
-
   return (
     <Card sx={{ display: "flex" }}>
       <CardMedia
@@ -405,7 +475,10 @@ function MediaCardTransp(props) {
           <Typography>
             Atuação em: {transportesProntos[order].atuacao}
           </Typography>
-          <Typography>IDA:{transportesProntos[order].idCodigo}</Typography>
+          <Typography>
+            IDA:{transportesProntos[order].idCodigo}
+            <ContatoWhatsapp />
+          </Typography>
         </CardContent>
       </Box>
     </Card>
@@ -564,7 +637,7 @@ function BasicTabs() {
   };
 
   return (
-    <Box id="voltaexpressACTION" sx={{ width: "100%" }}>
+    <Box id="volta-express-transporte-com-a-gente" sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
