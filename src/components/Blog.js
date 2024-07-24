@@ -88,7 +88,7 @@ const mainFeaturedPost = {
 const featuredPosts = [
   {
     title: "Roberto de Castro",
-    date: "08, Janeiro 2024",
+    date: "08, Julho 2024",
     description:
       "Minha mudança tinha o peso de aproximadamente 20 quilos, eram pedras para decoração do meu jardim, encaixotadas em 12 volumes.",
     image: depositions1,
@@ -97,7 +97,7 @@ const featuredPosts = [
   },
   {
     title: "Levere Transporte",
-    date: "23, Janeiro 2024",
+    date: "23, Julho 2024",
     description:
       "Peguei uma carga de Vitório ES para MG de duas mercearias que completou certinho os dois trechos que eu estaria viajando vazio.",
     image: depositions2,
@@ -106,7 +106,7 @@ const featuredPosts = [
   },
   {
     title: "Maria Alice",
-    date: "12, Fevereiro 2024",
+    date: "12, Junho 2024",
     description:
       "Gostaria de enviar minha decoração por uma transportadora porque eram objetos de valor sentimental e coleções.",
     image: depositions3,
@@ -115,7 +115,7 @@ const featuredPosts = [
   },
   {
     title: "Potencial Transporte",
-    date: "28, Fevereiro 2024",
+    date: "28, Junho 2024",
     description:
       "Completei o meu trajeto carregado por causa das três cargas que encaixaram no volume vazio que eu teria.",
     image: depositions4,
