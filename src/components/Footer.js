@@ -47,12 +47,29 @@ function Copyright() {
   return (
     <Typography
       variant="body2"
-      sx={{ width: 181, color: "primary.main", mt: 2 }}
+      sx={{ width: 176, color: "primary.main", mt: 2 }}
       align="left"
     >
       {"Copyright © "}
-      <Link color="inherit" href="#voltaexpressTOP">
+      <Link color="inherit" href="https://volta-express.netlify.app/">
         Volta Express
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
+
+function Lgpd() {
+  return (
+    <Typography
+      variant="body2"
+      sx={{ width: 176, color: "primary.main", mt: 2 }}
+      align="left"
+    >
+      {"* "}
+      <Link color="inherit" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">
+       Lei Geral de Proteção de Dados Pessoais - LGPD
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -106,8 +123,7 @@ function Footer(props) {
       >
         <Container sx={{ display: "flex", alignItems: "center" }}>
           <LogoVoltaExpress />
-
-          <Container sx={{ width: "400" }}>
+          <Container >
             <Typography
               variant="subtitle1"
               align="left"
@@ -116,6 +132,8 @@ function Footer(props) {
             >
               {description}
             </Typography>
+
+            <Lgpd/>
 
             <Copyright />
 
