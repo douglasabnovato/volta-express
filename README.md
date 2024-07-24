@@ -38,7 +38,9 @@ o desenho do favicon
 
 ### Forms
 
-- Cadastrar
+- Cadastrar 
+- Anunciar
+- Transportar
 
 ### Hospedagem
 
