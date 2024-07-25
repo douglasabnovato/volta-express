@@ -27,18 +27,19 @@ Componente do Rodapé: Footer
     
 ### Itens dos Formulários
 
+Formulário para Cadastrar
 Formulário do Anunciante
 Formulário do Parceiro Transportador
+    
+### Identidade Visual
+
+Listar as cores da aplicação
 
 ### Tarefas a desenvolver
 
 a responsividade dos componentes
 a posição dos botões
-o desenho do favicon
-
-### Forms
-
-- Cadastrar
+o desenho do favicon 
 
 ### Hospedagem
 

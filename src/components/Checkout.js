@@ -42,7 +42,7 @@ export default function Checkout(props) {
           </Typography>
           <Box sx={{ flexGrow: 1, display: "block" }}>
             <ColorButton
-              href="https://l1nk.dev/volta-express-anunciar"
+              href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAANvDZpURjM4UUFNRzRXVFg2Q042QzBTUEZJSVhPSi4u"
               target="_blank"
               variant="contained"
               size="large"
@@ -58,7 +58,7 @@ export default function Checkout(props) {
               ANUNCIAR SUA CARGA
             </ColorButton>
             <ColorButton
-              href="https://l1nk.dev/volta-express-transportar"
+              href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAANvDZpURjFQV1JIRTZCRjFOUE5RM0RFMFFGRUs0Mi4u"
               target="_blank"
               variant="contained"
               size="large"
