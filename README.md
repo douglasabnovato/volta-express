@@ -33,7 +33,7 @@ Formulário do Parceiro Transportador
     
 ### Identidade Visual
 
-Listar as cores da aplicação
+Listar as cores da aplicação em hexadecimal
 
 ### Tarefas a desenvolver
 
