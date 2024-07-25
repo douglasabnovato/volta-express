@@ -30,6 +30,10 @@ Componente do Rodapé: Footer
 Formulário para Cadastrar
 Formulário do Anunciante
 Formulário do Parceiro Transportador
+    
+### Identidade Visual
+
+Listar as cores da aplicação
 
 ### Tarefas a desenvolver
 

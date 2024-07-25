@@ -258,22 +258,6 @@ const transportesProntos = [
 
 const pages = ["TRANSPORTE COM A GENTE"];
 
-/*
-const pages =[
-  {
-    botao: "TRANSPORTE COM A GENTE",
-    url_ancora: "#volta-express-transporte-com-a-gente",
-  },
-  {
-    botao: "CADASTRE-SE GRATUITAMENTE",
-    url_ancora: "https://www.google.com.br/",
-  },
-];
-
-https://volta-express.netlify.app/
-
-*/
-
 const defaultTheme = createTheme();
 
 const Accordion = styled((props) => (
