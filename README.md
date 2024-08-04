@@ -41,6 +41,10 @@ a responsividade dos componentes
 a posição dos botões
 o desenho do favicon 
 
+# Volta Express V1
+
+- Listar as funcionalidades e detalhes da versão 1
+
 ### Hospedagem
 
 servidor: Netlify
