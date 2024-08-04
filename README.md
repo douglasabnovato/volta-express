@@ -1,6 +1,17 @@
 # Volta Express V3
 
 - Listar as funcionalidades e detalhes da versão 3
+
+### Evoluções
+
+- Seção de Vídeo institucional Sobre 
+- Seção de Planos: ofertas comerciais 
+- Copy: adicionar mais elementos 
+- Copy: criar textos opcionais aos já criados a fim de melhorar 
+
+### Apoiar o WHATSAPP e o suporte 
+
+- ter os links para as funcionalidades utilizadas em todos os processos do suporte
   
 # Volta Express V2
 
