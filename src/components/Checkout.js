@@ -55,7 +55,7 @@ export default function Checkout(props) {
                 textAlign: "center"
               }}
             >
-              ANUNCIAR SUA CARGA
+              TENHO CARGA E BUSCO MOTORISTA
             </ColorButton>
             <ColorButton
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAANvDZpURjFQV1JIRTZCRjFOUE5RM0RFMFFGRUs0Mi4u"
@@ -71,7 +71,7 @@ export default function Checkout(props) {
                 textAlign: "center"
               }}
             >
-              COMPLETAR SUA CARGA
+              TENHO CAMINHÃO E BUSCO FRETES
             </ColorButton>
           </Box>
         </Paper>
