@@ -143,7 +143,7 @@ function Header(props) {
                       ml: 0,
                     }}
                   >
-                    CADASTRE-SE GRATUITAMENTE
+                    VENHA PARA O VOLTA EXPRESS 
                   </ColorButton>
                 </MenuItem>
               ))}
@@ -193,7 +193,7 @@ function Header(props) {
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block", mr: 1, ml: 2 }}
             >
-              CADASTRE-SE GRATUITAMENTE
+              VENHA PARA O VOLTA EXPRESS 
             </ColorButton>
           </Box>
           {/* THE END - DESKTOP */}

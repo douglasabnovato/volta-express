@@ -9,6 +9,10 @@
 - Copy: adicionar mais elementos 
 - Copy: criar textos opcionais aos já criados a fim de melhorar 
 
+### Copies
+
+- Botão de cadastramento: de "CADASTRE-SE GRATUITAMENTE" para "VENHA PARA O VOLTA EXPRESS "
+
 ### Apoiar o WHATSAPP e o suporte 
 
 - ter os links para as funcionalidades utilizadas em todos os processos do suporte
