@@ -93,7 +93,7 @@ function ContatoWhatsapp() {
     <Button
       variant="contained"
       startIcon={<WhatsAppIcon />}
-      href="https://api.whatsapp.com/send?phone=5532998615190&text=Olá Volta Express. Quero saber dos seus serviços."
+      href="https://api.whatsapp.com/send?phone=5532998615190&text=Estava no site do Volta Express. Quero saber dos seus serviços."
       target="_blank"
       sx={{
         mt: 2,
