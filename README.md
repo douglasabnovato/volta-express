@@ -8,6 +8,8 @@
 - Seção de Planos: ofertas comerciais 
 - Copy: adicionar mais elementos 
 - Copy: criar textos opcionais aos já criados a fim de melhorar 
+- Rodapé: LGPD
+- Rodapé: Botão de contato com Número Whatsapp
 
 ### Copies
 
