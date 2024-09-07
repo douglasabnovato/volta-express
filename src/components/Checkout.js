@@ -55,7 +55,7 @@ export default function Checkout(props) {
                 textAlign: "center"
               }}
             >
-              TENHO CARGA <br/>E BUSCO MOTORISTA 
+              TENHO CARGA <br/> E BUSCO MOTORISTA 
             </ColorButton>
             <ColorButton
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=fXmzFxZ8hUWOMIqY0e7Ew1G6kYgJnl9Bovy9UF80z8FUREVOVEc0UDNNQUsxWDNDQVIwUzdJMUJZWC4u"
@@ -71,7 +71,7 @@ export default function Checkout(props) {
                 textAlign: "center"
               }}
             >
-              TENHO UM CAMINHÃO <br/>E BUSCO FRETES 
+              TENHO UM CAMINHÃO <br/> E BUSCO FRETES 
             </ColorButton>
             <ColorButton
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=fXmzFxZ8hUWOMIqY0e7Ew1SSTYmSb3BCqac8T0_WJNJURVVRMkFUQVdaSTZaNkY2WUFNN0NZMzlIMCQlQCN0PWcu"
@@ -87,7 +87,7 @@ export default function Checkout(props) {
                 textAlign: "center"
               }}
             >
-              TENHO UMA FROTA DE CAMINHÃO <br/>E BUSCO FRETES 
+              TENHO CARGAS <br/> E BUSCO CAMINHONEIROS 
             </ColorButton>
           </Box>
         </Paper>
