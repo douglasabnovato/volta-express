@@ -2,9 +2,43 @@
 
 - Descrever o processo das etapas sendo realizadas.
 
-### Evoluções
+### Marketing
 
 - Seção de Vídeo institucional Sobre 
+- vídeo com montagem digital
+- vídeo self em ambiente de fundo
+- imagens para motorista
+- imagens para anunciantes
+- imagens para transportadoras
+
+### Processos
+
+- Fluxo de trabalho
+- Operação
+
+### Whatsapp
+
+- imagem para abordagens comerciais
+- imagem para comunicação interna equipe
+
+### MVP
+
+- trocar os formulários para o domínio volta
+- adicionar o botão de form da transportadora
+- adicionar os links das respostas no footer do site
+- Botão de contato: Número Whatsapp
+- Mobile: tres botões no hamburguer
+- 3ª persona: tenho cargas e busco caminhoneiros
+
+### Copies
+
+- aperfeiçoar o copy dos formulários
+
+### Forms
+
+- ter forms reservas
+- criar forms para uso prospecção
+- permissão dos forms
 
 # Volta Express V3
 
