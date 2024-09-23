@@ -1,6 +1,6 @@
 # Volta Express V4
 
-- Descrever o processo das etapas sendo realizadas.
+- Incluindo o design do mapa para dentro da aplicação
 
 ### Marketing
 
