@@ -2,6 +2,10 @@
 
 - Incluindo o design do mapa para dentro da aplicação
 
+### To Do
+
+- Descrever em detalhes no readme.
+
 ### Marketing
 
 - Seção de Vídeo institucional Sobre 
