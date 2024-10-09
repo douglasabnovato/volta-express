@@ -13,6 +13,8 @@
 
 ### Revisões
 
+- novato:
+  - botão para levar ao mapa
 - mergh:
     - abertura do mapa com mais zoom, em uma localidade especifica
     - componente do mapa no desktop com maior largura
