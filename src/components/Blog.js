@@ -18,11 +18,16 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
+import MapsC from "./MapsC";
+import MapsT from "./MapsT";
 import AnunciantesForm from "./Checkout";
 import Header from "./Header";
 import MainFeaturedPost from "./MainFeaturedPost";
 import FeaturedPost from "./FeaturedPost";
 import Footer from "./Footer";
+
+import Button from "@mui/material/Button";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
 import anuncio2 from "./../assets/anunciantes/objetos-2.webp";
@@ -44,9 +49,6 @@ import depositions1 from "./../assets/depositions/depositions-1.jpg";
 import depositions2 from "./../assets/depositions/depositions-2.jpg";
 import depositions3 from "./../assets/depositions/depositions-3.jpg";
 import depositions4 from "./../assets/depositions/depositions-4.jpg";
-
-import Button from "@mui/material/Button";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const themeCard = createTheme({
   palette: {
@@ -638,6 +640,38 @@ function BasicTabs() {
   );
 }
 
+function CenteredTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box
+      sx={{ width: "100%", bgcolor: "background.paper" }}
+    >
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+        >
+          <Tab label="MAPA DE CARGAS" {...a11yProps(0)} />
+          <Tab label="MAPA DE MOTORISTAS" {...a11yProps(1)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <MapsC funcionalidade="MAPA DE CARGAS" />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+        <MapsT funcionalidade="MAPA DE TRANSPORTE" />
+      </CustomTabPanel>
+    </Box>
+  );
+}
+
 export default function Blog() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -665,6 +699,9 @@ export default function Blog() {
           </Grid>
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <BasicTabs />
+          </Grid>
+          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+            <CenteredTabs />
           </Grid>
         </main>
       </Container>

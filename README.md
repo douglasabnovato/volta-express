@@ -5,6 +5,11 @@
 ### To Do
 
 - Descrever em detalhes no readme.
+- API Google Maps
+    . dificuldade do processo, adicionar funcionalidades com o google maps
+    . adicionar os 2 mapas em abas conforme foco no cliente
+    . revisar o processo (merg)
+    . código fonte no github volta express
 
 ### Marketing
 
