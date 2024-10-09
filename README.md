@@ -18,6 +18,8 @@
     - componente do mapa no desktop com maior largura
     - icon do volta melhor design
     - aguardando um link da funcionalidade da api do google
+- torres:
+    - localização do usuário para abrir o mapa nessa região
 
 ### Marketing
 
