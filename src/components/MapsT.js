@@ -24,6 +24,7 @@ export default function MapsT(props) {
           </Typography>
           <Box sx={{ bgcolor: "#cfe8fc", width: "350", height: "400" }}>
             <iframe
+              title="Google Maps Transporte"
               src="https://www.google.com/maps/d/u/0/embed?mid=1HEwIXYYZiy_DIr2NmPVor3E058BYWE4&ehbc=2E312F"
               width="100%"
               height="400"

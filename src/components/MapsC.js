@@ -24,6 +24,7 @@ export default function MapsC(props) {
           </Typography>
           <Box sx={{ bgcolor: "#cfe8fc", width: "350", height: "400" }}>
             <iframe
+              title="Google Maps Carga"
               src="https://www.google.com/maps/d/embed?mid=1Ywi7AEJi7RkzEVGJX5CCvnz7ajSmy3g&ehbc=2E312F"
               width="100%"
               height="400"
