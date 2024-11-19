@@ -47,11 +47,11 @@
 ### Marketing
 
 - [ ] Seção institucional Sobre: vídeo, membros da equipe
-- [ ] Seção Como usar: Vídeo demonstrando como usar o Volta Express 
+- [x] Seção Como usar: Vídeo demonstrando como usar o Volta Express 
   - [ ] Vídeo: com montagem digital, self em ambiente de fundo
   - [ ] Imagem: para motorista, para anunciantes, para transportadoras
-- [ ] Google Ads: capturar informações dos acessos. Link já gerado.
-- [ ] Redes sociais: 
+- [o] Google Ads: capturar informações dos acessos. Link já gerado.
+- [ ] Redes sociais Volta Express: 
   - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil)
   - [ ] Facebook
   - [ ] Youtube: vídeos institucionais
