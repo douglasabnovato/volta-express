@@ -37,7 +37,7 @@
 - [ ] Dúvidas de "Como usar o mapa?": fazer um vídeo no site
 - [ ] Seção feeback: abordar as pessoas que já nos acessaram para melhor direcionar
 - [ ] FAQ : pegar informações para esclarecimentos
-- [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações
+- [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
   
 ### Processos
 
