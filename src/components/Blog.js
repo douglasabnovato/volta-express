@@ -660,13 +660,13 @@ function CenteredTabs() {
           aria-label="basic tabs example"
           centered
         >
-          <Tab label="COMO USAR OS MAPAS" {...a11yProps(0)} />
+          <Tab label="COMO USAR O VOLTA EXPRESS" {...a11yProps(0)} />
           <Tab label="MAPA DE CARGAS" {...a11yProps(1)} />
           <Tab label="MAPA DE MOTORISTAS" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <MapsW funcionalidade="Como usar os mapas" />
+        <MapsW funcionalidade="Como usar o VOLTA EXPRESS" />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <MapsC funcionalidade="Mapa de cargas" />

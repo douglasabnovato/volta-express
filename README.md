@@ -38,7 +38,7 @@
 - [ ] Seção feeback: abordar as pessoas que já nos acessaram para melhor direcionar
 - [ ] FAQ : pegar informações para esclarecimentos
 - [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
-  
+ 
 ### Processos
 
 - Fluxo de trabalho
@@ -50,7 +50,7 @@
 - [ ] Seção Como usar: Vídeo demonstrando como usar 
   - [ ] Vídeo: com montagem digital, self em ambiente de fundo
   - [ ] Imagem: para motorista, para anunciantes, para transportadoras
-- [ ] Google Ads: capturar informações dos acessos
+- [ ] Google Ads: capturar informações dos acessos. Link já gerado.
 - [ ] Redes sociais: 
   - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil)
   - [ ] Facebook
