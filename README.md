@@ -25,7 +25,7 @@
 - [x] mapa do geocode 
 - [x] adicionar os 2 mapas em abas conforme foco no clientDe  
 - [x] responsividade 
-- [o] abertura do mapa com mais zoom: abrir em JF. remover de JF   
+- [x] abertura do mapa com mais zoom: Mundi, Brasil, Juiz de Fora   
 - [ ] Rota em destaque: cor no mapa
 - [ ] Rota em texto: ordem das ruas 
 - [ ] Filtrar por palavra no mapa (autocomplete) - palavras chaves 
@@ -47,7 +47,7 @@
 ### Marketing
 
 - [ ] Seção institucional Sobre: vídeo, membros da equipe
-- [ ] Seção Como usar: Vídeo demonstrando como usar 
+- [ ] Seção Como usar: Vídeo demonstrando como usar o Volta Express 
   - [ ] Vídeo: com montagem digital, self em ambiente de fundo
   - [ ] Imagem: para motorista, para anunciantes, para transportadoras
 - [ ] Google Ads: capturar informações dos acessos. Link já gerado.

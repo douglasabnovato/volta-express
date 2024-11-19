@@ -32,7 +32,7 @@ export default function MapsC(props) {
           <Box sx={{ bgcolor: "#cfe8fc", width: "350", height: "400" }}>
             <iframe
               title="Google Maps de carga"
-              src="https://www.google.com/maps/d/embed?mid=1Ywi7AEJi7RkzEVGJX5CCvnz7ajSmy3g&ehbc=2E312F&ll=-21.757044853210292%2C-43.35096350639521&z=15"
+              src="https://www.google.com/maps/d/embed?mid=1Ywi7AEJi7RkzEVGJX5CCvnz7ajSmy3g&ehbc=2E312F&ll=-16.671913511766096%2C-68.70217983345472&z=3"
               width="100%"
               height="400"
               sx={{ width: "100%", height: "350" }}
@@ -44,8 +44,17 @@ export default function MapsC(props) {
   );
 }
 /**
+ 
+ Mundo:
  https://www.google.com/maps/d/embed?mid=1Ywi7AEJi7RkzEVGJX5CCvnz7ajSmy3g&ehbc=2E312F
+
+ Brasil:
+ https://www.google.com/maps/d/embed?mid=1Ywi7AEJi7RkzEVGJX5CCvnz7ajSmy3g&ehbc=2E312F&ll=-16.671913511766096%2C-68.70217983345472&z=3
+
+ Juiz de Fora:
+ https://www.google.com/maps/d/embed?mid=1Ywi7AEJi7RkzEVGJX5CCvnz7ajSmy3g&ehbc=2E312F&ll=-21.757044853210292%2C-43.35096350639521&z=15
 
  adicionar as coordenadas: parque halfeld JF
  &ll=-21.757044853210292%2C-43.35096350639521&z=15
+ 
  */
