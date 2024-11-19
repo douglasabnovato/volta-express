@@ -2,7 +2,7 @@
 
 - Incluir o design do Google Maps para dentro da aplicação
 - Focando na captação dos dados dos usuários da plataforma.
-- Branch sendo trabalhada: main, dev-volta-express-v4, volta-express-v4
+- Branches do workflow: main, dev-volta-express-v4, volta-express-v4
 
 ### MVP
 
@@ -50,7 +50,7 @@
 - [x] Seção Como usar: Vídeo demonstrando como usar o Volta Express 
   - [ ] Vídeo: com montagem digital, self em ambiente de fundo
   - [ ] Imagem: para motorista, para anunciantes, para transportadoras
-- [o] Google Ads: capturar informações dos acessos. Link já gerado.
+- [x] Google Ads: capturar informações dos acessos. Link já gerado. APERFEIÇOAR
 - [ ] Redes sociais Volta Express: 
   - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil)
   - [ ] Facebook
