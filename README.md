@@ -6,9 +6,14 @@
 
 ### MVP
 
-- [x] trocar os formulários para o domínio volta  
+- [x] Formulários no domínio volta  
 - [x] Botão de contato: Número Whatsapp
 - [x] Mobile: tres botões no hamburguer 
+
+### Processos
+
+- Fluxo de trabalho
+- Fluxo de Operação
 
 ### Telefone de contato
 
@@ -30,27 +35,19 @@
 - [ ] Rota em texto: ordem das ruas 
 - [ ] Filtrar por palavra no mapa (autocomplete) - palavras chaves 
 - [ ] Estilizar os cards de informação
-- [ ] Ao clicar em um ícone que é de rota com origem e destino, apresentar a rota em destaque.
-- [ ] Destacar o par, origem e destino dentre os demais ícones.
+- [ ] Destacar a rota ao clicar em um ícone da rota na origem ou no destino
 - [ ] Componente rect com google maps
 - [ ] Problema: "Nenhuma pessoa me contactou!": personalizar a mensagem do card.
-- [ ] Dúvidas de "Como usar o mapa?": fazer um vídeo no site
-- [ ] Seção feeback: abordar as pessoas que já nos acessaram para melhor direcionar
-- [ ] FAQ : pegar informações para esclarecimentos
+- [x] Dúvidas de "Como usar o mapa?": fazer um vídeo no site
 - [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
  
-### Processos
-
-- Fluxo de trabalho
-- Fluxo de Operação
-
 ### Marketing
 
 - [ ] Seção institucional Sobre: vídeo, membros da equipe
-- [x] Seção Como usar: Vídeo demonstrando como usar o Volta Express 
+- [ ] Seção Como usar: Vídeo demonstrando como usar funcionalidades 
   - [ ] Vídeo: com montagem digital, self em ambiente de fundo
   - [ ] Imagem: para motorista, para anunciantes, para transportadoras
-- [x] Google Ads: capturar informações dos acessos. Link já gerado. APERFEIÇOAR
+- [x] Google Ads: capturar informações dos acessos com o Link já gerado. APERFEIÇOAR
 - [ ] Redes sociais Volta Express: 
   - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil)
   - [ ] Facebook
@@ -59,6 +56,11 @@
 - [ ] Whatsapp:
   - [ ] montar copies de mensagens para abordagens
   - [ ] criar imagens para abordagens comerciais
+
+### Relacionamento com os clientes
+
+- [ ] Seção feeback: abordar as pessoas que já nos acessaram para melhor direcionar
+- [ ] Seção FAQ : pegar informações para esclarecimentos
 
 # Volta Express V3
 
