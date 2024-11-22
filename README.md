@@ -56,6 +56,9 @@
 - [ ] Whatsapp:
   - [ ] montar copies de mensagens para abordagens
   - [ ] criar imagens para abordagens comerciais
+- [ ] Seção de Planos: opções das ofertas comerciais 
+- [ ] Copy: adicionar mais elementos 
+- [ ] Copy: aperfeiçoar o storytelling 
 
 ### Relacionamento com os clientes
 
@@ -67,10 +70,7 @@
 - Focar no preenchimento dos formulários para permitir abordagens e anúncios dos stakeholders.
 
 ### Evoluções
- 
-- [ ] Seção de Planos: opções das ofertas comerciais 
-- [ ] Copy: adicionar mais elementos 
-- [ ] Copy: aperfeiçoar o storytelling 
+
 - [x] Rodapé: Link para o documento oficial da LGPD
 - [x] Rodapé: Botão de contato com Número Whatsapp
 
