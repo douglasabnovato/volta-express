@@ -1,7 +1,11 @@
 # Volta Express V4
 
+- Foco da plataforma é atrair a atenção de usuário 
+- Atração são funcionalidades e serviços que solucionam problemas dos clientes do nosso ecossistema
 - Incluir o design do Google Maps para dentro da aplicação
-- Focando na captação dos dados dos usuários da plataforma.
+- Analisar ciclo de vida dos usuários da plataforma.
+- Cérebro: automação da interação das informações dos clientes
+- DESAFIO: realizar uma viagem
 
 ### Gerais
 
@@ -12,12 +16,41 @@
   - [x] permissão dos forms
   - [x] aperfeiçoar o copy dos formulários
 
+### Seções em ordem com objetivo de
+
+- [ ] header
+- [ ] mapa
+- [ ] banner
+- [ ] depoimentos
+- [ ] video atualizado de Torres
+
 ### Portal MVP
 
 - [x] Botão de contato: Número Whatsapp
 - [x] Mobile: tres botões no hamburguer 
 - [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
 - [ ] Componente rect com google maps
+- [ ] Novo form inteligente
+  - [ ] Simples: para quem está querendo transportar a carga
+    - [ ] origem
+    - [ ] destino
+    - [ ] data opcional (sumir quando chegar a data)
+    - [ ] observações 
+    - [ ] contatos
+  - [ ] Avançado: para caminhoneiro. 
+    - [ ] primeira pergunta:se a pessoa está em transito ou está aguardando
+      - [ ] em trânsito
+        - [ ] origem
+        - [ ] destino
+        - [ ] tipo de caminhao
+        - [ ] contato
+        - [ ] observações
+      - [ ] está aguardando
+        - [ ] origem
+        - [ ] tipo de caminhão
+        - [ ] contato
+        - [ ] observações
+  
 
 ### Marketing Digital
 
@@ -26,7 +59,9 @@
   - [ ] membros da equipe
   - [ ] texto explicativo
 - [ ] Seção Como usar
-  - [ ] Vídeo com demonstração como usar as funcionalidades 
+  - [o] Vídeo com demonstração como usar as funcionalidades 
+    - [ ] dimensionar para mobile 
+    - [ ] Ferramentas usadas para gerar: wondershare filmora 14, obs studio, veed.io
   - [ ] Vídeo com montagem digital, self em ambiente de fundo
   - [ ] Texto explicativo com Imagem real de motorista, de anunciantes, de transportadoras
 - [ ] Seção de Planos: opções das ofertas comerciais 
@@ -51,6 +86,8 @@
   - [ ] Vídeos Institucionais
 - [ ] Whatsapp
   - [ ] Campanhas para aquecer os Leads
+- [ ] Roadmap de disparos
+- [ ] Roadmap de postagens
 
 ### Google Maps 
 
@@ -67,6 +104,8 @@
 
 #### Dados do marketing
 
+- [ ] Saber que os anúncios funcionaram. 
+  - [ ] Funcionar significa que o transporte aconteceu por causa do *Volta Express*
 - [ ] Google Ads
   - [ ] configurar na plataforma e capturar
   - [ ] entender as informações dos acessos com o Link em relatório
@@ -75,7 +114,7 @@
 ### Relacionamento com os clientes
 
 - [ ] Whatsapp: botão de whatsapp para conversa 
-- [ ] Seção feeback: abordar as pessoas que já nos acessaram para melhor direcionar
+- [ ] Seção feeback: espaço para OUVIR as pessoas para melhor direcionar
 - [ ] Seção FAQ : pegar informações para esclarecimentos
 
 #### Whatsapp 
@@ -89,6 +128,18 @@
 - Gestão de Negócio 
 - Gestão de Desenvolvimento
   - Branches do workflow: main, dev-volta-express-v4, volta-express-v4
+
+#### TO-DO 19-11-2024 
+
+- [ ] atualizar informações do site - mergh
+- [ ] atualizar to do no kaban teams - mergh
+- [ ] subir funcionalidades no portal - novato
+
+#### TO-DO 24-11-2024 
+
+- [ ] criar um form integrado a um bd que atualiza o mapa automaticamente - mergh
+- [ ] o banco de dados sql - torres
+- [ ] fazer a integração, forms, excel - torres e mergh
 
 # Volta Express V3
 
