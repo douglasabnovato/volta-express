@@ -16,7 +16,7 @@
   - [x] permissão dos forms
   - [x] aperfeiçoar o copy dos formulários
 
-### Seções em ordem com objetivo de
+### Seções em ordem com objetivo estratégico 
 
 - [ ] header
 - [ ] mapa
@@ -70,7 +70,7 @@
 ### Redes Sociais
 
 - [ ] Redes sociais Volta Express: 
-  - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil)
+  - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil): @voltaexpressbrasil
   - [ ] Facebook
   - [ ] Youtube: vídeos institucionais 
   - [ ] Whatsapp

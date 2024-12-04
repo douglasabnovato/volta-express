@@ -650,9 +650,7 @@ function CenteredTabs() {
   };
 
   return (
-    <Box
-      sx={{ width: "100%", bgcolor: "background.paper" }}
-    >
+    <Box sx={{ width: "100%", bgcolor: "background.paper", mt: 18 }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
@@ -685,7 +683,16 @@ export default function Blog() {
       <Header pages={pages} title="Volta Express" />
       <Container maxWidth="lg">
         <main>
+          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+            <CenteredTabs />
+          </Grid>
           <MainFeaturedPost post={mainFeaturedPost} />
+          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+            <BasicTabs />
+          </Grid>
+          <Typography variant="h5" sx={{ t: 2, mt: 4, mb: 2 }}>
+            Depoimentos
+          </Typography>
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
@@ -697,17 +704,11 @@ export default function Blog() {
             </Typography>
             <CustomizedAccordionsAnunc />
           </Grid>
-          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+          <Grid spacing={4} sx={{ t: 2, mt: 4, mb:4 }}>
             <Typography variant="h5" sx={{ t: 2, mt: 4, mb: 2 }}>
               Parceiros Transportadores
             </Typography>
             <CustomizedAccordionsTransp />
-          </Grid>
-          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
-            <BasicTabs />
-          </Grid>
-          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
-            <CenteredTabs />
           </Grid>
         </main>
       </Container>
