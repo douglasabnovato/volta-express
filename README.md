@@ -2,23 +2,22 @@
 
 - Incluir o design do Google Maps para dentro da aplicação
 - Focando na captação dos dados dos usuários da plataforma.
-- Branches do workflow: main, dev-volta-express-v4, volta-express-v4
 
-### MVP
+### Gerais
 
-- [x] Formulários no domínio volta  
+- [x] Nossa equipe de suporte atende no whatsapp, 5532998615190
+- [x] Forms para interação com clientes
+  - [x] Formulários no domínio volta
+  - [x] ter forms reservas 
+  - [x] permissão dos forms
+  - [x] aperfeiçoar o copy dos formulários
+
+### Portal MVP
+
 - [x] Botão de contato: Número Whatsapp
 - [x] Mobile: tres botões no hamburguer 
-
-### Telefone de contato
-
-- [x] Nossa equipe de suporte irá te atender no whatsapp, 5532998615190
-  
-### Forms
-
-- [x] ter forms reservas 
-- [x] permissão dos forms
-- [x] aperfeiçoar o copy dos formulários
+- [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
+- [ ] Componente rect com google maps
 
 ### Google Maps 
 
@@ -30,40 +29,66 @@
 - [ ] Rota em texto: ordem das ruas 
 - [ ] Filtrar por palavra no mapa (autocomplete) - palavras chaves 
 - [ ] Estilizar os cards de informação
-- [ ] Destacar a rota ao clicar em um ícone da rota na origem ou no destino
-- [ ] Componente rect com google maps
 - [ ] Problema: "Nenhuma pessoa me contactou!": personalizar a mensagem do card.
-- [x] Dúvidas de "Como usar o mapa?": fazer um vídeo no site
-- [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
- 
-### Marketing
+- [ ] Destacar a rota ao clicar em um ícone da rota na origem ou no destino
 
-- [ ] Seção institucional Sobre: vídeo, membros da equipe
-- [ ] Seção Como usar: Vídeo demonstrando como usar funcionalidades 
-  - [ ] Vídeo: com montagem digital, self em ambiente de fundo
-  - [ ] Imagem: para motorista, para anunciantes, para transportadoras
-- [x] Google Ads: capturar informações dos acessos com o Link já gerado. APERFEIÇOAR
-- [ ] Redes sociais Volta Express: 
-  - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil)
-  - [ ] Facebook
-  - [ ] Youtube: vídeos institucionais
-- [ ] Mkt outbound | inbound
-- [ ] Whatsapp:
-  - [ ] montar copies de mensagens para abordagens
-  - [ ] criar imagens para abordagens comerciais
+### Marketing Digital
+
+- [ ] Seção institucional Sobre 
+  - [ ] vídeo
+  - [ ] membros da equipe
+  - [ ] texto explicativo
+- [ ] Seção Como usar
+  - [ ] Vídeo com demonstração como usar as funcionalidades 
+  - [ ] Vídeo com montagem digital, self em ambiente de fundo
+  - [ ] Texto explicativo com Imagem real de motorista, de anunciantes, de transportadoras
 - [ ] Seção de Planos: opções das ofertas comerciais 
 - [ ] Copy: adicionar mais elementos 
 - [ ] Copy: aperfeiçoar o storytelling 
 
+### Redes Sociais
+
+- [ ] Redes sociais Volta Express: 
+  - [x] [Instagram](https://www.instagram.com/voltaexpressbrasil)
+  - [ ] Facebook
+  - [ ] Youtube: vídeos institucionais 
+  - [ ] Whatsapp
+
+### Outbound para redes sociais
+
+- [ ] Instagram / Facebook
+  - [ ] Stories 
+  - [ ] Feeds
+  - [ ] Vídeos Curtos
+- [ ] Youtube
+  - [ ] Vídeos Institucionais
+- [ ] Whatsapp
+  - [ ] Campanhas para aquecer os Leads
+
+#### Dados do marketing
+
+- [ ] Google Ads
+  - [ ] configurar na plataforma e capturar
+  - [ ] entender as informações dos acessos com o Link em relatório
+  - [ ] aperfeiçoar interações
+
 ### Relacionamento com os clientes
 
+- [ ] Whatsapp: botão de whatsapp para conversa 
 - [ ] Seção feeback: abordar as pessoas que já nos acessaram para melhor direcionar
 - [ ] Seção FAQ : pegar informações para esclarecimentos
 
+#### Whatsapp 
+
+- [ ] ChatBot com a api do whatsapp para atendimento inteligente
+
 ### Processos
 
-- Fluxo de trabalho
+- Fluxo de Trabalho
 - Fluxo de Operação
+- Gestão de Negócio 
+- Gestão de Desenvolvimento
+  - Branches do workflow: main, dev-volta-express-v4, volta-express-v4
 
 # Volta Express V3
 
