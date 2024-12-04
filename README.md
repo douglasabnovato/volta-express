@@ -19,19 +19,6 @@
 - [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
 - [ ] Componente rect com google maps
 
-### Google Maps 
-
-- [x] mapa do geocode 
-- [x] adicionar os 2 mapas em abas conforme foco no clientDe  
-- [x] responsividade 
-- [x] abertura do mapa com mais zoom: Mundi, Brasil, Juiz de Fora   
-- [ ] Rota em destaque: cor no mapa
-- [ ] Rota em texto: ordem das ruas 
-- [ ] Filtrar por palavra no mapa (autocomplete) - palavras chaves 
-- [ ] Estilizar os cards de informação
-- [ ] Problema: "Nenhuma pessoa me contactou!": personalizar a mensagem do card.
-- [ ] Destacar a rota ao clicar em um ícone da rota na origem ou no destino
-
 ### Marketing Digital
 
 - [ ] Seção institucional Sobre 
@@ -64,6 +51,19 @@
   - [ ] Vídeos Institucionais
 - [ ] Whatsapp
   - [ ] Campanhas para aquecer os Leads
+
+### Google Maps 
+
+- [x] mapa do geocode 
+- [x] adicionar os 2 mapas em abas conforme foco no clientDe  
+- [x] responsividade 
+- [x] abertura do mapa com mais zoom: Mundi, Brasil, Juiz de Fora   
+- [ ] Rota em destaque: cor no mapa
+- [ ] Rota em texto: ordem das ruas 
+- [ ] Filtrar por palavra no mapa (autocomplete) - palavras chaves 
+- [ ] Estilizar os cards de informação
+- [ ] Problema: "Nenhuma pessoa me contactou!": personalizar a mensagem do card.
+- [ ] Destacar a rota ao clicar em um ícone da rota na origem ou no destino
 
 #### Dados do marketing
 
