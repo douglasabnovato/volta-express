@@ -5,7 +5,7 @@
 - Incluir o design do Google Maps para dentro da aplicação
 - Analisar ciclo de vida dos usuários da plataforma.
 - Cérebro: automação da interação das informações dos clientes
-- DESAFIO: realizar uma viagem
+- DESAFIO: realizar mais viagens
 
 ### Gerais
 
@@ -51,7 +51,6 @@
         - [ ] contato
         - [ ] observações
   
-
 ### Marketing Digital
 
 - [ ] Seção institucional Sobre 
@@ -134,6 +133,8 @@
 - [ ] atualizar informações do site - mergh
 - [ ] atualizar to do no kaban teams - mergh
 - [ ] subir funcionalidades no portal - novato
+  - [ ] legenda no mapa
+  - [ ] atualizar vídeo
 
 #### TO-DO 24-11-2024 
 
