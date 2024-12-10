@@ -8,6 +8,7 @@ import PaletteIcon from "@mui/icons-material/Palette";
 import { pink } from "@mui/material/colors";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import InfoIcon from "@mui/icons-material/Info";
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 function TooltipOrigem() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -26,7 +27,7 @@ function TooltipOrigem() {
   return (
     <span>
       <IconButton onClick={handleClick}>
-        <LocalMallIcon color="success" sx={{ fontSize: 28 }} />
+        <LocalShippingIcon color="success" sx={{ fontSize: 28 }} />
       </IconButton>
       <Popover
         id={id}
