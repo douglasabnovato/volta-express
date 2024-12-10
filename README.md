@@ -116,8 +116,8 @@
 ### Relacionamento com os clientes
 
 - [x] Whatsapp: botão de whatsapp para conversa 
-- [ ] Seção feeback: espaço para OUVIR as pessoas para melhor direcionar
-- [o] Seção FAQ : 4 perguntas e respostas para esclarecimentos
+- [o] Seção feeback: espaço para OUVIR as pessoas para melhor direcionar
+- [x] Seção FAQ : 4 perguntas e respostas para esclarecimentos
 
 #### Whatsapp 
 

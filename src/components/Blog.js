@@ -786,7 +786,7 @@ function AccordionFAQ() {
           é um sistema web. Assim, para usar nossas funcionalidades é fácil.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion defaultExpanded>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
