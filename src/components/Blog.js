@@ -29,6 +29,8 @@ import Footer from "./Footer";
 
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+ 
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
 import anuncio2 from "./../assets/anunciantes/objetos-2.webp";
@@ -762,6 +764,73 @@ function TranspTabs() {
   );
 }
 
+function AccordionFAQ() {
+  return (
+    <div>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          Preciso instalar o aplicativo para usar o Volta Express?
+        </AccordionSummary>
+        <AccordionDetails>
+          <strong>Não.</strong> O{" "}
+          <a
+            href="https://volta-express.netlify.app/"
+            style={{ textDecoration: "none" }}
+          >
+            portal Volta Express
+          </a>{" "}
+          é um sistema web. Assim, para usar nossas funcionalidades é fácil.
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          Consigo usar o Volta Express gratuitamente?
+        </AccordionSummary>
+        <AccordionDetails>
+          <strong>SIM.</strong> O Volta Express tem uma versão standard para
+          permitir você usar e já ter bons resultados.
+        </AccordionDetails>
+      </Accordion>
+    </div>
+  );
+}
+
+function FaqTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box id="volta-express-transporte-com-a-gente" sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+        >
+          <Tab label="FAQ" {...a11yProps(0)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <Grid>
+          <AccordionFAQ />
+        </Grid>
+      </CustomTabPanel>
+    </Box>
+  );
+}
+
 export default function Blog() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -784,6 +853,9 @@ export default function Blog() {
           </Grid>
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <TranspTabs />
+          </Grid>
+          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+            <FaqTabs />
           </Grid>
         </main>
       </Container>
