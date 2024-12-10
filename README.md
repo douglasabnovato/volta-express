@@ -117,7 +117,7 @@
 
 - [x] Whatsapp: botão de whatsapp para conversa 
 - [o] Seção feeback: espaço para OUVIR as pessoas para melhor direcionar
-- [x] Seção FAQ : 4 perguntas e respostas para esclarecimentos
+- [x] Seção FAQ : 2 perguntas e respostas para esclarecimentos
 
 #### Whatsapp 
 
