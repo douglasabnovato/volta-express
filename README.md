@@ -31,7 +31,7 @@
 
 - [x] Botão de contato: Número Whatsapp
 - [x] Mobile: tres botões no hamburguer 
-- [x] Legenda: inserir uma legenda para os mapas 
+- [x] Legenda: inserir uma legenda para os mapas (versão v4)
 - [ ] Componente rect com google maps
 - [ ] Novo form inteligente
   - [ ] Simples: para quem está querendo transportar a carga
