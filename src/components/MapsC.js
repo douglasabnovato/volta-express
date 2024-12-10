@@ -1,6 +1,119 @@
 import React from "react";
 import { CssBaseline, Box, Container, Paper, Typography } from "@mui/material";
 
+import Popover from "@mui/material/Popover";
+import IconButton from "@mui/material/IconButton";
+import SportsScoreOutlinedIcon from "@mui/icons-material/SportsScoreOutlined";
+import PaletteIcon from "@mui/icons-material/Palette";
+import { pink } from "@mui/material/colors";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+
+function TooltipOrigem() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+
+  return (
+    <span>
+      <IconButton onClick={handleClick}>
+        <LocalMallIcon color="success" sx={{ fontSize: 28 }} />
+      </IconButton>
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "left",
+        }}
+      >
+        <Typography sx={{ p: 1 }}>Local de Origem da Carga</Typography>
+      </Popover>
+    </span>
+  );
+}
+
+function TooltipDestino() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+  return (
+    <span>
+      <IconButton onClick={handleClick}>
+        <SportsScoreOutlinedIcon color="secondary" sx={{ fontSize: 30 }} />
+      </IconButton>
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "left",
+        }}
+      >
+        <Typography sx={{ p: 1 }}>Local de Destino da Carga</Typography>
+      </Popover>
+    </span>
+  );
+}
+
+function TooltipPaleta() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+  return (
+    <span>
+      <IconButton onClick={handleClick}>
+        <PaletteIcon sx={{ color: pink[500], fontSize: 28 }} />
+      </IconButton>
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "left",
+        }}
+      >
+        <Typography sx={{ p: 1, width: 220 }}>
+          A paleta de cores conecta diretamente a carga de Origem à carga de
+          Destino
+        </Typography>
+      </Popover>
+    </span>
+  );
+}
+
 export default function MapsC(props) {
   return (
     <React.Fragment>
@@ -15,19 +128,21 @@ export default function MapsC(props) {
         <Paper
           variant="outlined"
           sx={{
-            my: { xs: 6, md: 6 },
-            p: { xs: 2, md: 8 },
+            my: { xs: 1, md: 1 },
+            p: { xs: 1, md: 1 },
           }}
         >
           <Typography
             component="h1"
             variant="h4"
-            align="center"
+            align="right"
             sx={{
               mb: 1.5,
             }}
           >
-            {props.funcionalidade}
+            <TooltipOrigem />
+            <TooltipDestino />
+            <TooltipPaleta />
           </Typography>
           <Box sx={{ bgcolor: "#cfe8fc", width: "350", height: "400" }}>
             <iframe

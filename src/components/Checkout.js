@@ -33,12 +33,12 @@ export default function Checkout(props) {
         <Paper
           variant="outlined"
           sx={{
-            my: { xs: 6, md: 6 },
-            p: { xs: 2, md: 8 },
+            my: { xs: 1, md: 1 },
+            p: { xs: 1, md: 1 },
           }}
         >
           <Typography component="h1" variant="h4" align="center">
-            {props.funcionalidade}
+             
           </Typography>
           <Box sx={{ flexGrow: 1, display: "block" }}>
             <ColorButton

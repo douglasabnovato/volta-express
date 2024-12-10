@@ -1,5 +1,5 @@
 import React from "react";
-import { CssBaseline, Box, Container, Paper, Typography } from "@mui/material";
+import { CssBaseline, Box, Container, Paper } from "@mui/material";
 
 export default function MapsW(props) {
   return (
@@ -15,20 +15,10 @@ export default function MapsW(props) {
         <Paper
           variant="outlined"
           sx={{
-            my: { xs: 6, md: 6 },
-            p: { xs: 2, md: 8 },
+            my: { xs: 1, md: 1 },
+            p: { xs: 1, md: 1 },
           }}
         >
-          <Typography
-            component="h1"
-            variant="h4"
-            align="center"
-            sx={{
-              mb: 1.5,
-            }}
-          >
-            {props.funcionalidade}
-          </Typography>
           <Box sx={{ bgcolor: "#cfe8fc" }}>
             <iframe
               width="100%"

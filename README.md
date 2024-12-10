@@ -18,17 +18,20 @@
 
 ### Seções em ordem com objetivo estratégico 
 
-- [ ] header
-- [ ] mapa
-- [ ] banner
-- [ ] depoimentos
-- [ ] video atualizado de Torres
+- header
+- como usar o volta express / mapa de cargas / mapa de motoristas
+- banner
+- transporte com a gente
+- depoimentos
+- anunciantes
+- parceiros transportadores
+- footer
 
 ### Portal MVP
 
 - [x] Botão de contato: Número Whatsapp
 - [x] Mobile: tres botões no hamburguer 
-- [ ] Legenda: inserir uma legenda ao lado do mapa : i de informações. exemplo em imagens
+- [x] Legenda: inserir uma legenda para os mapas 
 - [ ] Componente rect com google maps
 - [ ] Novo form inteligente
   - [ ] Simples: para quem está querendo transportar a carga
@@ -112,9 +115,9 @@
 
 ### Relacionamento com os clientes
 
-- [ ] Whatsapp: botão de whatsapp para conversa 
+- [x] Whatsapp: botão de whatsapp para conversa 
 - [ ] Seção feeback: espaço para OUVIR as pessoas para melhor direcionar
-- [ ] Seção FAQ : pegar informações para esclarecimentos
+- [o] Seção FAQ : pegar informações para esclarecimentos
 
 #### Whatsapp 
 
@@ -133,7 +136,8 @@
 - [ ] atualizar informações do site - mergh
 - [ ] atualizar to do no kaban teams - mergh
 - [ ] subir funcionalidades no portal - novato
-  - [ ] legenda no mapa
+  - [x] legenda nos mapas
+  - [x] transporte com a gente: ajustes de ux
   - [ ] atualizar vídeo
 
 #### TO-DO 24-11-2024 
