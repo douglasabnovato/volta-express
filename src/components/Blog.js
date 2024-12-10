@@ -676,6 +676,92 @@ function CenteredTabs() {
   );
 }
 
+function DepoTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box id="volta-express-transporte-com-a-gente" sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+        >
+          <Tab label="DEPOIMENTOS" {...a11yProps(0)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <Grid container spacing={4}>
+          {featuredPosts.map((post) => (
+            <FeaturedPost key={post.title} post={post} />
+          ))}
+        </Grid>
+      </CustomTabPanel>
+    </Box>
+  );
+}
+
+function AnuncTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box id="volta-express-transporte-com-a-gente" sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+        >
+          <Tab label="ANUNCIANTES" {...a11yProps(0)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <Grid container>
+          <CustomizedAccordionsAnunc />
+        </Grid>
+      </CustomTabPanel>
+    </Box>
+  );
+}
+
+function TranspTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box id="volta-express-transporte-com-a-gente" sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+        >
+          <Tab label="PARCEIROS TRANSPORTADORES" {...a11yProps(0)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <Grid>
+          <CustomizedAccordionsTransp />
+        </Grid>
+      </CustomTabPanel>
+    </Box>
+  );
+}
+
 export default function Blog() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -690,25 +776,14 @@ export default function Blog() {
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <BasicTabs />
           </Grid>
-          <Typography variant="h5" sx={{ t: 2, mt: 4, mb: 2 }}>
-            Depoimentos
-          </Typography>
-          <Grid container spacing={4}>
-            {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))}
+          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+            <DepoTabs />
           </Grid>
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
-            <Typography variant="h5" sx={{ t: 2, mt: 4, mb: 2 }}>
-              Anunciantes
-            </Typography>
-            <CustomizedAccordionsAnunc />
+            <AnuncTabs />
           </Grid>
-          <Grid spacing={4} sx={{ t: 2, mt: 4, mb:4 }}>
-            <Typography variant="h5" sx={{ t: 2, mt: 4, mb: 2 }}>
-              Parceiros Transportadores
-            </Typography>
-            <CustomizedAccordionsTransp />
+          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+            <TranspTabs />
           </Grid>
         </main>
       </Container>

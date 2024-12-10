@@ -5,8 +5,7 @@ import Popover from "@mui/material/Popover";
 import IconButton from "@mui/material/IconButton";
 import SportsScoreOutlinedIcon from "@mui/icons-material/SportsScoreOutlined";
 import PaletteIcon from "@mui/icons-material/Palette";
-import { pink } from "@mui/material/colors";
-import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { pink } from "@mui/material/colors"; 
 import InfoIcon from "@mui/icons-material/Info";
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
