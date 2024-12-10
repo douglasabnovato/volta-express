@@ -61,7 +61,7 @@
   - [ ] membros da equipe
   - [ ] texto explicativo
 - [ ] Seção Como usar
-  - [o] Vídeo com demonstração como usar as funcionalidades 
+  - [ ] Vídeo com demonstração como usar as funcionalidades 
     - [ ] dimensionar para mobile 
     - [ ] Ferramentas usadas para gerar: wondershare filmora 14, obs studio, veed.io
   - [ ] Vídeo com montagem digital, self em ambiente de fundo
