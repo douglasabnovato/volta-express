@@ -1,5 +1,13 @@
 # Volta Express V4
 
+Projeto nascido como Ferrex.
+
+O objetivo dessa aplicação é permitir anunciantes encontrarem parceiros transportadores para realizar seus transportes de mercadorias com eficiência.
+
+Também é nosso objetivo reduzir a zero o transporte a vazio dos veículos.
+
+## Nosso segredo 
+
 - Foco da plataforma é atrair a atenção de usuário 
 - Atração são funcionalidades e serviços que solucionam problemas dos clientes do nosso ecossistema
 - Incluir o design do Google Maps para dentro da aplicação
@@ -7,33 +15,85 @@
 - Cérebro: automação da interação das informações dos clientes
 - DESAFIO: realizar mais viagens
 
-### Gerais
+### Processos
 
+- Fluxo de Trabalho:
+  - reunião semanal para funcionalidades da aplicação
+  - reunião diretória para estratégias da startup
+- Fluxo de Operação: 
+  - caminho das informações na aplicação
+- Gestão de Negócio: to-do no kaban teams
+- Gestão de Desenvolvimento
+  - Branches do workflow: main, dev-volta-express-v4, volta-express-v4
+  - github project
+
+### Workflow
+
+- gestão do projeto detalhado no teams project
+- desenhar as regras de negócios no fluxo da aplicação 
+- esclarecer as funcionalidades
+- esclarecer as tarefas de design
+- validar novas funcionalidades
+- desenvolver novas funcionalidades
+- atualizar o mvp em produção 
+
+### Seções em ordem com objetivo estratégico 
+
+- Seção Header
+  - Logo
+  - Botão transporte com a gente
+  - Botão Venha para o volta express
+- Seção Mapas: como usar o volta express / mapa de cargas / mapa de motoristas
+- Seção Banner Principal
+- Seção Transporte com a gente
+- Seção Depoimentos
+- Seção Anunciantes
+- Seção Parceiros Transportadores
+- Seção FAQ
+- Seção Feeback
+- Seção Footer   
+
+#### Seção Footer
+   
+- [x] Rodapé: Link para o documento oficial da LGPD
+- [x] Rodapé: Botão de contato com Número Whatsapp
+
+### Relacionamento com os clientes
+ 
 - [x] Nossa equipe de suporte atende no whatsapp, 5532998615190
+- [x] Seção FAQ : 4 perguntas e respostas para esclarecimentos
+- [o] Seção Feeback: espaço para OUVIR as pessoas para melhor direcionar
+
+### Requisitos importantes
+
+- a responsividade dos componentes
+- a posição dos botões mobile e desktop
+- o desenho do favicon personalizado para salvar na área de trabalho
+- Botão de contato: Número Whatsapp
+- Mobile: tres botões no hamburguer 
+
+### Formulários
+
+Elaboração de formulários focado no preenchimento para permitir abordagens e anúncios dos stakeholders com eficiência e boas práticas de experiences.
+
+- Formulário para Cadastrar
+- Formulário do Anunciante
+- Formulário do Parceiro Transportador
+
+#### Estruturação
+
 - [x] Forms para interação com clientes
   - [x] Formulários no domínio volta
   - [x] ter forms reservas 
   - [x] permissão dos forms
   - [x] aperfeiçoar o copy dos formulários
 
-### Seções em ordem com objetivo estratégico 
+#### Estruturação Form inteligente
 
-- header
-- como usar o volta express / mapa de cargas / mapa de motoristas
-- banner
-- transporte com a gente
-- depoimentos
-- anunciantes
-- parceiros transportadores
-- footer
-
-### Portal MVP
-
-- [x] Botão de contato: Número Whatsapp
-- [x] Mobile: tres botões no hamburguer 
-- [x] Legenda: inserir uma legenda para os mapas (versão v4)
-- [ ] Componente rect com google maps
-- [ ] Novo form inteligente
+- [ ] criar um form integrado a um bd que atualiza o mapa automaticamente - mergh
+- [ ] o banco de dados sql - torres
+- [ ] fazer a integração, forms, excel - torres e mergh
+- [ ] Modelos:
   - [ ] Simples: para quem está querendo transportar a carga
     - [ ] origem
     - [ ] destino
@@ -52,8 +112,49 @@
         - [ ] origem
         - [ ] tipo de caminhão
         - [ ] contato
-        - [ ] observações
+        - [ ] observações 
+ 
+### Palesta de Cores
+
+- botão: #9C27B0
+- azul: #1976D2
+- true blue: #0073CF
+- dark blue: #00008B
+- blue gray: #6699CC
+- royal blue: #4169E1
+- misty blue: #A0AFB7
+
+### Whatsapp  
+
+- um botão de whatsapp nos anúncios com o número oficial
+
+#### Atendimento inteligente 
+
+- [ ] ChatBot com a api do whatsapp   
+
+### Copies
+
+- Os botões com textos com ordens das funcionalidades
+- Os cards com textos atrativos para conversão
+- Aperfeiçoar os textos estáticos
+
+### Google Maps 
   
+- [ ] Componente rect com google maps 
+- [x] Legenda: inserir uma legenda para os mapas 
+- [x] mapa do geocode 
+- [x] adicionar os 2 mapas em abas conforme foco no clientDe  
+- [x] responsividade 
+- [x] abertura do mapa com mais zoom: Mundi, Brasil, Juiz de Fora  
+- [x] transporte com a gente: ajustes de ux
+- [ ] atualizar vídeo
+- [ ] Rota em destaque: cor no mapa
+- [ ] Rota em texto: ordem das ruas 
+- [ ] Filtrar por palavra no mapa (autocomplete) - palavras chaves 
+- [ ] Estilizar os cards de informação
+- [ ] Problema: "Nenhuma pessoa me contactou!": personalizar a mensagem do card.
+- [ ] Destacar a rota ao clicar em um ícone da rota na origem ou no destino
+
 ### Marketing Digital
 
 - [ ] Seção institucional Sobre 
@@ -70,6 +171,15 @@
 - [ ] Copy: adicionar mais elementos 
 - [ ] Copy: aperfeiçoar o storytelling 
 
+#### Dados do marketing Digital
+
+- [ ] Saber que os anúncios funcionaram. 
+  - [ ] Funcionar significa que o transporte aconteceu por causa do *Volta Express*
+- [ ] Google Ads
+  - [ ] configurar na plataforma e capturar
+  - [ ] entender as informações dos acessos com o Link em relatório
+  - [ ] aperfeiçoar interações
+
 ### Redes Sociais
 
 - [ ] Redes sociais Volta Express: 
@@ -78,7 +188,7 @@
   - [ ] Youtube: vídeos institucionais 
   - [ ] Whatsapp
 
-### Outbound para redes sociais
+#### Outbound para redes sociais
 
 - [ ] Instagram / Facebook
   - [ ] Stories 
@@ -91,145 +201,6 @@
 - [ ] Roadmap de disparos
 - [ ] Roadmap de postagens
 
-### Google Maps 
-
-- [x] mapa do geocode 
-- [x] adicionar os 2 mapas em abas conforme foco no clientDe  
-- [x] responsividade 
-- [x] abertura do mapa com mais zoom: Mundi, Brasil, Juiz de Fora   
-- [ ] Rota em destaque: cor no mapa
-- [ ] Rota em texto: ordem das ruas 
-- [ ] Filtrar por palavra no mapa (autocomplete) - palavras chaves 
-- [ ] Estilizar os cards de informação
-- [ ] Problema: "Nenhuma pessoa me contactou!": personalizar a mensagem do card.
-- [ ] Destacar a rota ao clicar em um ícone da rota na origem ou no destino
-
-#### Dados do marketing
-
-- [ ] Saber que os anúncios funcionaram. 
-  - [ ] Funcionar significa que o transporte aconteceu por causa do *Volta Express*
-- [ ] Google Ads
-  - [ ] configurar na plataforma e capturar
-  - [ ] entender as informações dos acessos com o Link em relatório
-  - [ ] aperfeiçoar interações
-
-### Relacionamento com os clientes
-
-- [x] Whatsapp: botão de whatsapp para conversa 
-- [o] Seção feeback: espaço para OUVIR as pessoas para melhor direcionar
-- [x] Seção FAQ : 4 perguntas e respostas para esclarecimentos
-
-#### Whatsapp 
-
-- [ ] ChatBot com a api do whatsapp para atendimento inteligente
-
-### Processos
-
-- Fluxo de Trabalho
-- Fluxo de Operação
-- Gestão de Negócio 
-- Gestão de Desenvolvimento
-  - Branches do workflow: main, dev-volta-express-v4, volta-express-v4
-
-#### TO-DO 19-11-2024 
-
-- [ ] atualizar informações do site - mergh
-- [ ] atualizar to do no kaban teams - mergh
-- [ ] subir funcionalidades no portal - novato
-  - [x] legenda nos mapas
-  - [x] transporte com a gente: ajustes de ux
-  - [ ] atualizar vídeo
-
-#### TO-DO 24-11-2024 
-
-- [ ] criar um form integrado a um bd que atualiza o mapa automaticamente - mergh
-- [ ] o banco de dados sql - torres
-- [ ] fazer a integração, forms, excel - torres e mergh
-
-# Volta Express V3
-
-- Focar no preenchimento dos formulários para permitir abordagens e anúncios dos stakeholders.
-
-### Evoluções
-
-- [x] Rodapé: Link para o documento oficial da LGPD
-- [x] Rodapé: Botão de contato com Número Whatsapp
-
-### Copies
-
-- Os botões com textos com ordens das funcionalidades
-- Os cards com textos atrativos para conversão
-
-### Whatsapp e o suporte 
-
-- um botão de whatsapp nos anúncios com o número oficial
-  
-# Volta Express V2
-
-O objetivo dessa aplicação é permitir anunciantes encontrarem parceiros transportadores para realizar seus transportes de mercadorias.
-
-Também é nosso objetivo reduzir a zero o transporte a vazio dos veículos.
-
-### Informações
-
-- projeto nascido como Ferrex
-- gestão do projeto detalhado no trello
-- desenhar as regras de negócios no fluxo da aplicação 
-- esclarecer as funcionalidades
-- esclarecer as tarefas de design
-- validar novas funcionalidades
-- desenvolver novas funcionalidades
-- atualizar o mvp em produção
-
-### Organização do projeto
-
-- Componente da Página: Blog
-- Componente da AppBar: Header 
-- Componente do Banner Principal: MainFeaturedPost 
-- Componente de Depoimentos: FeaturedPost 
-- Componentes dos Formulários: Blog
-- Componente do Transporte com a gente: Checkout 
-- Componente do Rodapé: Footer
-    
-### Itens dos Formulários
-
-- Formulário para Cadastrar
-- Formulário do Anunciante
-- Formulário do Parceiro Transportador
-    
-### Identidade Visual
-
-As cores da aplicação em hexadecimal
-
-- botão: #9C27B0
-- azul: #1976D2
-- true blue: #0073CF
-- dark blue: #00008B
-- blue gray: #6699CC
-- royal blue: #4169E1
-- misty blue: #A0AFB7
-
-### Tarefas para desenvolver
-
-- a responsividade dos componentes
-- a posição dos botões
-- o desenho do favicon 
-
-# Volta Express V1
-
-- Seção Header
-  - Logo
-  - Botão transporte com a gente
-  - Botão Venha para o volta express
-- Seção Banner Principal
-- Seção Depoimentos
-- Seção Anunciantes
-- Seção Parceiros Transportadores
-- Seção Transporte com a gente
-- Seção Mapas
-- Seção Footer
-
 ### Hospedagem
 
-servidor: Netlify
-url: https://volta-express.netlify.app
+- Servidor Netlify: https://volta-express.netlify.app
