@@ -62,7 +62,7 @@ Também é nosso objetivo reduzir a zero o transporte a vazio dos veículos.
  
 - [x] Nossa equipe de suporte atende no whatsapp, 5532998615190
 - [x] Seção FAQ : 4 perguntas e respostas para esclarecimentos
-- [o] Seção Feeback: espaço para OUVIR as pessoas para melhor direcionar
+- [ ] Seção Feeback: espaço para OUVIR as pessoas para melhor direcionar
 
 ### Requisitos importantes
 

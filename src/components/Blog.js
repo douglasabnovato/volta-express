@@ -29,7 +29,7 @@ import Footer from "./Footer";
 
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
- 
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
@@ -776,10 +776,14 @@ function AccordionFAQ() {
           Preciso instalar o aplicativo para usar o Volta Express?
         </AccordionSummary>
         <AccordionDetails>
-          <strong>Não.</strong> O{" "}
+          <strong>NÃO.</strong> O{" "}
           <a
             href="https://volta-express.netlify.app/"
-            style={{ textDecoration: "none" }}
+            style={{
+              textDecoration: "none",
+              fontWeight: "bold",
+              color: "#000000",
+            }}
           >
             portal Volta Express
           </a>{" "}
@@ -797,6 +801,54 @@ function AccordionFAQ() {
         <AccordionDetails>
           <strong>SIM.</strong> O Volta Express tem uma versão standard para
           permitir você usar e já ter bons resultados.
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3-content"
+          id="panel3-header"
+        >
+          Como funciona a plataforma da Volta Express?
+        </AccordionSummary>
+        <AccordionDetails>
+          <p>
+            A Volta Express conecta motoristas autônomos a empresas que precisam
+            transportar cargas.{" "}
+          </p>
+          <p>
+            Através de nossa plataforma, você encontra as melhores oportunidades
+            de frete, otimiza suas rotas e aumenta seus ganhos.
+          </p>
+          <p>
+            Basta se cadastrar, informar seus dados e disponibilidade, e nossa
+            tecnologia fará o restante, indicando as cargas mais adequadas para
+            você.
+          </p>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel4-content"
+          id="panel4-header"
+        >
+          Quais os benefícios de utilizar a Volta Express?
+        </AccordionSummary>
+        <AccordionDetails>
+          <p>
+            A Volta Express oferece diversos benefícios para os motoristas. As
+            duas maiores são:{" "}
+          </p>
+          <p>
+            <strong>Mais cargas:</strong> Acesso a uma grande variedade de
+            cargas, garantindo que seu caminhão esteja sempre trabalhando.
+          </p>
+          <p>
+            <strong>Rotas otimizadas:</strong> Nossas ferramentas de
+            roteirização ajudam você a encontrar a rota mais eficiente,
+            economizando combustível e tempo.
+          </p>
         </AccordionDetails>
       </Accordion>
     </div>
