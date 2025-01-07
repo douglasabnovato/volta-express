@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useState } from "react";
+
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -52,6 +54,8 @@ import depositions1 from "./../assets/depositions/depositions-1.jpg";
 import depositions2 from "./../assets/depositions/depositions-2.jpg";
 import depositions3 from "./../assets/depositions/depositions-3.jpg";
 import depositions4 from "./../assets/depositions/depositions-4.jpg";
+
+import "./form.css";
 
 const themeCard = createTheme({
   palette: {
@@ -883,6 +887,70 @@ function FaqTabs() {
   );
 }
 
+function AccordionFEEDBACK() {
+  const [email, setEmail] = useState("");
+  const [mensagem, setMensagem] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Email:", email);
+    console.log("Mensagem:", mensagem);
+    // Aqui você implementaria a lógica para enviar os dados, por exemplo, para uma API
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Qual o seu melhor contato (telefone/e-mail)?:
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        O que quer falar com a gente?
+        <textarea
+          value={mensagem}
+          onChange={(e) => setMensagem(e.target.value)}
+          rows="8"
+        />
+      </label>
+      <br />
+      <button type="submit">ENVIAR MENSAGEM</button>
+    </form>
+  );
+}
+
+function FeedbackTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box id="volta-express-transporte-com-a-gente" sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+        >
+          <Tab label="FEEDBACK" {...a11yProps(0)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <Grid>
+          <AccordionFEEDBACK />
+        </Grid>
+      </CustomTabPanel>
+    </Box>
+  );
+}
+
 export default function Blog() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -908,6 +976,9 @@ export default function Blog() {
           </Grid>
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <FaqTabs />
+          </Grid>
+          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
+            <FeedbackTabs />
           </Grid>
         </main>
       </Container>
