@@ -26,6 +26,8 @@ import MapsW from "./MapsW";
 import AnunciantesForm from "./Checkout";
 import Header from "./Header";
 import MainFeaturedPost from "./MainFeaturedPost";
+import SecundFeaturedPost from "./SecundFeaturedPost";
+import ThirthFeaturedPost from "./ThirthFeaturedPost";
 import FeaturedPost from "./FeaturedPost";
 import Footer from "./Footer";
 
@@ -49,7 +51,9 @@ import transporte6 from "./../assets/transportadores/frete-pequeno-2.webp";
 import transporte7 from "./../assets/transportadores/frete-pequeno-3.webp";
 import transporte8 from "./../assets/transportadores/frete-pequeno-4.jpeg";
 import transporte9 from "./../assets/transportadores/frete-pequeno-5.webp";
-import paine1 from "./../assets/painel/carreta-3.jpg";
+import paine1 from "./../assets/painel/carreta-1.png";
+import paine2 from "./../assets/painel/carreta-2.png";
+import paine3 from "./../assets/painel/carreta-3.jpg";
 import depositions1 from "./../assets/depositions/depositions-1.jpg";
 import depositions2 from "./../assets/depositions/depositions-2.jpg";
 import depositions3 from "./../assets/depositions/depositions-3.jpg";
@@ -89,6 +93,24 @@ const mainFeaturedPost = {
   title: "Transportar a um clique",
   description:
     "Conectando destinos, impulsionando negócios: SUA CARGA, NOSSA ROTA.",
+  image: paine3,
+  imageText: "transportar",
+  linkText: "_",
+};
+
+const secundFeaturedPost = {
+  title: "Sua carga, nosso compromisso!",
+  description:
+    "Conectamos você aos melhores transportadores do mercado, garantindo entregas rápidas e seguras.",
+  image: paine2,
+  imageText: "transportar",
+  linkText: "_",
+};
+
+const thirthFeaturedPost = {
+  title: "Sua carga em boas mãos!",
+  description:
+    "Nossa equipe está comprometida em oferecer soluções personalizadas e um atendimento de excelência.",
   image: paine1,
   imageText: "transportar",
   linkText: "_",
@@ -974,12 +996,14 @@ export default function Blog() {
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <TranspTabs />
           </Grid>
+          <SecundFeaturedPost post={secundFeaturedPost} />
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <FaqTabs />
           </Grid>
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <FeedbackTabs />
           </Grid>
+          <ThirthFeaturedPost post={thirthFeaturedPost} />
         </main>
       </Container>
       <Footer
