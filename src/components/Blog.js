@@ -940,7 +940,7 @@ function AccordionFEEDBACK() {
         />
       </label>
       <br />
-      <button type="submit">ENVIAR MENSAGEM</button>
+      <button className="msgEnviar" type="submit">ENVIAR MENSAGEM</button>
     </form>
   );
 }

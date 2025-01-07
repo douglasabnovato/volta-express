@@ -7,7 +7,7 @@ export default function MapsW(props) {
       <CssBaseline />
       <Container
         component="main"
-        maxWidth="sm"
+        maxWidth="100%"
         sx={{
           mb: 4,
         }}
