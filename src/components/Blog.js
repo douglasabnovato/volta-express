@@ -1,6 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
-
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -26,14 +24,12 @@ import MapsW from "./MapsW";
 import AnunciantesForm from "./Checkout";
 import Header from "./Header";
 import MainFeaturedPost from "./MainFeaturedPost";
-import SecundFeaturedPost from "./SecundFeaturedPost";
-import ThirthFeaturedPost from "./ThirthFeaturedPost";
 import FeaturedPost from "./FeaturedPost";
 import Footer from "./Footer";
 
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-
+ 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import anuncio1 from "./../assets/anunciantes/objetos-1.webp";
@@ -51,15 +47,11 @@ import transporte6 from "./../assets/transportadores/frete-pequeno-2.webp";
 import transporte7 from "./../assets/transportadores/frete-pequeno-3.webp";
 import transporte8 from "./../assets/transportadores/frete-pequeno-4.jpeg";
 import transporte9 from "./../assets/transportadores/frete-pequeno-5.webp";
-import paine1 from "./../assets/painel/carreta-1.png";
-import paine2 from "./../assets/painel/carreta-2.png";
-import paine3 from "./../assets/painel/carreta-3.jpg";
+import paine1 from "./../assets/painel/carreta-3.jpg";
 import depositions1 from "./../assets/depositions/depositions-1.jpg";
 import depositions2 from "./../assets/depositions/depositions-2.jpg";
 import depositions3 from "./../assets/depositions/depositions-3.jpg";
 import depositions4 from "./../assets/depositions/depositions-4.jpg";
-
-import "./form.css";
 
 const themeCard = createTheme({
   palette: {
@@ -93,24 +85,6 @@ const mainFeaturedPost = {
   title: "Transportar a um clique",
   description:
     "Conectando destinos, impulsionando negócios: SUA CARGA, NOSSA ROTA.",
-  image: paine3,
-  imageText: "transportar",
-  linkText: "_",
-};
-
-const secundFeaturedPost = {
-  title: "Sua carga, nosso compromisso!",
-  description:
-    "Conectamos você aos melhores transportadores do mercado, garantindo entregas rápidas e seguras.",
-  image: paine2,
-  imageText: "transportar",
-  linkText: "_",
-};
-
-const thirthFeaturedPost = {
-  title: "Sua carga em boas mãos!",
-  description:
-    "Nossa equipe está comprometida em oferecer soluções personalizadas e um atendimento de excelência.",
   image: paine1,
   imageText: "transportar",
   linkText: "_",
@@ -802,14 +776,10 @@ function AccordionFAQ() {
           Preciso instalar o aplicativo para usar o Volta Express?
         </AccordionSummary>
         <AccordionDetails>
-          <strong>NÃO.</strong> O{" "}
+          <strong>Não.</strong> O{" "}
           <a
             href="https://volta-express.netlify.app/"
-            style={{
-              textDecoration: "none",
-              fontWeight: "bold",
-              color: "#000000",
-            }}
+            style={{ textDecoration: "none" }}
           >
             portal Volta Express
           </a>{" "}
@@ -827,54 +797,6 @@ function AccordionFAQ() {
         <AccordionDetails>
           <strong>SIM.</strong> O Volta Express tem uma versão standard para
           permitir você usar e já ter bons resultados.
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3-content"
-          id="panel3-header"
-        >
-          Como funciona a plataforma da Volta Express?
-        </AccordionSummary>
-        <AccordionDetails>
-          <p>
-            A Volta Express conecta motoristas autônomos a empresas que precisam
-            transportar cargas.{" "}
-          </p>
-          <p>
-            Através de nossa plataforma, você encontra as melhores oportunidades
-            de frete, otimiza suas rotas e aumenta seus ganhos.
-          </p>
-          <p>
-            Basta se cadastrar, informar seus dados e disponibilidade, e nossa
-            tecnologia fará o restante, indicando as cargas mais adequadas para
-            você.
-          </p>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel4-content"
-          id="panel4-header"
-        >
-          Quais os benefícios de utilizar a Volta Express?
-        </AccordionSummary>
-        <AccordionDetails>
-          <p>
-            A Volta Express oferece diversos benefícios para os motoristas. As
-            duas maiores são:{" "}
-          </p>
-          <p>
-            <strong>Mais cargas:</strong> Acesso a uma grande variedade de
-            cargas, garantindo que seu caminhão esteja sempre trabalhando.
-          </p>
-          <p>
-            <strong>Rotas otimizadas:</strong> Nossas ferramentas de
-            roteirização ajudam você a encontrar a rota mais eficiente,
-            economizando combustível e tempo.
-          </p>
         </AccordionDetails>
       </Accordion>
     </div>
@@ -909,70 +831,6 @@ function FaqTabs() {
   );
 }
 
-function AccordionFEEDBACK() {
-  const [email, setEmail] = useState("");
-  const [mensagem, setMensagem] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Email:", email);
-    console.log("Mensagem:", mensagem);
-    // Aqui você implementaria a lógica para enviar os dados, por exemplo, para uma API
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Qual o seu melhor contato (telefone/e-mail)?:
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        O que quer falar com a gente?
-        <textarea
-          value={mensagem}
-          onChange={(e) => setMensagem(e.target.value)}
-          rows="8"
-        />
-      </label>
-      <br />
-      <button className="msgEnviar" type="submit">ENVIAR MENSAGEM</button>
-    </form>
-  );
-}
-
-function FeedbackTabs() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  return (
-    <Box id="volta-express-transporte-com-a-gente" sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-          centered
-        >
-          <Tab label="FEEDBACK" {...a11yProps(0)} />
-        </Tabs>
-      </Box>
-      <CustomTabPanel value={value} index={0}>
-        <Grid>
-          <AccordionFEEDBACK />
-        </Grid>
-      </CustomTabPanel>
-    </Box>
-  );
-}
-
 export default function Blog() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -996,14 +854,9 @@ export default function Blog() {
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <TranspTabs />
           </Grid>
-          <SecundFeaturedPost post={secundFeaturedPost} />
           <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
             <FaqTabs />
           </Grid>
-          <Grid spacing={4} sx={{ t: 2, mt: 4 }}>
-            <FeedbackTabs />
-          </Grid>
-          <ThirthFeaturedPost post={thirthFeaturedPost} />
         </main>
       </Container>
       <Footer

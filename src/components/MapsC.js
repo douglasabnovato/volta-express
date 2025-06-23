@@ -120,7 +120,7 @@ export default function MapsC(props) {
       <CssBaseline />
       <Container
         component="main"
-        maxWidth="100%"
+        maxWidth="sm"
         sx={{
           mb: 4,
         }}
