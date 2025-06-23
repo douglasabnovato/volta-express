@@ -1,5 +1,7 @@
 # Volta Express V4
 
+Um projeto de inteligência em logística e interação.
+
 Um preview das últimas versões, 3 e 4, do projeto pois são importantes fluxos.
 
 ## versão 4.0 - Volta Express
