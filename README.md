@@ -1,5 +1,7 @@
 # Volta Express V4
 
+Edições importantes do projeto e anotações para subir a nova versão!
+
 Projeto nascido como Ferrex.
 
 O objetivo dessa aplicação é permitir anunciantes encontrarem parceiros transportadores para realizar seus transportes de mercadorias com eficiência.
