@@ -1,6 +1,9 @@
 # Volta Express V5
 
 Um novo modelo de negócio com inteligência para logística.
+
+A plataforma de prateleiras para dar match entre os anúncios de cargas e os transportadores cadastrados.
+
 Propósito do Volta Express é criar oportunidades para a parte mais frágil da relação desse ecossistema de Logística.
 
 ## Pages
@@ -20,7 +23,7 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 
 ### Page quero carga
 
-#### Home
+#### Seção Home
 
 - Qual o objetivo desse conteúdo?
 - Qual a objeção superada?
@@ -30,6 +33,14 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 ## Forms Jotform
 
 Plataforma de solução para capturar informações
+
+### Cadastrar Transportador (Caminhoneiro)
+
+### Cadastrar Embarcador (Quem tem a carga)
+
+### Embarcador anunciando carga
+
+### Transportador anunciando viagem
 
 ## ROADMAP 
 
