@@ -2,6 +2,28 @@
 
 Um novo modelo de negócio.
 
+## Page Home
+
+## Page Cadastrar
+
+## Page quero transportar
+
+### Home
+
+- Qual o objetivo desse conteúdo?
+- Qual a objeção superada?
+- cta para levar para a lista ativa da ação principal
+- cta para permitir anunciar 
+
+## Page quero carga
+
+### Home
+
+- Qual o objetivo desse conteúdo?
+- Qual a objeção superada?
+- cta para levar para a lista ativa da ação principal
+- cta para permitir anunciar 
+
 # Volta Express V4
 
 Um projeto de inteligência em logística e interação.
