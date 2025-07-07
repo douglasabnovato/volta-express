@@ -1,28 +1,79 @@
 # Volta Express V5
 
-Um novo modelo de negócio.
+Um novo modelo de negócio com inteligência para logística.
+Propósito do Volta Express é criar oportunidades para a parte mais frágil da relação desse ecossistema de Logística.
 
-## Page Home
-
-## Page Cadastrar
-
-## Page quero transportar
+## Pages
 
 ### Home
+
+### Page Cadastrar
+
+### Page quero transportar
+
+#### Seção Home
 
 - Qual o objetivo desse conteúdo?
 - Qual a objeção superada?
 - cta para levar para a lista ativa da ação principal
 - cta para permitir anunciar 
 
-## Page quero carga
+### Page quero carga
 
-### Home
+#### Home
 
 - Qual o objetivo desse conteúdo?
 - Qual a objeção superada?
 - cta para levar para a lista ativa da ação principal
 - cta para permitir anunciar 
+
+## Forms Jotform
+
+Plataforma de solução para capturar informações
+
+## ROADMAP 
+
+### google meu negócio 
+ 
+### redes socias
+
+## QA
+
+Desenhar os testes
+
+### PRIMEIRA TELA
+ 
+- Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express" que fica no menu ancoragem de bloco azul
+
+- A frase: "No Volta Express temos a sua solução!" a parte de "sua solução" está apagado. Sugestão mesma cor do Volta Express
+
+- Melhorar as duas frases em caixa azul e clicáveis
+sugestão: Tenho Caminhão e Busco Carga / Tenho Carga e Busco Caminhão
+
+### TELA TENHO CAMINHÃO E QUERO TRANSPORTAR MERCADORIA
+ 
+- Botão principal está abrindo nova janela e não deve abrir nova janela para que possamos analisar via Google Analytics
+
+- Trocar palavras em inglês para português
+- Melhor não ter no momento barra de pesquisa
+- No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
+- Diminuir para 6 exposições de cargas e criar paginas para ir navegando. Porém só navega quem tem cadastro
+- Comportamento diferente no Edge e mais lento para carregar
+- Mostrar nos cards o mapa, peso da carga, volume e data
+
+### TELA TENHO CARGA E QUERO ALUGAR CAMINHÃO
+ 
+- Trocar palavras em inglês para português
+- Melhor não ter no momento barra de pesquisa
+- No lugar de ter barra de pesquisa tem botão de CPA para levar para lista ativa e outro para levar para um formulário que o remetente anuncia sua disponibilidade de carga (jotform)
+- Criar paginas para ir navegando. Porém só navega quem tem cadastro
+- Comportamento diferente no Edge e mais lento para carregar
+- Mostrar nos cards o mapa, peso máximo que o caminhão suporta e data
+ 
+### TELA ENTRAR NO VOLTA EXPRESS
+ 
+- Mudar texto de inglês para português
+- Colocar formulário do jotform
 
 # Volta Express V4
 
