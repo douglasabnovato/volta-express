@@ -10,6 +10,8 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 
 ### Home
 
+será o principal ambiente de divulgação da marca Volta Express
+
 ### Page Cadastrar
 
 ### Page quero transportar
@@ -21,7 +23,7 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 - cta para levar para a lista ativa da ação principal
 - cta para permitir anunciar
 
-### Page quero carga
+### Page quero carregar
 
 #### Seção Home
 
@@ -32,15 +34,16 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 
 ## Forms Jotform
 
-Plataforma de solução para capturar informações
+Plataforma de solução para capturar informações.
+Cada formulário com seus atributos e seus respectivos objetivos.
 
-### Cadastrar Transportador (Caminhoneiro)
+### cadastrar embarcador (Quem tem a carga)
 
-### Cadastrar Embarcador (Quem tem a carga)
+### anunciar caminhão
 
-### Embarcador anunciando carga
+### cadastrar transportador (Caminhoneiro)
 
-### Transportador anunciando viagem
+### anuncar carga
 
 ## ROADMAP
 
