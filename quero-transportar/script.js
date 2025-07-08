@@ -29,5 +29,5 @@ sr.reveal(".heading", { delay: 800, origin: "top" });
 sr.reveal(".ride-container .box", { delay: 600, origin: "top" });
 sr.reveal(".services-container .box", { delay: 600, origin: "top" });
 sr.reveal(".about-container .box", { delay: 600, origin: "top" });
-sr.reveal(".reviews-container", { delay: 600, origin: "top" });
+sr.reveal(".reviews-container-edit", { delay: 600, origin: "top" });
 sr.reveal(".newsletter .box", { delay: 400, origin: "bottom" });
