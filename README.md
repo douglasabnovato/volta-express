@@ -54,37 +54,37 @@ Desenhar os testes
 
 ### PRIMEIRA TELA
  
-- Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express" que fica no menu ancoragem de bloco azul
+- [] Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express" que fica no menu ancoragem de bloco azul
 
-- A frase: "No Volta Express temos a sua solução!" a parte de "sua solução" está apagado. Sugestão mesma cor do Volta Express
+- [x] A frase: "No Volta Express temos a sua solução!" a parte de "sua solução" está apagado. Sugestão mesma cor do Volta Express
 
-- Melhorar as duas frases em caixa azul e clicáveis
+- [x] Melhorar as duas frases em caixa azul e clicáveis
 sugestão: Tenho Caminhão e Busco Carga / Tenho Carga e Busco Caminhão
 
 ### TELA TENHO CAMINHÃO E QUERO TRANSPORTAR MERCADORIA
  
-- Botão principal está abrindo nova janela e não deve abrir nova janela para que possamos analisar via Google Analytics
+- [] Botão principal está abrindo nova janela e não deve abrir nova janela para que possamos analisar via Google Analytics
 
-- Trocar palavras em inglês para português
-- Melhor não ter no momento barra de pesquisa
-- No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
-- Diminuir para 6 exposições de cargas e criar paginas para ir navegando. Porém só navega quem tem cadastro
-- Comportamento diferente no Edge e mais lento para carregar
-- Mostrar nos cards o mapa, peso da carga, volume e data
+- [] Trocar palavras em inglês para português
+- [] Melhor não ter no momento barra de pesquisa
+- [] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
+- [] Diminuir para 6 exposições de cargas e criar paginas para ir navegando. Porém só navega quem tem cadastro
+- [] Comportamento diferente no Edge e mais lento para carregar
+- [] Mostrar nos cards o mapa, peso da carga, volume e data
 
 ### TELA TENHO CARGA E QUERO ALUGAR CAMINHÃO
  
-- Trocar palavras em inglês para português
-- Melhor não ter no momento barra de pesquisa
-- No lugar de ter barra de pesquisa tem botão de CPA para levar para lista ativa e outro para levar para um formulário que o remetente anuncia sua disponibilidade de carga (jotform)
-- Criar paginas para ir navegando. Porém só navega quem tem cadastro
-- Comportamento diferente no Edge e mais lento para carregar
-- Mostrar nos cards o mapa, peso máximo que o caminhão suporta e data
+- [] Trocar palavras em inglês para português
+- [] Melhor não ter no momento barra de pesquisa
+- [] No lugar de ter barra de pesquisa tem botão de CPA para levar para lista ativa e outro para levar para um formulário que o remetente anuncia sua disponibilidade de carga (jotform)
+- [] Criar paginas para ir navegando. Porém só navega quem tem cadastro
+- [] Comportamento diferente no Edge e mais lento para carregar
+- [] Mostrar nos cards o mapa, peso máximo que o caminhão suporta e data
  
 ### TELA ENTRAR NO VOLTA EXPRESS
  
-- Mudar texto de inglês para português
-- Colocar formulário do jotform
+- [] Mudar texto de inglês para português
+- [] Colocar formulário do jotform
 
 # Volta Express V4
 

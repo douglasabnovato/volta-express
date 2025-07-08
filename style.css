@@ -15,7 +15,11 @@
   --main-color: #fe5b3d;
   --second-color: #ffac38;
   --third-color: #104ac8e4;
+  --fourth-color: #eeeff1;
+  --text-color-third: #104ac8e4;
   --text-color: #444;
+  --text-color-white: #fff;
+  --text-color-claro: #eeeff1;
   --gradient: linear-gradient(#fe5b3d, #ffac38);
 }
 
@@ -47,7 +51,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #eeeff1;
+  background-color: var(--fourth-color);
   padding: 15px 100px;
 }
 
@@ -136,7 +140,7 @@ header {
 }
 
 .form-container {
-  padding: 22px; 
+  padding: 2px;
 }
 
 .form-container .form {
@@ -147,32 +151,40 @@ header {
   position: absolute;
   bottom: 4rem;
   left: 100px;
-  background: #eeeff1;
-  padding: 20px;
+  background-color: var(--fourth-color);
+  padding: 22px;
+  width: 100%;
+  max-width: 680px;
   border-radius: 0.5rem;
 }
 
 .input-box {
-  flex: 1 1 8rem;
-  display: flex; 
+  flex: 1 1 10rem;
+  display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
-  padding: 12px;
-  width: 100%; 
-  max-width: 280px;
-  border: 3px solid var(--third-color);
-  color: var(--third-color);
+
+  max-width: 300px;
+  width: 100%;
+  padding: 14px;
+
+  background-color: var(--third-color);
+  border: 3px solid var(--third-color); 
 }
 
-.input-box:hover {
-  background-color: var(--third-color);
-  color: #fff;
+.input-box:hover {  
+  background-color: var(--main-color);
+  border: 3px solid var(--main-color);
   cursor: pointer;
 }
 
-.input-box span {
+.input-box a { 
+  color: var(--text-color-white);
   font-weight: 500;
 }
+ 
+ 
+ 
 
 /* Copyright */
 .copyright {
