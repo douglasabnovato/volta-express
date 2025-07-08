@@ -55,6 +55,10 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 
 Desenhar os testes
 
+### DevOps
+
+- [] fazer o domínio com volta express brasil: https://douglasabnovato.github.io/volta-express/
+
 ### PRIMEIRA TELA
 
 - [x] Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express" que fica no menu ancoragem de bloco azul
