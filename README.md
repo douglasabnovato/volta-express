@@ -66,12 +66,13 @@ Desenhar os testes
 
 ### TELA: TENHO CAMINHÃO E BUSCO CARGA
 
-- [] Trocar palavras em inglês para português
-- [] Melhor não ter no momento barra de pesquisa
-- [] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
-- [] Diminuir para 6 exposições de cargas e criar paginas para ir navegando. Porém só navega quem tem cadastro
-- [] Comportamento diferente no Edge e mais lento para carregar
-- [] Mostrar nos cards o mapa, peso da carga, volume e data
+- [x] Trocar palavras em inglês para português
+- [x] Melhor não ter no momento barra de pesquisa
+- [x] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
+- [x] Diminuir para 9 exposições de cargas
+- [] criar paginas para ir navegando. Porém só navega quem tem cadastro ***
+- [] Comportamento diferente no Edge e mais lento para carregar ***
+- [] Mostrar nos cards o mapa, peso da carga, volume e data 
 
 ### TELA: TENHO CARGA E BUSCO CAMINHÃO
 
