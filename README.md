@@ -10,6 +10,8 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 
 ### Home
 
+será o principal ambiente de divulgação da marca Volta Express
+
 ### Page Cadastrar
 
 ### Page quero transportar
@@ -21,7 +23,7 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 - cta para levar para a lista ativa da ação principal
 - cta para permitir anunciar
 
-### Page quero carga
+### Page quero carregar
 
 #### Seção Home
 
@@ -32,15 +34,16 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 
 ## Forms Jotform
 
-Plataforma de solução para capturar informações
+Plataforma de solução para capturar informações.
+Cada formulário com seus atributos e seus respectivos objetivos.
 
-### Cadastrar Transportador (Caminhoneiro)
+### cadastrar embarcador (Quem tem a carga)
 
-### Cadastrar Embarcador (Quem tem a carga)
+### anunciar caminhão
 
-### Embarcador anunciando carga
+### cadastrar transportador (Caminhoneiro)
 
-### Transportador anunciando viagem
+### anuncar carga
 
 ## ROADMAP
 
@@ -51,6 +54,10 @@ Plataforma de solução para capturar informações
 ## QA
 
 Desenhar os testes
+
+### DevOps
+
+- [] fazer o domínio com volta express brasil: https://douglasabnovato.github.io/volta-express/
 
 ### PRIMEIRA TELA
 
@@ -63,12 +70,13 @@ Desenhar os testes
 
 ### TELA: TENHO CAMINHÃO E BUSCO CARGA
 
-- [] Trocar palavras em inglês para português
-- [] Melhor não ter no momento barra de pesquisa
-- [] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
-- [] Diminuir para 6 exposições de cargas e criar paginas para ir navegando. Porém só navega quem tem cadastro
-- [] Comportamento diferente no Edge e mais lento para carregar
-- [] Mostrar nos cards o mapa, peso da carga, volume e data
+- [x] Trocar palavras em inglês para português
+- [x] Melhor não ter no momento barra de pesquisa
+- [x] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
+- [x] Diminuir para 9 exposições de cargas
+- [] criar paginas para ir navegando. Porém só navega quem tem cadastro ***
+- [] Comportamento diferente no Edge e mais lento para carregar ***
+- [] Mostrar nos cards o mapa, peso da carga, volume e data 
 
 ### TELA: TENHO CARGA E BUSCO CAMINHÃO
 
