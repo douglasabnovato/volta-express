@@ -16,6 +16,8 @@ será o principal ambiente de divulgação da marca Volta Express
 
 ### Page quero transportar
 
+- [] Quando clicar em transportar agora, deve cair no whats app da pessoa que está anunciando
+
 #### Seção Home
 
 - Qual o objetivo desse conteúdo?
@@ -24,6 +26,8 @@ será o principal ambiente de divulgação da marca Volta Express
 - cta para permitir anunciar
 
 ### Page quero carregar
+
+- [] Quando clicar em carregar agora, deve cair no whats app da pessoa que está anunciando
 
 #### Seção Home
 
@@ -36,6 +40,12 @@ será o principal ambiente de divulgação da marca Volta Express
 
 Plataforma de solução para capturar informações.
 Cada formulário com seus atributos e seus respectivos objetivos.
+
+- [] Após enviar, deve mostar que foi enviado para análise.
+- [] Implementar: https://www.jotform.com/help/597-how-to-get-google-maps-api-key-for-jotform-mapping-widgets/
+- [] Implementar: https://jotmap.jotform.io/
+- [] Testar Show Map Location : Para verificar se vai puxar a latitude e longitude da origem e destino do anunciante
+- [] Aperfeiçoar Design do Jotform
 
 ### cadastrar embarcador (Quem tem a carga)
 
@@ -57,7 +67,9 @@ Desenhar os testes
 
 ### Geral
 
-- [] Favicon personalizado: home, transportador, embarcador
+- [x] Favicon personalizado: home, transportador, embarcador
+- [x] Quero Transportar - Favicon: aumentar tamanho 
+- [x] Quero Transportar - Logo: aumentar tamanho 
 
 ### DevOps
 
@@ -77,10 +89,9 @@ Desenhar os testes
 - [x] Trocar palavras em inglês para português
 - [x] Melhor não ter no momento barra de pesquisa
 - [x] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
-- [x] Diminuir para 9 exposições de cargas
-- [] criar paginas para ir navegando. Porém só navega quem tem cadastro ***
-- [] Comportamento diferente no Edge e mais lento para carregar ***
+- [x] Diminuir para 9 exposições de cargas 
 - [] Mostrar nos cards o mapa, peso da carga, volume e data 
+- [] Desenvolver a funcionalidade de Newsletter
 
 ### TELA: TENHO CARGA E BUSCO CAMINHÃO
 
@@ -90,11 +101,16 @@ Desenhar os testes
 - [] Criar paginas para ir navegando. Porém só navega quem tem cadastro
 - [] Comportamento diferente no Edge e mais lento para carregar
 - [] Mostrar nos cards o mapa, peso máximo que o caminhão suporta e data
+- [] Desenvolver a funcionalidade de Newsletter
 
 ### TELA: ENTRAR NO VOLTA EXPRESS
 
 - [] Mudar texto de inglês para português
 - [] Colocar formulário do jotform
+
+### Fluxo de Telas
+
+- [] Temos que criar depois uma página pós corrida, aonde o intuito é ter uma avlaiação igual do bla bla car 
 
 # Volta Express V4
 
