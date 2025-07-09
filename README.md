@@ -80,7 +80,7 @@ Desenhar os testes
 
 ### DevOps
 
-- [ ] fazer o domínio com volta express brasil: https://douglasabnovato.github.io/volta-express/
+- [x] fazer o domínio com volta express brasil: https://douglasabnovato.github.io/volta-express-brasil/
 
 ### PRIMEIRA TELA
 
