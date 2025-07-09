@@ -156,11 +156,13 @@ header {
   padding-left: 8px;
 }
 
-.form-container form {
+.form-container .form-buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  width: 100%;
+  max-width: 520px;
+  gap: 0.7rem;
   position: absolute;
   bottom: 4rem;
   left: 100px;
@@ -169,17 +171,17 @@ header {
   border-radius: 0.5rem;
 }
 
-.input-box {
-  flex: 1 1 7rem;
+.form-container .form-buttons .input-box {
+  flex: 1 1 6rem;
   display: flex;
   flex-direction: column;
 }
 
-.input-box span {
+.form-container .form-buttons .input-box span {
   font-weight: 500;
 }
 
-.input-box input {
+.form-container .form-buttons .input-box input {
   padding: 7px;
   outline: none;
   border: none;
@@ -188,9 +190,9 @@ header {
   font-size: 1rem;
 }
 
-.form-container form .btn {
-  flex: 1 1 7rem;
-  padding: 10px 34px;
+.form-container .form-buttons .btn {
+  flex: 1 1 4rem;
+  padding: 20px 24px;
   border: none;
   border-radius: 0.5rem;
   background: #474fa0;
@@ -199,7 +201,7 @@ header {
   font-weight: 500;
 }
 
-.form-container form .btn:hover {
+.form-container .form-buttons .btn:hover {
   background: var(--main-color);
   cursor: pointer;
 }
@@ -405,12 +407,20 @@ header {
   font-size: 1.8rem;
 }
 
+.newsletter p {
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+  max-width: 920px;
+}
+
 .newsletter .box {
-  margin-top: 1rem;
+  margin-top: 2rem;
   background: #fff;
   border-radius: 0.5rem;
   padding: 4px 8px;
-  width: 350px;
+  width: 100%;
+  max-width: 920px;
   display: flex;
   justify-content: space-between;
 }
@@ -418,6 +428,8 @@ header {
 .newsletter .box input {
   border: none;
   outline: none;
+  width: 100%;
+  max-width: 680px;
 }
 
 .newsletter .box .btn {
@@ -425,6 +437,52 @@ header {
   color: #fff;
   padding: 8px 20px;
   border-radius: 0.5rem;
+}
+
+/* Advertise Cargo */
+.advertise-cargo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.rev-img {
+  width: 70px;
+  height: 70px;
+}
+
+.rev-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--second-color);
+}
+
+.advertise-cargo-container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.advertise-cargo-container .box h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.advertise-cargo-container .box p {
+  font-style: italic;
+}
+
+.advertise-cargo-container .box .stars .bx {
+  color: var(--main-color);
 }
 
 /* Copyright */
