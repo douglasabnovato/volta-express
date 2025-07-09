@@ -14,11 +14,12 @@ Será o principal ambiente de divulgação da marca Volta Express
 ### Page Cadastrar
 
 Teremos uma home de login para se identificar como transportador e embarcador.
-Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 - [ ] login home  
 - [ ] login transportador
 - [ ] login embarcador
+
+Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 ### Page quero transportar
 
