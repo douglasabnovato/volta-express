@@ -51,7 +51,7 @@ header {
 }
 
 .logo img {
-  width: 40px;
+  width: 68px;
 }
 
 .navbar {
@@ -136,12 +136,24 @@ header {
 
 .app-stores {
   display: flex;
+  cursor: pointer;
+}
+
+.app-stores a {
+  display: flex;
+  vertical-align: text-top;
+  color: #474fa0;
+  font-weight: 500;
+}
+.app-stores a:hover {
+  font-weight: 700;
 }
 
 .app-stores img {
-  width: 100px;
+  width: 100%;
+  max-width: 60px;
   margin-right: 1rem;
-  cursor: pointer;
+  padding-left: 8px;
 }
 
 .form-container form {
