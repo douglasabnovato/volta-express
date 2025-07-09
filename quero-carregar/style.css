@@ -145,7 +145,7 @@ header {
   color: #474fa0;
   font-weight: 500;
 }
-.app-stores a:hover {  
+.app-stores a:hover {
   font-weight: 700;
 }
 
@@ -406,12 +406,20 @@ header {
   font-size: 1.8rem;
 }
 
+.newsletter p {
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+  max-width: 920px;
+}
+
 .newsletter .box {
-  margin-top: 1rem;
+  margin-top: 2rem;
   background: #fff;
   border-radius: 0.5rem;
   padding: 4px 8px;
-  width: 350px;
+  width: 100%;
+  max-width: 920px;
   display: flex;
   justify-content: space-between;
 }
@@ -419,6 +427,8 @@ header {
 .newsletter .box input {
   border: none;
   outline: none;
+  width: 100%;
+  max-width: 680px;
 }
 
 .newsletter .box .btn {
@@ -429,6 +439,19 @@ header {
 }
 
 /* Anunciar caminhão (advertise truck) */
+.advertise-truck .heading {
+  text-align: center;
+}
+
+.advertise-truck .heading span {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.advertise-truck .heading h1 {
+  font-size: 2rem;
+}
+
 .advertise-truck-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
