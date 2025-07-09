@@ -1,18 +1,24 @@
-# Volta Express Brasil V5
+# Volta Express Brasil 
+## V5
 
 Um novo modelo de negócio com inteligência para logística.
-
 A plataforma de prateleiras para dar match entre os anúncios de cargas e os transportadores cadastrados.
-
 Propósito do Volta Express é criar oportunidades para a parte mais frágil da relação desse ecossistema de Logística.
 
 ## Pages
 
 ### Home
 
-será o principal ambiente de divulgação da marca Volta Express
+Será o principal ambiente de divulgação da marca Volta Express
 
 ### Page Cadastrar
+
+Teremos uma home de login para se identificar como transportador e embarcador.
+Tratar seção e validação. cadastrar, entrar, trocar senha.
+
+- [ ] login home  
+- [ ] login transportador
+- [ ] login embarcador
 
 ### Page quero transportar
 
