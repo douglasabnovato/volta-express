@@ -1,4 +1,4 @@
-# Volta Express V5
+# Volta Express Brasil V5
 
 Um novo modelo de negócio com inteligência para logística.
 
@@ -54,6 +54,10 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 ## QA
 
 Desenhar os testes
+
+### Geral
+
+- [] Favicon personalizado: home, transportador, embarcador
 
 ### DevOps
 
