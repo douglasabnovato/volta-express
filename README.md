@@ -10,20 +10,11 @@ Propósito do Volta Express é criar oportunidades para a parte mais frágil da 
 ### Home
 
 Será o principal ambiente de divulgação da marca Volta Express
-
-### Page Cadastrar
-
-Teremos uma home de login para se identificar como transportador e embarcador.
-
-- [ ] login home  
-- [ ] login transportador
-- [ ] login embarcador
-
-Tratar seção e validação. cadastrar, entrar, trocar senha.
+Opção de persona: Transportador ou Embarcador
 
 ### Page quero transportar
 
-- [ ] Quando clicar em transportar agora, deve cair no whats app da pessoa que está anunciando
+- [ ] Quando clicar em transportar agora, deve cair no whatsapp da pessoa que está anunciando
 
 #### Seção Home
 
@@ -34,7 +25,7 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 ### Page quero carregar
 
-- [ ] Quando clicar em carregar agora, deve cair no whats app da pessoa que está anunciando
+- [ ] Quando clicar em carregar agora, deve cair no whatsapp da pessoa que está anunciando
 
 #### Seção Home
 
@@ -42,6 +33,18 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 - Qual a objeção superada?
 - cta para levar para a lista ativa da ação principal
 - cta para permitir anunciar
+
+### Page Cadastrar
+
+Teremos uma home de login para se identificar como transportador ou embarcador.
+
+- [ ] login home  
+- [ ] login transportador
+- [ ] login embarcador
+
+Tratar seção e validação. cadastrar, entrar, trocar senha.
+
+- [ ] validações
 
 ## Forms Jotform
 
@@ -56,17 +59,45 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 
 ### cadastrar embarcador (Quem tem a carga)
 
+- [ ] listar atributos
+- [ ] ajustar design
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
+
+
 ### anunciar caminhão
+
+- [ ] listar atributos
+- [ ] ajustar design
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
 
 ### cadastrar transportador (Caminhoneiro)
 
+- [ ] listar atributos
+- [ ] ajustar design
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
+
 ### anunciar carga
+
+- [ ] listar atributos
+- [ ] ajustar design
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
 
 ## ROADMAP
 
 ### google meu negócio
 
+- configurar atributos para gerar informações
+
 ### redes socias
+
+- analisar quais perfis são estratégicos
+- criar perfis
+- criar, validar conteúdos
+- agendar e compartilhar conteúdo
 
 ## QA
 
@@ -97,17 +128,18 @@ Desenhar os testes
 - [x] Melhor não ter no momento barra de pesquisa
 - [x] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
 - [x] Diminuir para 9 exposições de cargas 
+- [ ] Criar paginação dos anúncios para ir navegando para modo logado
 - [ ] Mostrar nos cards o mapa, peso da carga, volume e data 
 - [ ] Desenvolver a funcionalidade de Newsletter
 
 ### TELA: TENHO CARGA E BUSCO CAMINHÃO
 
-- [ ] Trocar palavras em inglês para português
-- [ ] Melhor não ter no momento barra de pesquisa
-- [ ] No lugar de ter barra de pesquisa tem botão de CPA para levar para lista ativa e outro para levar para um formulário que o remetente anuncia sua disponibilidade de carga (jotform)
-- [ ] Criar paginas para ir navegando. Porém só navega quem tem cadastro
-- [ ] Comportamento diferente no Edge e mais lento para carregar
-- [ ] Mostrar nos cards o mapa, peso máximo que o caminhão suporta e data
+- [x] Trocar palavras em inglês para português
+- [x] Melhor não ter no momento barra de pesquisa
+- [x] No lugar de ter barra de pesquisa tem botão de CPA para levar para lista ativa e outro para levar para um formulário que o remetente anuncia sua disponibilidade de carga (jotform)
+- [x] Diminuir para 9 exposições de cargas 
+- [ ] Criar paginação dos anúncios para ir navegando para modo logado
+- [ ] Mostrar nos cards o mapa, peso da carga, volume e data 
 - [ ] Desenvolver a funcionalidade de Newsletter
 
 ### TELA: ENTRAR NO VOLTA EXPRESS
