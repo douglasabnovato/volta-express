@@ -55,6 +55,10 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 - [ ] validações
 
+### Anúncios
+
+- [ ] Botão de whatsapp de cada card de anúncio com o número de contato do respectivo anúncio
+
 ## Forms
 
 ### Google
@@ -177,10 +181,23 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 
 ### Comunicação
 
-Criar e-mails especializados:
+#### E-mail especializados:
 
   - marketing@voltaexpressbrasil.com 
   - vendas@voltaexpressbrasil.com 
+
+#### Whatsapp
+
+  - alterar o nome e ícone no whatsapp para Volta Express Brasil
+      - Volta Express Brasil : suporte 
+      - Volta Express Brasil | Equipe : equipe Volta Express
+
+### Suporte
+
+- whatsapp de suporte:
+  - mensagem do botão do whatsapp
+    - Olá! Gostei do seu anúncio no Volta Express Brasil - Carregar Agora! Quero saber mais detalhes.
+    - Olá! Gostei do seu anúncio no Volta Express Brasil - Transportar Agora! Quero saber mais detalhes.
 
 ## QA
 
