@@ -46,7 +46,27 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 - [ ] validações
 
-## Forms Jotform
+## Forms 
+
+### Microsoft 
+
+#### Embarcador
+
+- [ ] Anúncio do Embarcador (anúncio de viagem):
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEERHf9DlfKV6ExlJWAqO2rkrEfiDm7j52nJ8QE3pMg809-g/viewform?embedded=true" width="640" height="2244" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] Cadastro do Embarcador (cadastro de embarcador e caminhão):
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtUzKmapxQKWFjIaADxmI2nyOyvyELG0E9GFMkmQCvwBCfFg/viewform?embedded=true" width="640" height="1714" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+#### Transportador
+
+- [ ] Anúncio do Transportador (anúncio da carga ):
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFjrVBNm2cwfAl7l9CuvAyxEHsomHJIF6AvvLOX7YygpbinA/viewform?embedded=true" width="640" height="2295" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] Cadastro do Transportador (cadastro de transportador)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSft9tp8rgdYr8ZQ3-QJlUcNulJa1GfDmeSsezeH1joUDah5uQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+### Jotform
 
 Plataforma de solução para capturar informações.
 Cada formulário com seus atributos e seus respectivos objetivos.
@@ -63,7 +83,6 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 - [ ] ajustar design
 - [ ] ajustar imagens
 - [ ] apresentar mensagem ao terminar envio
-
 
 ### anunciar caminhão
 
