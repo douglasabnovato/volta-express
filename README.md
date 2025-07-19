@@ -61,23 +61,47 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 #### Embarcador
 
-    - [ ] estilizar dentro do form
-    - [ ] remover cabeçalho
-    - [ ] personalizar resposta ao final
+- [ ] Cadastro do Embarcador (cadastro de embarcador e caminhão):
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtUzKmapxQKWFjIaADxmI2nyOyvyELG0E9GFMkmQCvwBCfFg/viewform?embedded=true" width="640" height="1714" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio 
 
 - [ ] Anúncio do Embarcador (anúncio de viagem):
+
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEERHf9DlfKV6ExlJWAqO2rkrEfiDm7j52nJ8QE3pMg809-g/viewform?embedded=true" width="640" height="2244" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 
-- [ ] Cadastro do Embarcador (cadastro de embarcador e caminhão):
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtUzKmapxQKWFjIaADxmI2nyOyvyELG0E9GFMkmQCvwBCfFg/viewform?embedded=true" width="640" height="1714" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
 
 #### Transportador
 
+- [ ] Cadastro do Transportador (cadastro de transportador)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSft9tp8rgdYr8ZQ3-QJlUcNulJa1GfDmeSsezeH1joUDah5uQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
+
 - [ ] Anúncio do Transportador (anúncio da carga ):
+
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFjrVBNm2cwfAl7l9CuvAyxEHsomHJIF6AvvLOX7YygpbinA/viewform?embedded=true" width="640" height="2295" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 
-- [ ] Cadastro do Transportador (cadastro de transportador)
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSft9tp8rgdYr8ZQ3-QJlUcNulJa1GfDmeSsezeH1joUDah5uQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
 
 ### Jotform
 
@@ -137,35 +161,7 @@ Cada formulário com seus atributos e seus respectivos objetivos.
   );
 </script>
 ```
-
-### cadastrar embarcador (Quem tem a carga)
-
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
-
-### anunciar caminhão
-
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
-
-### cadastrar transportador (Caminhoneiro)
-
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
-
-### anunciar carga
-
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
-
+ 
 ## ROADMAP
 
 ### google meu negócio
