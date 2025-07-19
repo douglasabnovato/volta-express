@@ -1,4 +1,5 @@
-# Volta Express Brasil 
+# Volta Express Brasil
+
 ## V5
 
 Um novo modelo de negócio com inteligência para logística.
@@ -38,7 +39,7 @@ Opção de persona: Transportador ou Embarcador
 
 Teremos uma home de login para se identificar como transportador ou embarcador.
 
-- [ ] login home  
+- [ ] login home
 - [ ] login transportador
 - [ ] login embarcador
 
@@ -46,14 +47,15 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 - [ ] validações
 
-## Forms 
+## Forms
 
-### Microsoft 
+### Microsoft
 
 #### Embarcador
 
 - [ ] Anúncio do Embarcador (anúncio de viagem):
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEERHf9DlfKV6ExlJWAqO2rkrEfiDm7j52nJ8QE3pMg809-g/viewform?embedded=true" width="640" height="2244" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    - [ ] estilizar dentro do form
 
 - [ ] Cadastro do Embarcador (cadastro de embarcador e caminhão):
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtUzKmapxQKWFjIaADxmI2nyOyvyELG0E9GFMkmQCvwBCfFg/viewform?embedded=true" width="640" height="1714" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
@@ -76,6 +78,54 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 - [ ] Implementar: https://jotmap.jotform.io/
 - [ ] Testar Show Map Location : Para verificar se vai puxar a latitude e longitude da origem e destino do anunciante
 - [ ] Aperfeiçoar Design do Jotform
+
+- Anunciar carga:
+
+```html
+<iframe
+  id="JotFormIFrame-250908223798668"
+  title="Detalhes Viagem"
+  onload="window.parent.scrollTo(0,0)"
+  allowtransparency="true"
+  allow="geolocation; microphone; camera; fullscreen; payment"
+  src="https://form.jotform.com/250908223798668"
+  frameborder="0"
+  style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+  scrolling="no"
+>
+</iframe>
+<script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+<script>
+  window.jotformEmbedHandler(
+    "iframe[id='JotFormIFrame-250908223798668']",
+    "https://form.jotform.com/"
+  );
+</script>
+```
+
+- Anunciar viagem:
+
+```html
+<iframe
+  id="JotFormIFrame-250906267526057"
+  title="Anunciar Viagem do Caminhão"
+  onload="window.parent.scrollTo(0,0)"
+  allowtransparency="true"
+  allow="geolocation; microphone; camera; fullscreen; payment"
+  src="https://form.jotform.com/250906267526057"
+  frameborder="0"
+  style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+  scrolling="no"
+>
+</iframe>
+<script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+<script>
+  window.jotformEmbedHandler(
+    "iframe[id='JotFormIFrame-250906267526057']",
+    "https://form.jotform.com/"
+  );
+</script>
+```
 
 ### cadastrar embarcador (Quem tem a carga)
 
@@ -125,8 +175,8 @@ Desenhar os testes
 ### Geral
 
 - [x] Favicon personalizado: home, transportador, embarcador
-- [x] Quero Transportar - Favicon: aumentar tamanho 
-- [x] Quero Transportar - Logo: aumentar tamanho 
+- [x] Quero Transportar - Favicon: aumentar tamanho
+- [x] Quero Transportar - Logo: aumentar tamanho
 
 ### DevOps
 
@@ -146,9 +196,9 @@ Desenhar os testes
 - [x] Trocar palavras em inglês para português
 - [x] Melhor não ter no momento barra de pesquisa
 - [x] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
-- [x] Diminuir para 9 exposições de cargas 
+- [x] Diminuir para 9 exposições de cargas
 - [ ] Criar paginação dos anúncios para ir navegando para modo logado
-- [ ] Mostrar nos cards o mapa, peso da carga, volume e data 
+- [ ] Mostrar nos cards o mapa, peso da carga, volume e data
 - [ ] Desenvolver a funcionalidade de Newsletter
 
 ### TELA: TENHO CARGA E BUSCO CAMINHÃO
@@ -156,9 +206,9 @@ Desenhar os testes
 - [x] Trocar palavras em inglês para português
 - [x] Melhor não ter no momento barra de pesquisa
 - [x] No lugar de ter barra de pesquisa tem botão de CPA para levar para lista ativa e outro para levar para um formulário que o remetente anuncia sua disponibilidade de carga (jotform)
-- [x] Diminuir para 9 exposições de cargas 
+- [x] Diminuir para 9 exposições de cargas
 - [ ] Criar paginação dos anúncios para ir navegando para modo logado
-- [ ] Mostrar nos cards o mapa, peso da carga, volume e data 
+- [ ] Mostrar nos cards o mapa, peso da carga, volume e data
 - [ ] Desenvolver a funcionalidade de Newsletter
 
 ### TELA: ENTRAR NO VOLTA EXPRESS
@@ -168,7 +218,7 @@ Desenhar os testes
 
 ### Fluxo de Telas
 
-- [ ] Temos que criar depois uma página pós corrida, aonde o intuito é ter uma avlaiação igual do bla bla car 
+- [ ] Temos que criar depois uma página pós corrida, aonde o intuito é ter uma avlaiação igual do bla bla car
 
 # Volta Express V4
 
