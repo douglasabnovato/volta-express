@@ -49,13 +49,16 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 ## Forms
 
-### Microsoft
+### Google
 
 #### Embarcador
 
+    - [ ] estilizar dentro do form
+    - [ ] remover cabeçalho
+    - [ ] personalizar resposta ao final
+    
 - [ ] Anúncio do Embarcador (anúncio de viagem):
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEERHf9DlfKV6ExlJWAqO2rkrEfiDm7j52nJ8QE3pMg809-g/viewform?embedded=true" width="640" height="2244" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-    - [ ] estilizar dentro do form
 
 - [ ] Cadastro do Embarcador (cadastro de embarcador e caminhão):
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtUzKmapxQKWFjIaADxmI2nyOyvyELG0E9GFMkmQCvwBCfFg/viewform?embedded=true" width="640" height="1714" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
