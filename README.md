@@ -21,6 +21,8 @@ Seguimentação de persona: Transportador ou Embarcador
   - mensagem: Olá! Gostei do seu anúncio no Volta Express Brasil - Transportar Agora! Quero saber mais detalhes. : https://wa.me/5532998615190?text=Ol%C3%A1!%20Gostei%20do%20seu%20an%C3%BAncio%20no%20Volta%20Express%20Brasil%20-%20Transportar%20Agora!%20Quero%20saber%20mais%20detalhes.
   - Botão estilizado e com ícone do whatsapp
 
+- [ ] Botão de whatsapp de cada card de anúncio com o número de contato do respectivo anúncio
+
 #### Seção Home
 
 - [ ] Foco de ação para o cliente
@@ -34,6 +36,8 @@ Seguimentação de persona: Transportador ou Embarcador
 - [x] Quando clicar em carregar agora, deve cair no whatsapp da pessoa que está anunciando
   - mensagem: Olá! Gostei do seu anúncio no Volta Express Brasil - Carregar Agora! Quero saber mais detalhes. : https://wa.me/5532998615190?text=Ol%C3%A1!%20Gostei%20do%20seu%20an%C3%BAncio%20no%20Volta%20Express%20Brasil%20-%20Carregar%20Agora!%20Quero%20saber%20mais%20detalhes.  
   - Botão estilizado e com ícone do whatsapp
+
+- [ ] Botão de whatsapp de cada card de anúncio com o número de contato do respectivo anúncio
 
 #### Seção Home
 
@@ -53,11 +57,7 @@ Teremos uma home de login para se identificar como transportador ou embarcador.
 
 Tratar seção e validação. cadastrar, entrar, trocar senha.
 
-- [ ] validações
-
-### Anúncios
-
-- [ ] Botão de whatsapp de cada card de anúncio com o número de contato do respectivo anúncio
+- [ ] validações 
 
 ## Forms
 
