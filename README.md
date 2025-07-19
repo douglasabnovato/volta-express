@@ -1,44 +1,53 @@
-# Volta Express Brasil 
+# Volta Express Brasil
+
 ## V5
 
 Um novo modelo de negócio com inteligência para logística.
+
 A plataforma de prateleiras para dar match entre os anúncios de cargas e os transportadores cadastrados.
-Propósito do Volta Express é criar oportunidades para a parte mais frágil da relação desse ecossistema de Logística.
+
+Propósito do Volta Express Brasil é criar oportunidades para a parte mais frágil da relação desse ecossistema de Logística.
 
 ## Pages
 
 ### Home
 
-Será o principal ambiente de divulgação da marca Volta Express
-Opção de persona: Transportador ou Embarcador
+Será o principal ambiente de divulgação da marca Volta Express Brasil
+Seguimentação de persona: Transportador ou Embarcador
 
 ### Page quero transportar
 
-- [ ] Quando clicar em transportar agora, deve cair no whatsapp da pessoa que está anunciando
+- [x] Quando clicar em "transportar agora", deve cair no whatsapp da pessoa que está anunciando (link: https://wa.me/5532998615190)
+  - mensagem: Olá! Gostei do seu anúncio no Volta Express Brasil - Transportar Agora! Quero saber mais detalhes. : https://wa.me/5532998615190?text=Ol%C3%A1!%20Gostei%20do%20seu%20an%C3%BAncio%20no%20Volta%20Express%20Brasil%20-%20Transportar%20Agora!%20Quero%20saber%20mais%20detalhes.
+  - Botão estilizado e com ícone do whatsapp
 
 #### Seção Home
 
-- Qual o objetivo desse conteúdo?
-- Qual a objeção superada?
-- cta para levar para a lista ativa da ação principal
-- cta para permitir anunciar
+- [ ] Foco de ação para o cliente
+  - Qual o objetivo desse conteúdo?
+  - Qual a objeção superada?
+  - cta para levar para a lista ativa da ação principal
+  - cta para permitir anunciar
 
 ### Page quero carregar
 
-- [ ] Quando clicar em carregar agora, deve cair no whatsapp da pessoa que está anunciando
+- [x] Quando clicar em carregar agora, deve cair no whatsapp da pessoa que está anunciando
+  - mensagem: Olá! Gostei do seu anúncio no Volta Express Brasil - Carregar Agora! Quero saber mais detalhes. : https://wa.me/5532998615190?text=Ol%C3%A1!%20Gostei%20do%20seu%20an%C3%BAncio%20no%20Volta%20Express%20Brasil%20-%20Carregar%20Agora!%20Quero%20saber%20mais%20detalhes.  
+  - Botão estilizado e com ícone do whatsapp
 
 #### Seção Home
 
-- Qual o objetivo desse conteúdo?
-- Qual a objeção superada?
-- cta para levar para a lista ativa da ação principal
-- cta para permitir anunciar
+- [ ] Foco de ação para o cliente
+  - Qual o objetivo desse conteúdo?
+  - Qual a objeção superada?
+  - cta para levar para a lista ativa da ação principal
+  - cta para permitir anunciar
 
 ### Page Cadastrar
 
 Teremos uma home de login para se identificar como transportador ou embarcador.
 
-- [ ] login home  
+- [ ] home login
 - [ ] login transportador
 - [ ] login embarcador
 
@@ -46,46 +55,117 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 
 - [ ] validações
 
-## Forms Jotform
+### Anúncios
+
+- [ ] Botão de whatsapp de cada card de anúncio com o número de contato do respectivo anúncio
+
+## Forms
+
+### Google
+
+#### Embarcador
+
+- [ ] Cadastro do Embarcador (cadastro de embarcador e caminhão):
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtUzKmapxQKWFjIaADxmI2nyOyvyELG0E9GFMkmQCvwBCfFg/viewform?embedded=true" width="640" height="1714" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio 
+
+- [ ] Anúncio do Embarcador (anúncio de viagem):
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEERHf9DlfKV6ExlJWAqO2rkrEfiDm7j52nJ8QE3pMg809-g/viewform?embedded=true" width="640" height="2244" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
+
+#### Transportador
+
+- [ ] Cadastro do Transportador (cadastro de transportador)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSft9tp8rgdYr8ZQ3-QJlUcNulJa1GfDmeSsezeH1joUDah5uQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
+
+- [ ] Anúncio do Transportador (anúncio da carga ):
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFjrVBNm2cwfAl7l9CuvAyxEHsomHJIF6AvvLOX7YygpbinA/viewform?embedded=true" width="640" height="2295" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+- [ ] listar atributos
+- [ ] ajustar design, dentro do form
+- [ ] remover cabeçalho
+- [ ] ajustar imagens
+- [ ] apresentar mensagem ao terminar envio
+
+### Jotform
 
 Plataforma de solução para capturar informações.
 Cada formulário com seus atributos e seus respectivos objetivos.
 
-- [ ] Após enviar, deve mostar que foi enviado para análise.
-- [ ] Implementar: https://www.jotform.com/help/597-how-to-get-google-maps-api-key-for-jotform-mapping-widgets/
-- [ ] Implementar: https://jotmap.jotform.io/
-- [ ] Testar Show Map Location : Para verificar se vai puxar a latitude e longitude da origem e destino do anunciante
-- [ ] Aperfeiçoar Design do Jotform
+- Após enviar, deve mostar que foi enviado para análise.
+- Implementar: https://www.jotform.com/help/597-how-to-get-google-maps-api-key-for-jotform-mapping-widgets/
+- Implementar: https://jotmap.jotform.io/
+- Testar Show Map Location : Para verificar se vai puxar a latitude e longitude da origem e destino do anunciante
+- Aperfeiçoar Design do Jotform
 
-### cadastrar embarcador (Quem tem a carga)
+- Anunciar carga:
 
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
+```html
+<iframe
+  id="JotFormIFrame-250908223798668"
+  title="Detalhes Viagem"
+  onload="window.parent.scrollTo(0,0)"
+  allowtransparency="true"
+  allow="geolocation; microphone; camera; fullscreen; payment"
+  src="https://form.jotform.com/250908223798668"
+  frameborder="0"
+  style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+  scrolling="no"
+>
+</iframe>
+<script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+<script>
+  window.jotformEmbedHandler(
+    "iframe[id='JotFormIFrame-250908223798668']",
+    "https://form.jotform.com/"
+  );
+</script>
+```
 
+- Anunciar viagem:
 
-### anunciar caminhão
-
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
-
-### cadastrar transportador (Caminhoneiro)
-
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
-
-### anunciar carga
-
-- [ ] listar atributos
-- [ ] ajustar design
-- [ ] ajustar imagens
-- [ ] apresentar mensagem ao terminar envio
-
+```html
+<iframe
+  id="JotFormIFrame-250906267526057"
+  title="Anunciar Viagem do Caminhão"
+  onload="window.parent.scrollTo(0,0)"
+  allowtransparency="true"
+  allow="geolocation; microphone; camera; fullscreen; payment"
+  src="https://form.jotform.com/250906267526057"
+  frameborder="0"
+  style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+  scrolling="no"
+>
+</iframe>
+<script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+<script>
+  window.jotformEmbedHandler(
+    "iframe[id='JotFormIFrame-250906267526057']",
+    "https://form.jotform.com/"
+  );
+</script>
+```
+ 
 ## ROADMAP
 
 ### google meu negócio
@@ -99,6 +179,26 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 - criar, validar conteúdos
 - agendar e compartilhar conteúdo
 
+### Comunicação
+
+#### E-mail especializados:
+
+  - marketing@voltaexpressbrasil.com 
+  - vendas@voltaexpressbrasil.com 
+
+#### Whatsapp
+
+  - alterar o nome e ícone no whatsapp para Volta Express Brasil
+      - Volta Express Brasil : suporte 
+      - Volta Express Brasil | Equipe : equipe Volta Express
+
+### Suporte
+
+- whatsapp de suporte:
+  - mensagem do botão do whatsapp
+    - Olá! Gostei do seu anúncio no Volta Express Brasil - Carregar Agora! Quero saber mais detalhes.
+    - Olá! Gostei do seu anúncio no Volta Express Brasil - Transportar Agora! Quero saber mais detalhes.
+
 ## QA
 
 Desenhar os testes
@@ -106,8 +206,8 @@ Desenhar os testes
 ### Geral
 
 - [x] Favicon personalizado: home, transportador, embarcador
-- [x] Quero Transportar - Favicon: aumentar tamanho 
-- [x] Quero Transportar - Logo: aumentar tamanho 
+- [x] Quero Transportar - Favicon: aumentar tamanho
+- [x] Quero Transportar - Logo: aumentar tamanho
 
 ### DevOps
 
@@ -115,8 +215,8 @@ Desenhar os testes
 
 ### PRIMEIRA TELA
 
-- [x] Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express" que fica no menu ancoragem de bloco azul
-- [x] A frase: "No Volta Express temos a sua solução!" a parte de "sua solução" está apagado. Sugestão mesma cor do Volta Express
+- [x] Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express Brasil" que fica no menu ancoragem de bloco azul
+- [x] A frase: "No Volta Express Brasil temos a sua solução!" a parte de "sua solução" está apagado. Sugestão mesma cor do Volta Express Brasil
 - [x] Melhorar as duas frases em caixa azul e clicáveis
       sugestão: Tenho Caminhão e Busco Carga / Tenho Carga e Busco Caminhão
 - [x] Botão principal está abrindo nova janela e não deve abrir nova janela para que possamos analisar via Google Analytics
@@ -127,20 +227,22 @@ Desenhar os testes
 - [x] Trocar palavras em inglês para português
 - [x] Melhor não ter no momento barra de pesquisa
 - [x] No lugar de ter barra de pesquisa tem botão de CTA para levar para lista ativa e outro para levar para um formulário que o caminhoneiro anuncia sua disponibilidade de viagem (jotform)
-- [x] Diminuir para 9 exposições de cargas 
+- [x] Diminuir para 9 exposições de cargas
 - [ ] Criar paginação dos anúncios para ir navegando para modo logado
-- [ ] Mostrar nos cards o mapa, peso da carga, volume e data 
+- [ ] Mostrar nos cards o mapa, peso da carga, volume e data
 - [ ] Desenvolver a funcionalidade de Newsletter
+- [ ] Desenvolver a funcionalidade de FAQ
 
 ### TELA: TENHO CARGA E BUSCO CAMINHÃO
 
 - [x] Trocar palavras em inglês para português
 - [x] Melhor não ter no momento barra de pesquisa
 - [x] No lugar de ter barra de pesquisa tem botão de CPA para levar para lista ativa e outro para levar para um formulário que o remetente anuncia sua disponibilidade de carga (jotform)
-- [x] Diminuir para 9 exposições de cargas 
+- [x] Diminuir para 9 exposições de cargas
 - [ ] Criar paginação dos anúncios para ir navegando para modo logado
-- [ ] Mostrar nos cards o mapa, peso da carga, volume e data 
+- [ ] Mostrar nos cards o mapa, peso da carga, volume e data
 - [ ] Desenvolver a funcionalidade de Newsletter
+- [ ] Desenvolver a funcionalidade de FAQ
 
 ### TELA: ENTRAR NO VOLTA EXPRESS
 
@@ -149,7 +251,7 @@ Desenhar os testes
 
 ### Fluxo de Telas
 
-- [ ] Temos que criar depois uma página pós corrida, aonde o intuito é ter uma avlaiação igual do bla bla car 
+- [ ] Temos que criar depois uma página pós corrida, aonde o intuito é ter uma avlaiação igual do bla bla car
 
 # Volta Express V4
 
