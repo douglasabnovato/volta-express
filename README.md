@@ -3,43 +3,51 @@
 ## V5
 
 Um novo modelo de negócio com inteligência para logística.
+
 A plataforma de prateleiras para dar match entre os anúncios de cargas e os transportadores cadastrados.
-Propósito do Volta Express é criar oportunidades para a parte mais frágil da relação desse ecossistema de Logística.
+
+Propósito do Volta Express Brasil é criar oportunidades para a parte mais frágil da relação desse ecossistema de Logística.
 
 ## Pages
 
 ### Home
 
-Será o principal ambiente de divulgação da marca Volta Express
-Opção de persona: Transportador ou Embarcador
+Será o principal ambiente de divulgação da marca Volta Express Brasil
+Seguimentação de persona: Transportador ou Embarcador
 
 ### Page quero transportar
 
-- [ ] Quando clicar em transportar agora, deve cair no whatsapp da pessoa que está anunciando
+- [x] Quando clicar em "transportar agora", deve cair no whatsapp da pessoa que está anunciando (link: https://wa.me/5532998615190)
+  - mensagem: Olá! Gostei do seu anúncio no Volta Express Brasil - Transportar Agora! Quero saber mais detalhes. : https://wa.me/5532998615190?text=Ol%C3%A1!%20Gostei%20do%20seu%20an%C3%BAncio%20no%20Volta%20Express%20Brasil%20-%20Transportar%20Agora!%20Quero%20saber%20mais%20detalhes.
+  - Botão estilizado e com ícone do whatsapp
 
 #### Seção Home
 
-- Qual o objetivo desse conteúdo?
-- Qual a objeção superada?
-- cta para levar para a lista ativa da ação principal
-- cta para permitir anunciar
+- [ ] Foco de ação para o cliente
+  - Qual o objetivo desse conteúdo?
+  - Qual a objeção superada?
+  - cta para levar para a lista ativa da ação principal
+  - cta para permitir anunciar
 
 ### Page quero carregar
 
-- [ ] Quando clicar em carregar agora, deve cair no whatsapp da pessoa que está anunciando
+- [x] Quando clicar em carregar agora, deve cair no whatsapp da pessoa que está anunciando
+  - mensagem: Olá! Gostei do seu anúncio no Volta Express Brasil - Carregar Agora! Quero saber mais detalhes. : https://wa.me/5532998615190?text=Ol%C3%A1!%20Gostei%20do%20seu%20an%C3%BAncio%20no%20Volta%20Express%20Brasil%20-%20Carregar%20Agora!%20Quero%20saber%20mais%20detalhes.  
+  - Botão estilizado e com ícone do whatsapp
 
 #### Seção Home
 
-- Qual o objetivo desse conteúdo?
-- Qual a objeção superada?
-- cta para levar para a lista ativa da ação principal
-- cta para permitir anunciar
+- [ ] Foco de ação para o cliente
+  - Qual o objetivo desse conteúdo?
+  - Qual a objeção superada?
+  - cta para levar para a lista ativa da ação principal
+  - cta para permitir anunciar
 
 ### Page Cadastrar
 
 Teremos uma home de login para se identificar como transportador ou embarcador.
 
-- [ ] login home
+- [ ] home login
 - [ ] login transportador
 - [ ] login embarcador
 
@@ -56,7 +64,7 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
     - [ ] estilizar dentro do form
     - [ ] remover cabeçalho
     - [ ] personalizar resposta ao final
-    
+
 - [ ] Anúncio do Embarcador (anúncio de viagem):
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEERHf9DlfKV6ExlJWAqO2rkrEfiDm7j52nJ8QE3pMg809-g/viewform?embedded=true" width="640" height="2244" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 
@@ -76,11 +84,11 @@ Tratar seção e validação. cadastrar, entrar, trocar senha.
 Plataforma de solução para capturar informações.
 Cada formulário com seus atributos e seus respectivos objetivos.
 
-- [ ] Após enviar, deve mostar que foi enviado para análise.
-- [ ] Implementar: https://www.jotform.com/help/597-how-to-get-google-maps-api-key-for-jotform-mapping-widgets/
-- [ ] Implementar: https://jotmap.jotform.io/
-- [ ] Testar Show Map Location : Para verificar se vai puxar a latitude e longitude da origem e destino do anunciante
-- [ ] Aperfeiçoar Design do Jotform
+- Após enviar, deve mostar que foi enviado para análise.
+- Implementar: https://www.jotform.com/help/597-how-to-get-google-maps-api-key-for-jotform-mapping-widgets/
+- Implementar: https://jotmap.jotform.io/
+- Testar Show Map Location : Para verificar se vai puxar a latitude e longitude da origem e destino do anunciante
+- Aperfeiçoar Design do Jotform
 
 - Anunciar carga:
 
@@ -171,6 +179,13 @@ Cada formulário com seus atributos e seus respectivos objetivos.
 - criar, validar conteúdos
 - agendar e compartilhar conteúdo
 
+### Comunicação
+
+Criar e-mails especializados:
+
+  - marketing@voltaexpressbrasil.com 
+  - vendas@voltaexpressbrasil.com 
+
 ## QA
 
 Desenhar os testes
@@ -187,8 +202,8 @@ Desenhar os testes
 
 ### PRIMEIRA TELA
 
-- [x] Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express" que fica no menu ancoragem de bloco azul
-- [x] A frase: "No Volta Express temos a sua solução!" a parte de "sua solução" está apagado. Sugestão mesma cor do Volta Express
+- [x] Ao abrir no Edge , com 100% do zoom ele corta a frase "Entrar no Volta Express Brasil" que fica no menu ancoragem de bloco azul
+- [x] A frase: "No Volta Express Brasil temos a sua solução!" a parte de "sua solução" está apagado. Sugestão mesma cor do Volta Express Brasil
 - [x] Melhorar as duas frases em caixa azul e clicáveis
       sugestão: Tenho Caminhão e Busco Carga / Tenho Carga e Busco Caminhão
 - [x] Botão principal está abrindo nova janela e não deve abrir nova janela para que possamos analisar via Google Analytics
@@ -203,6 +218,7 @@ Desenhar os testes
 - [ ] Criar paginação dos anúncios para ir navegando para modo logado
 - [ ] Mostrar nos cards o mapa, peso da carga, volume e data
 - [ ] Desenvolver a funcionalidade de Newsletter
+- [ ] Desenvolver a funcionalidade de FAQ
 
 ### TELA: TENHO CARGA E BUSCO CAMINHÃO
 
@@ -213,6 +229,7 @@ Desenhar os testes
 - [ ] Criar paginação dos anúncios para ir navegando para modo logado
 - [ ] Mostrar nos cards o mapa, peso da carga, volume e data
 - [ ] Desenvolver a funcionalidade de Newsletter
+- [ ] Desenvolver a funcionalidade de FAQ
 
 ### TELA: ENTRAR NO VOLTA EXPRESS
 
